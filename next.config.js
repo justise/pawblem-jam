@@ -1,5 +1,9 @@
 // next.config.js
 const withCSS = require('@zeit/next-css')
-module.exports = withCSS({
-    /* my next config */
-})
+const withImages = require('next-images')
+
+module.exports = withImages(
+    withCSS({
+        /* my next config */
+    })
+)
