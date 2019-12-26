@@ -1,20 +1,30 @@
 {
-  "name": "pawblem-jam",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "next": "^9.1.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  }
+    "name": "pawblem-jam",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@zeit/next-css": "^1.0.1",
+        "next": "^9.1.6",
+        "next-images": "^1.2.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-slick": "^0.25.2",
+        "slick-carousel": "^1.8.1"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.21",
+        "@types/prop-types": "^15.7.3",
+        "@types/react": "^16.9.17",
+        "typescript": "^3.7.4"
+    }
 }

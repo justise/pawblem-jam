@@ -88,49 +88,459 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/meta.js":
-/*!****************************!*\
-  !*** ./components/meta.js ***!
-  \****************************/
+/***/ "./components/footer.tsx":
+/*!*******************************!*\
+  !*** ./components/footer.tsx ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Meta; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/krisgray/Dev/pawblem-jam/components/meta.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/krisgray/Dev/pawblem-jam/components/footer.tsx";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Meta() {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+/**
+ * Allow the Loading attribute on iframe
+ */
+
+function Footer() {
+  return __jsx("footer", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 15
     },
     __self: this
-  }, __jsx("link", {
+  }, __jsx("div", {
+    className: "footer-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "yui3-g-r",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "yui3-u-1-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, __jsx("iframe", {
+    src: "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpawblemsolved%2F&tabs=timeline&width=300&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=1710284432544466",
+    width: "300",
+    height: "400",
+    style: {
+      border: 'none',
+      overflow: 'hidden'
+    },
+    scrolling: "no",
+    allowTransparency: true,
+    loading: "lazy",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "yui3-u-1-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "More Information"), __jsx("ul", {
+    className: "bullet-list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, "Home"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/services",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, "Services"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/rates",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "Rates"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/forms",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, "Forms"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/petsitters",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "Team"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/far",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "FAQs")))), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, "Our Blog"), __jsx("a", {
+    href: "https://gracieslittleworld.com/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "/images/blog.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }))), __jsx("div", {
+    className: "yui3-u-1-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, "Contact"), __jsx("ul", {
+    className: "icon-list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }, __jsx("li", {
+    className: "dog",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, "425-445-7247"), __jsx("li", {
+    className: "cat",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "mailto:info@pawblemsolved.com",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, "info@pawblemsolved.com"))), __jsx("ul", {
+    className: "social",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }, __jsx("li", {
+    className: "yelp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "http://www.yelp.com/biz/pawblem-solved-redmond",
+    target: "_blank",
+    title: "People love us on Yelp!",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-yelp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }))), __jsx("li", {
+    className: "blog",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "http://www.gracieslittleworld.com",
+    target: "_blank",
+    title: "Visit my Blog",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-rss",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }))), __jsx("li", {
+    className: "twitter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "http://twitter.com/pawblemsolved",
+    target: "_blank",
+    title: "Keep up to date with Twitter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-twitter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108
+    },
+    __self: this
+  }))), __jsx("li", {
+    className: "facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://www.facebook.com/pawblemsolved",
+    target: "_blank",
+    title: "See our Facebook Page",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: this
+  })))), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "/request.php",
+    className: "request-button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: this
+  }, "Ready to Request a Pet Nanny?")))));
+}
+
+/***/ }),
+
+/***/ "./components/header.tsx":
+/*!*******************************!*\
+  !*** ./components/header.tsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navigation */ "./components/navigation.tsx");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/krisgray/Dev/pawblem-jam/components/header.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function Header({
+  selectedTab
+}) {
+  return __jsx("header", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "Pawblem Solved: Dog Walkers and Pet Sitters"), __jsx("link", {
     href: "https://fonts.googleapis.com/css?family=Roboto:100,300,500,700",
     rel: "stylesheet",
     type: "text/css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), __jsx("link", {
-    rel: "stylesheet",
-    type: "text/css",
-    href: "css/mainV3.css?cacheBust=10",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }), __jsx("link", {
@@ -138,7 +548,7 @@ function Meta() {
     href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }), __jsx("link", {
@@ -147,7 +557,7 @@ function Meta() {
     href: "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }), __jsx("link", {
@@ -156,16 +566,16 @@ function Meta() {
     href: "//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }), __jsx("link", {
     rel: "icon",
     type: "img/ico",
-    href: "images/favicon.ico",
+    href: "/images/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }), __jsx("meta", {
@@ -173,7 +583,7 @@ function Meta() {
     content: "Usmu6yAcz6VKluDFlY8muuovktEPRq8P1Htfh9dbLrs",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }), __jsx("meta", {
@@ -181,7 +591,7 @@ function Meta() {
     content: "Kirkland Pet Setting, Kirkland Cat Sitting, Kirkland Dog Sitting, Kirkland Dog Walking, Kirkland Pet Walking, Redmond Pet Setting, Redmond Cat Sitting, Redmond Dog Sitting, Redmond Dog Walking, Redmond Pet Walking, Pet Care, Dogs, Cats, House Sitting, Danielle Jaffy, Washington, Redmond, North Kirkland, Kirkland, Juanita, Moss Bay, Seattle, 98052, 98053, 98073, 98033, 98034, 98083, 98004, 98005, 98006, 98007, 98008, 98009, 98015",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   }), __jsx("meta", {
@@ -189,44 +599,12 @@ function Meta() {
     content: "width=device-width, initial-scale=1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), __jsx("link", {
-    rel: "prefetch",
-    href: "images/banners/cat2.jpg",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
   }), __jsx("link", {
     rel: "prefetch",
-    href: "images/banners/cat3.jpg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }), __jsx("link", {
-    rel: "prefetch",
-    href: "images/banners/dog25.jpg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }), __jsx("link", {
-    rel: "prefetch",
-    href: "images/banners/dog2.jpg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }), __jsx("link", {
-    rel: "prefetch",
-    href: "images/banners/dog13.jpg",
+    href: "/images/banners/cat2.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
@@ -234,7 +612,7 @@ function Meta() {
     __self: this
   }), __jsx("link", {
     rel: "prefetch",
-    href: "images/banners/dog5.jpg",
+    href: "/images/banners/cat3.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
@@ -242,7 +620,7 @@ function Meta() {
     __self: this
   }), __jsx("link", {
     rel: "prefetch",
-    href: "images/banners/cat5.jpg",
+    href: "/images/banners/dog25.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46
@@ -250,7 +628,7 @@ function Meta() {
     __self: this
   }), __jsx("link", {
     rel: "prefetch",
-    href: "images/banners/dog10.jpg",
+    href: "/images/banners/dog2.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47
@@ -258,10 +636,42 @@ function Meta() {
     __self: this
   }), __jsx("link", {
     rel: "prefetch",
-    href: "images/banners/dog24.jpg",
+    href: "/images/banners/dog13.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48
+    },
+    __self: this
+  }), __jsx("link", {
+    rel: "prefetch",
+    href: "/images/banners/dog5.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }), __jsx("link", {
+    rel: "prefetch",
+    href: "/images/banners/cat5.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }), __jsx("link", {
+    rel: "prefetch",
+    href: "/images/banners/dog10.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }), __jsx("link", {
+    rel: "prefetch",
+    href: "/images/banners/dog24.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
     },
     __self: this
   }), __jsx("meta", {
@@ -269,7 +679,7 @@ function Meta() {
     content: "1710284432544466",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 54
     },
     __self: this
   }), __jsx("meta", {
@@ -277,7 +687,7 @@ function Meta() {
     content: "business.business",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 55
     },
     __self: this
   }), __jsx("meta", {
@@ -285,7 +695,7 @@ function Meta() {
     content: "Pawblem Solved Pet Sitting and Dog Walking",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 56
     },
     __self: this
   }), __jsx("meta", {
@@ -293,15 +703,15 @@ function Meta() {
     content: "en_US",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 60
     },
     __self: this
   }), __jsx("meta", {
     property: "og:image",
-    content: "http://www.pawblemsolveed.com/images/site-logo.jpg",
+    content: "http://www.pawblemsolveed.com//images/site-logo.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 61
     },
     __self: this
   }), __jsx("meta", {
@@ -309,7 +719,7 @@ function Meta() {
     content: "17220 NE 137th CT",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 66
     },
     __self: this
   }), __jsx("meta", {
@@ -317,7 +727,7 @@ function Meta() {
     content: "Redmond",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 70
     },
     __self: this
   }), __jsx("meta", {
@@ -325,7 +735,7 @@ function Meta() {
     content: "WA",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 74
     },
     __self: this
   }), __jsx("meta", {
@@ -333,7 +743,7 @@ function Meta() {
     content: "98052",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 75
     },
     __self: this
   }), __jsx("meta", {
@@ -341,7 +751,7 @@ function Meta() {
     content: "USA",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 79
     },
     __self: this
   }), __jsx("meta", {
@@ -349,7 +759,7 @@ function Meta() {
     content: "info@pawblemsolved.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 83
     },
     __self: this
   }), __jsx("meta", {
@@ -357,7 +767,7 @@ function Meta() {
     content: "425-445-7247",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 87
     },
     __self: this
   }), __jsx("meta", {
@@ -365,7 +775,7 @@ function Meta() {
     content: "https://www.pawblemsolved.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 91
     },
     __self: this
   }), __jsx("meta", {
@@ -373,7 +783,7 @@ function Meta() {
     content: "47.723269",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 95
     },
     __self: this
   }), __jsx("meta", {
@@ -381,7 +791,7 @@ function Meta() {
     content: "-122.109560",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 96
     },
     __self: this
   }), __jsx("meta", {
@@ -389,7 +799,7 @@ function Meta() {
     content: "1663352948",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 100
     },
     __self: this
   }), __jsx("meta", {
@@ -397,7 +807,7 @@ function Meta() {
     content: "summary_large_image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 102
     },
     __self: this
   }), __jsx("meta", {
@@ -405,7 +815,7 @@ function Meta() {
     content: "@PawblemSolved",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 103
     },
     __self: this
   }), __jsx("meta", {
@@ -413,19 +823,631 @@ function Meta() {
     content: "@PawblemSolved",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 104
     },
     __self: this
   }), __jsx("meta", {
     name: "twitter:image:src",
-    content: "https://www.pawblemsolved.com/images/site-logo.jpg",
+    content: "https://www.pawblemsolved.com//images/site-logo.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 105
     },
     __self: this
-  }));
+  }), __jsx("link", {
+    rel: "stylesheet",
+    type: "text/css",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109
+    },
+    __self: this
+  }), __jsx("link", {
+    rel: "stylesheet",
+    type: "text/css",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "/scripts/google-analytics.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: this
+  }), __jsx("meta", {
+    name: "Description",
+    content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120
+    },
+    __self: this
+  }), __jsx("meta", {
+    property: "og:title",
+    content: "Pawblem Solved: Dog Walkers and Pet Sitters",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: this
+  }), __jsx("meta", {
+    name: "twitter:title",
+    content: "Pawblem Solved: Dog Walkers and Pet Sitters",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128
+    },
+    __self: this
+  }), __jsx("meta", {
+    property: "og:description",
+    content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: this
+  }), __jsx("meta", {
+    name: "twitter:description",
+    content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
+    },
+    __self: this
+  }), __jsx("meta", {
+    property: "og:url",
+    content: "https://www.pawblemsolved.com/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "header-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "index.php",
+    className: "header-logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 146
+    },
+    __self: this
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147
+    },
+    __self: this
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
+    },
+    __self: this
+  }, "Pawblem", __jsx("img", {
+    src: "/images/paw-icon.png",
+    className: "paw-icon",
+    style: {
+      padding: '3px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150
+    },
+    __self: this
+  }), "Solved")), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 158
+    },
+    __self: this
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159
+    },
+    __self: this
+  }, "Pet Sitting Service")))), __jsx(_navigation__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    selectedTab: selectedTab,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163
+    },
+    __self: this
+  }), __jsx("ul", {
+    className: "social",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 164
+    },
+    __self: this
+  }, __jsx("li", {
+    className: "yelp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 165
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "http://www.yelp.com/biz/pawblem-solved-redmond",
+    target: "_blank",
+    title: "People love us on Yelp!",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 166
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-yelp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 171
+    },
+    __self: this
+  }))), __jsx("li", {
+    className: "blog",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 174
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "http://www.gracieslittleworld.com",
+    target: "_blank",
+    title: "Visit my Blog",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 175
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-rss",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 180
+    },
+    __self: this
+  }))), __jsx("li", {
+    className: "twitter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 183
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "http://twitter.com/pawblemsolved",
+    target: "_blank",
+    title: "Keep up to date with Twitter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 184
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-twitter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 189
+    },
+    __self: this
+  }))), __jsx("li", {
+    className: "facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 192
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://www.facebook.com/pawblemsolved",
+    target: "_blank",
+    title: "See our Facebook Page",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 193
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "fa fa-facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 198
+    },
+    __self: this
+  })))));
 }
+Header.propTypes = {
+  selectedTab: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string.isRequired
+};
+
+/***/ }),
+
+/***/ "./components/navigation.tsx":
+/*!***********************************!*\
+  !*** ./components/navigation.tsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navigation; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/krisgray/Dev/pawblem-jam/components/navigation.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function Navigation({
+  selectedTab
+}) {
+  const isSelected = tabName => {
+    return selectedTab == tabName ? 'selected' : '';
+  };
+
+  return __jsx("div", {
+    className: "nav-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx("ul", {
+    className: "nav",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, __jsx("li", {
+    className: isSelected('home'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "Home"))), __jsx("li", {
+    className: isSelected('services'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/services",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "Services"))), __jsx("li", {
+    className: isSelected('rates'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/rates",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "Rates"))), __jsx("li", {
+    className: isSelected('forms'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/forms",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Forms"))), __jsx("li", {
+    className: isSelected('team'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/petsitters",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, "Team"))), __jsx("li", {
+    className: isSelected('faq'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/faq",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, "FAQs"))), __jsx("li", {
+    className: isSelected('request'),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/request",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "red",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, "Request Service")))));
+}
+Navigation.propTypes = {
+  selectedTab: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
+};
+
+/***/ }),
+
+/***/ "./components/reviewscarousel.tsx":
+/*!****************************************!*\
+  !*** ./components/reviewscarousel.tsx ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SimpleSlider; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-slick */ "react-slick");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "/Users/krisgray/Dev/pawblem-jam/components/reviewscarousel.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+class SimpleSlider extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  render() {
+    const settings = {
+      autoplay: true,
+      dots: false
+    };
+    return __jsx(react_slick__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, __jsx("a", {
+      target: "_blank",
+      href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=6C7kRXpUvT527BKdXqGYHQ",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, __jsx("img", {
+      src: "/images/reviews/yelp1.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, __jsx("a", {
+      target: "_blank",
+      href: "https://www.facebook.com/cami.p.baker/posts/10214303303924620:0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, __jsx("img", {
+      src: "/images/reviews/facebook1.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, __jsx("a", {
+      target: "_blank",
+      href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=gYcFypNzyPDAuQEcTEncEA",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, __jsx("img", {
+      src: "/images/reviews/yelp2.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }, __jsx("a", {
+      target: "_blank",
+      href: "https://www.facebook.com/ellen.moyer.7/posts/1879023325458836:0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, __jsx("img", {
+      src: "/images/reviews/facebook2.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44
+      },
+      __self: this
+    }, __jsx("a", {
+      target: "_blank",
+      href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=S3-wQKKkWIkHn5yWpTF7FA",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, __jsx("img", {
+      src: "/images/reviews/yelp3.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }))));
+  }
+
+}
+/*
+
+        <div id="review-slides-mobile">
+            <div>
+                <a
+                    target="_blank"
+                    href="https://www.yelp.com/biz/pawblem-solved-redmond?hrid=6C7kRXpUvT527BKdXqGYHQ"
+                >
+                    <img src="/images/reviews/yelp1.png" />
+                </a>
+            </div>
+            <div>
+                <a
+                    target="_blank"
+                    href="https://www.facebook.com/cami.p.baker/posts/10214303303924620:0"
+                >
+                    <img src="/images/reviews/facebook1.png" />
+                </a>
+            </div>
+            <div>
+                <a
+                    target="_blank"
+                    href="https://www.yelp.com/biz/pawblem-solved-redmond?hrid=gYcFypNzyPDAuQEcTEncEA"
+                >
+                    <img src="/images/reviews/yelp2.png" />
+                </a>
+            </div>
+            <div>
+                <a
+                    target="_blank"
+                    href="https://www.facebook.com/ellen.moyer.7/posts/1879023325458836:0"
+                >
+                    <img src="/images/reviews/facebook2.png" />
+                </a>
+            </div>
+            <div>
+                <a
+                    target="_blank"
+                    href="https://www.yelp.com/biz/pawblem-solved-redmond?hrid=S3-wQKKkWIkHn5yWpTF7FA"
+                >
+                    <img src="/images/reviews/yelp3.png" />
+                </a>
+            </div>
+        </div>
+        */
 
 /***/ }),
 
@@ -536,6 +1558,39 @@ module.exports = __webpack_require__(/*! core-js/library/fn/symbol/iterator */ "
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+
+function _extends() {
+  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
 
 /***/ }),
 
@@ -2230,10 +3285,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/index.tsx":
+/*!*************************!*\
+  !*** ./pages/index.tsx ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2243,12 +3298,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_meta__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/meta */ "./components/meta.js");
-/* harmony import */ var _styles_main1_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/main1.css */ "./styles/main1.css");
-/* harmony import */ var _styles_main1_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_main1_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/header */ "./components/header.tsx");
+/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/footer */ "./components/footer.tsx");
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/main.css */ "./styles/main.css");
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_main_css__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/krisgray/Dev/pawblem-jam/pages/index.js";
+/* harmony import */ var _components_reviewscarousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/reviewscarousel */ "./components/reviewscarousel.tsx");
+var _jsxFileName = "/Users/krisgray/Dev/pawblem-jam/pages/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2256,103 +3311,40 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Index = () => __jsx("html", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, __jsx("head", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, __jsx("title", {
+
+
+const Index = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 9
-  },
-  __self: undefined
-}, "Pawblem Solved: Dog Walkers and Pet Sitters"), __jsx(_components_meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}), __jsx("meta", {
-  name: "Description",
-  content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}), __jsx("meta", {
-  property: "og:title",
-  content: "Pawblem Solved: Dog Walkers and Pet Sitters",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
-}), __jsx("meta", {
-  name: "twitter:title",
-  content: "Pawblem Solved: Dog Walkers and Pet Sitters",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
-}), __jsx("meta", {
-  property: "og:description",
-  content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 23
-  },
-  __self: undefined
-}), __jsx("meta", {
-  name: "twitter:description",
-  content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27
-  },
-  __self: undefined
-}), __jsx("meta", {
-  property: "og:url",
-  content: "https://www.pawblemsolved.com/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 31
-  },
-  __self: undefined
-})), __jsx("body", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33
   },
   __self: undefined
 }, __jsx("div", {
   id: "container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34
+    lineNumber: 10
   },
   __self: undefined
-}, "HEADER2", __jsx("div", {
+}, __jsx(_components_header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  selectedTab: "home",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}), __jsx("div", {
   id: "content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 36
+    lineNumber: 12
   },
   __self: undefined
 }, __jsx("div", {
   className: "banner-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 13
   },
   __self: undefined
 }, __jsx("div", {
@@ -2360,492 +3352,504 @@ const Index = () => __jsx("html", {
   id: "banner-home",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 38
+    lineNumber: 14
   },
   __self: undefined
 }), __jsx("div", {
   className: "banner-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 39
+    lineNumber: 15
   },
   __self: undefined
 }, __jsx("h1", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 16
   },
   __self: undefined
 }, "Dog Walkers & Cat Sitters"), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 41
+    lineNumber: 17
   },
   __self: undefined
 }, "Redmond \xA0 North Kirkland")), __jsx("div", {
   className: "banner-footer",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43
+    lineNumber: 19
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/request",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 20
   },
   __self: undefined
 }, __jsx("a", {
-  href: "/request.php",
   className: "request-button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 44
+    lineNumber: 21
   },
   __self: undefined
-}, "Request a Pet Nanny"))), __jsx("div", {
+}, "Request a Pet Nanny")))), __jsx("div", {
   className: "content-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 50
+    lineNumber: 28
   },
   __self: undefined
 }, __jsx("section", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 51
+    lineNumber: 29
   },
   __self: undefined
 }, __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 52
+    lineNumber: 30
   },
   __self: undefined
 }), __jsx("ol", {
   className: "yui3-g-r",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 53
+    lineNumber: 31
   },
   __self: undefined
 }, __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 54
+    lineNumber: 32
   },
   __self: undefined
 }, __jsx("h3", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 55
+    lineNumber: 33
   },
   __self: undefined
 }, "Expertise 2018 Best Dog", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 57
+    lineNumber: 35
   },
   __self: undefined
 }), " Walkers in Redmond"), __jsx("a", {
   href: "https://www.expertise.com/wa/redmond/dog-walkers#provider1",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 59
+    lineNumber: 37
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/accolades/Expertise.png",
+  src: "/images/accolades/Expertise.png",
   className: "accolade",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 60
+    lineNumber: 38
   },
   __self: undefined
 }), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 64
+    lineNumber: 42
   },
   __self: undefined
 }))), __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 67
+    lineNumber: 45
   },
   __self: undefined
 }, __jsx("h3", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 68
+    lineNumber: 46
   },
   __self: undefined
 }, "Over 25,000 Pawblems", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 70
+    lineNumber: 48
   },
   __self: undefined
 }), " Solved Since 2010"), __jsx("div", {
   className: "large-icon walker",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 72
+    lineNumber: 50
   },
   __self: undefined
 })), __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 74
+    lineNumber: 52
   },
   __self: undefined
 }, __jsx("h3", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 75
+    lineNumber: 53
   },
   __self: undefined
 }, "Purrfect 5 Star Rating by ", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 76
+    lineNumber: 54
   },
   __self: undefined
 }), "Our Furry Friends and Pet Parents"), __jsx("a", {
   href: "https://www.yelp.com/biz/pawblem-solved-redmond",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 79
+    lineNumber: 57
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/accolades/yelp5star.png",
+  src: "/images/accolades/yelp5star.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 80
+    lineNumber: 58
   },
   __self: undefined
 }))))), __jsx("hr", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 86
+    lineNumber: 64
   },
   __self: undefined
 }), __jsx("section", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 88
+    lineNumber: 66
   },
   __self: undefined
 }, __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 89
+    lineNumber: 67
   },
   __self: undefined
 }, __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 90
+    lineNumber: 68
   },
   __self: undefined
 }, "Why Pawblem Solved"), " for your pets?"), __jsx("ol", {
   className: "yui3-g-r",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 92
+    lineNumber: 70
   },
   __self: undefined
 }, __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 93
+    lineNumber: 71
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/icons/dog.png",
+  src: "/images/icons/dog.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 94
+    lineNumber: 72
   },
   __self: undefined
 }), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 95
+    lineNumber: 73
   },
   __self: undefined
 }), __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 96
+    lineNumber: 74
   },
   __self: undefined
 }, "Responsible"), __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 97
+    lineNumber: 75
   },
   __self: undefined
 }, "No Overloaded Schedules")), __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 99
+    lineNumber: 77
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/icons/cat.png",
+  src: "/images/icons/cat.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 100
+    lineNumber: 78
   },
   __self: undefined
 }), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 101
+    lineNumber: 79
   },
   __self: undefined
 }), __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 102
+    lineNumber: 80
   },
   __self: undefined
 }, "Trusted"), __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 103
+    lineNumber: 81
   },
   __self: undefined
 }, "Licensed, Bonded, Insured")), __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 105
+    lineNumber: 83
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/icons/bulldog.png",
+  src: "/images/icons/bulldog.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 106
+    lineNumber: 84
   },
   __self: undefined
 }), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 107
+    lineNumber: 85
   },
   __self: undefined
 }), __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 108
+    lineNumber: 86
   },
   __self: undefined
 }, "Convienence"), __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 109
+    lineNumber: 87
   },
   __self: undefined
 }, "In Home Care & Private Walks", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 111
+    lineNumber: 89
   },
   __self: undefined
 }), " in Your Neighboorhood"))), __jsx("ol", {
   className: "yui3-g-r",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 115
+    lineNumber: 93
   },
   __self: undefined
 }, __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 116
+    lineNumber: 94
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/icons/cat2.png",
+  src: "/images/icons/cat2.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 117
+    lineNumber: 95
   },
   __self: undefined
 }), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 118
+    lineNumber: 96
   },
   __self: undefined
 }), __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 119
+    lineNumber: 97
   },
   __self: undefined
 }, "Dependable"), __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 120
+    lineNumber: 98
   },
   __self: undefined
 }, "Same Walker & Backup ", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 121
+    lineNumber: 99
   },
   __self: undefined
 }), "Coverage for Every Visit.")), __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 125
+    lineNumber: 103
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/icons/dog2.png",
+  src: "/images/icons/dog2.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 126
+    lineNumber: 104
   },
   __self: undefined
 }), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 127
+    lineNumber: 105
   },
   __self: undefined
 }), __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 128
+    lineNumber: 106
   },
   __self: undefined
 }, "Confidence"), __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 129
+    lineNumber: 107
   },
   __self: undefined
-}, "Free Meet & Greets to Make Sure", ' ', __jsx("br", {
+}, "Free Meet & Greets to Make Sure ", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 131
+    lineNumber: 108
   },
   __self: undefined
 }), "it's a Great Fit for Pet & Parent.")), __jsx("li", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 135
+    lineNumber: 112
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/icons/cat3.png",
+  src: "/images/icons/cat3.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 136
+    lineNumber: 113
   },
   __self: undefined
 }), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 137
+    lineNumber: 114
   },
   __self: undefined
 }), __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 138
+    lineNumber: 115
   },
   __self: undefined
 }, "Quality"), __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 139
+    lineNumber: 116
   },
   __self: undefined
 }, "Founded in 2010 with", __jsx("br", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 141
+    lineNumber: 118
   },
   __self: undefined
 }), " Consistent 5-Star Reviews")))), __jsx("hr", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 147
+    lineNumber: 124
   },
   __self: undefined
 }), __jsx("section", {
   className: "getting-started",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 149
+    lineNumber: 126
   },
   __self: undefined
 }, __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 150
+    lineNumber: 127
   },
   __self: undefined
 }, __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 151
+    lineNumber: 128
   },
   __self: undefined
 }, "3 simple steps to get started"), " with Pawblem Solved"), __jsx("div", {
   className: "yui3-g-r",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 154
+    lineNumber: 131
   },
   __self: undefined
 }, __jsx("div", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 155
+    lineNumber: 132
   },
   __self: undefined
 }, __jsx("div", {
   className: "getting-started-card",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 156
+    lineNumber: 133
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/request",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 134
   },
   __self: undefined
 }, __jsx("a", {
-  href: "request.php",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 157
+    lineNumber: 135
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/sophie.jpg",
+  src: "/images/sophie.jpg",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 158
+    lineNumber: 136
   },
   __self: undefined
 }), __jsx("footer", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 159
+    lineNumber: 137
   },
   __self: undefined
 }, __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 160
+    lineNumber: 138
   },
   __self: undefined
 }, "Request Service"), __jsx("p", {
@@ -2854,361 +3858,149 @@ const Index = () => __jsx("html", {
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 161
+    lineNumber: 139
   },
   __self: undefined
-}, "Tell Us About Your Needs"))))), __jsx("div", {
+}, "Tell Us About Your Needs")))))), __jsx("div", {
   className: "yui3-u-1-3",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 169
+    lineNumber: 148
   },
   __self: undefined
 }, __jsx("div", {
   className: "getting-started-card",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 170
+    lineNumber: 149
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/petsitters",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 150
   },
   __self: undefined
 }, __jsx("a", {
-  href: "petsitters.php",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 171
+    lineNumber: 151
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/consultation2.jpg",
+  src: "/images/consultation2.jpg",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 172
+    lineNumber: 152
   },
   __self: undefined
 }), __jsx("footer", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 173
+    lineNumber: 153
   },
   __self: undefined
 }, __jsx("h4", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 174
+    lineNumber: 154
   },
   __self: undefined
 }, "Meet Your Nanny"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 175
+    lineNumber: 155
   },
   __self: undefined
-}, "Book Your Free Consultation"))))), __jsx("div", {
+}, "Book Your Free Consultation")))))), __jsx("div", {
   className: "yui3-u-1-3",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 164
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "getting-started-card",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 165
+  },
+  __self: undefined
+}, __jsx("img", {
+  src: "/images/dancingdog.jpg",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 166
+  },
+  __self: undefined
+}), __jsx("footer", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 167
+  },
+  __self: undefined
+}, __jsx("h4", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 168
+  },
+  __self: undefined
+}, "Happy Pets"), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 169
+  },
+  __self: undefined
+}, "Begin Operation Tippy Taps")))))), __jsx("hr", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 176
+  },
+  __self: undefined
+}), __jsx("section", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 178
+  },
+  __self: undefined
+}, __jsx("h2", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 179
+  },
+  __self: undefined
+}, "Our customers ", __jsx("b", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 180
+  },
+  __self: undefined
+}, "love us!")), __jsx(_components_reviewscarousel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 182
+  },
+  __self: undefined
+}), __jsx("div", {
+  className: "yui3-g-r",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 183
   },
   __self: undefined
 }, __jsx("div", {
-  className: "getting-started-card",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 184
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/dancingdog.jpg",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 185
-  },
-  __self: undefined
-}), __jsx("footer", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 186
-  },
-  __self: undefined
-}, __jsx("h4", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 187
-  },
-  __self: undefined
-}, "Happy Pets"), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 188
-  },
-  __self: undefined
-}, "Begin Operation Tippy Taps")))))), __jsx("hr", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 195
-  },
-  __self: undefined
-}), __jsx("section", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 197
-  },
-  __self: undefined
-}, __jsx("h2", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 198
-  },
-  __self: undefined
-}, "Our customers ", __jsx("b", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 199
-  },
-  __self: undefined
-}, "love us!")), __jsx("div", {
-  id: "review-slides",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 201
-  },
-  __self: undefined
-}, __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 202
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=6C7kRXpUvT527BKdXqGYHQ",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 203
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/yelp1.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 207
-  },
-  __self: undefined
-}))), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 210
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.facebook.com/cami.p.baker/posts/10214303303924620:0",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 211
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/facebook1.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 215
-  },
-  __self: undefined
-}))), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 218
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=gYcFypNzyPDAuQEcTEncEA",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 219
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/yelp2.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 223
-  },
-  __self: undefined
-}))), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 226
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.facebook.com/ellen.moyer.7/posts/1879023325458836:0",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 227
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/facebook2.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 231
-  },
-  __self: undefined
-}))), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 234
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=S3-wQKKkWIkHn5yWpTF7FA",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 235
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/yelp3.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 239
-  },
-  __self: undefined
-})))), __jsx("div", {
-  id: "review-slides-mobile",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 244
-  },
-  __self: undefined
-}, __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 245
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=6C7kRXpUvT527BKdXqGYHQ",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 246
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/yelp1.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 250
-  },
-  __self: undefined
-}))), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 253
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.facebook.com/cami.p.baker/posts/10214303303924620:0",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 254
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/facebook1.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 258
-  },
-  __self: undefined
-}))), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 261
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=gYcFypNzyPDAuQEcTEncEA",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 262
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/yelp2.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 266
-  },
-  __self: undefined
-}))), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 269
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.facebook.com/ellen.moyer.7/posts/1879023325458836:0",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 270
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/facebook2.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 274
-  },
-  __self: undefined
-}))), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 277
-  },
-  __self: undefined
-}, __jsx("a", {
-  target: "_blank",
-  href: "https://www.yelp.com/biz/pawblem-solved-redmond?hrid=S3-wQKKkWIkHn5yWpTF7FA",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 278
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "images/reviews/yelp3.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 282
-  },
-  __self: undefined
-})))), __jsx("div", {
-  className: "yui3-g-r",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 287
-  },
-  __self: undefined
-}, __jsx("div", {
   className: "yui3-u-1-2",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 288
+    lineNumber: 184
   },
   __self: undefined
 }, __jsx("div", {
   className: "review-block",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 289
+    lineNumber: 185
   },
   __self: undefined
 }, __jsx("a", {
@@ -3216,14 +4008,14 @@ const Index = () => __jsx("html", {
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 290
+    lineNumber: 186
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/icons/facebook.png",
+  src: "/images/icons/facebook.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 294
+    lineNumber: 190
   },
   __self: undefined
 })), __jsx("a", {
@@ -3231,56 +4023,56 @@ const Index = () => __jsx("html", {
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 296
+    lineNumber: 192
   },
   __self: undefined
-}, "16", __jsx("img", {
-  src: "images/icons/facebook-paw.png",
+}, "14", ' ', __jsx("img", {
+  src: "/images/icons/facebook-paw.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 301
-  },
-  __self: undefined
-}), __jsx("img", {
-  src: "images/icons/facebook-paw.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 302
+    lineNumber: 197
   },
   __self: undefined
 }), __jsx("img", {
-  src: "images/icons/facebook-paw.png",
+  src: "/images/icons/facebook-paw.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 303
+    lineNumber: 198
   },
   __self: undefined
 }), __jsx("img", {
-  src: "images/icons/facebook-paw.png",
+  src: "/images/icons/facebook-paw.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 304
+    lineNumber: 199
   },
   __self: undefined
 }), __jsx("img", {
-  src: "images/icons/facebook-paw.png",
+  src: "/images/icons/facebook-paw.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 305
+    lineNumber: 200
+  },
+  __self: undefined
+}), __jsx("img", {
+  src: "/images/icons/facebook-paw.png",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 201
   },
   __self: undefined
 }), ' ', "Reviews on Facebook"))), __jsx("div", {
   className: "yui3-u-1-2",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 310
+    lineNumber: 206
   },
   __self: undefined
 }, __jsx("div", {
   className: "review-block",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 311
+    lineNumber: 207
   },
   __self: undefined
 }, __jsx("a", {
@@ -3288,14 +4080,14 @@ const Index = () => __jsx("html", {
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 312
+    lineNumber: 208
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/icons/yelp.png",
+  src: "/images/icons/yelp.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 316
+    lineNumber: 212
   },
   __self: undefined
 })), __jsx("a", {
@@ -3303,66 +4095,66 @@ const Index = () => __jsx("html", {
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 318
+    lineNumber: 214
   },
   __self: undefined
-}, "16", __jsx("img", {
-  src: "images/icons/yelp-paw.png",
+}, "18", ' ', __jsx("img", {
+  src: "/images/icons/yelp-paw.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 323
-  },
-  __self: undefined
-}), __jsx("img", {
-  src: "images/icons/yelp-paw.png",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 324
+    lineNumber: 219
   },
   __self: undefined
 }), __jsx("img", {
-  src: "images/icons/yelp-paw.png",
+  src: "/images/icons/yelp-paw.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 325
+    lineNumber: 220
   },
   __self: undefined
 }), __jsx("img", {
-  src: "images/icons/yelp-paw.png",
+  src: "/images/icons/yelp-paw.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 326
+    lineNumber: 221
   },
   __self: undefined
 }), __jsx("img", {
-  src: "images/icons/yelp-paw.png",
+  src: "/images/icons/yelp-paw.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 327
+    lineNumber: 222
+  },
+  __self: undefined
+}), __jsx("img", {
+  src: "/images/icons/yelp-paw.png",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 223
   },
   __self: undefined
 }), ' ', "Reviews on Yelp"))))), __jsx("hr", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 335
+    lineNumber: 231
   },
   __self: undefined
 }), __jsx("section", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 336
+    lineNumber: 232
   },
   __self: undefined
 }, __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 337
+    lineNumber: 233
   },
   __self: undefined
 }, "Servicing ", __jsx("b", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 338
+    lineNumber: 234
   },
   __self: undefined
 }, "Redmond and North Kirkland")), __jsx("a", {
@@ -3370,19 +4162,25 @@ const Index = () => __jsx("html", {
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 340
+    lineNumber: 236
   },
   __self: undefined
 }, __jsx("img", {
-  src: "images/map4.png",
+  src: "/images/map4.png",
   id: "map",
   alt: "Image of all the Areas of Redmond and North Kirkland that we service.",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 344
+    lineNumber: 240
   },
   __self: undefined
-}))))), "FOOTER"), "SCRIPTS"));
+}))))), __jsx(_components_footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 249
+  },
+  __self: undefined
+})));
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
@@ -3399,25 +4197,14 @@ const Index = () => __jsx("html", {
 
 /***/ }),
 
-/***/ "./styles/main1.css":
-/*!**************************!*\
-  !*** ./styles/main1.css ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 4:
+/*!*******************************!*\
+  !*** multi ./pages/index.tsx ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/krisgray/Dev/pawblem-jam/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/krisgray/Dev/pawblem-jam/pages/index.tsx */"./pages/index.tsx");
 
 
 /***/ }),
@@ -3532,6 +4319,17 @@ module.exports = require("core-js/library/fn/weak-map");
 
 /***/ }),
 
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -3573,6 +4371,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "react-slick":
+/*!******************************!*\
+  !*** external "react-slick" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-slick");
 
 /***/ }),
 
