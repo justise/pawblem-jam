@@ -7,6 +7,7 @@ declare module 'react' {
     interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
         // extends React's HTMLAttributes
         loading?: string;
+        allowtransparency?: string;
     }
 }
 
@@ -22,7 +23,7 @@ export default function Footer() {
                             height="400"
                             style={{ border: 'none', overflow: 'hidden' }}
                             scrolling="no"
-                            allowTransparency={true}
+                            allowtransparency="true"
                             loading="lazy"
                         ></iframe>
                     </div>
@@ -121,9 +122,11 @@ export default function Footer() {
 
                         <br />
                         <br />
-                        <a href="/request.php" className="request-button">
-                            Ready to Request a Pet Nanny?
-                        </a>
+                        <Link href="/request">
+                            <a className="request-button">
+                                Ready to Request a Pet Nanny?
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>
