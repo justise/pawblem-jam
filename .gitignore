@@ -3,3 +3,4 @@ node_modules
 
 # NextJS generated resources
 .next/
+.next
