@@ -44,7 +44,7 @@ export default function Navigation({
                 </li>
                 <li className={isSelected('request')}>
                     <Link href="/request">
-                        <a className="red">Request Service</a>
+                        <a>Request Service</a>
                     </Link>
                 </li>
             </ul>

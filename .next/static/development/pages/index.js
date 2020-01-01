@@ -188,7 +188,7 @@ function Footer() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/far",
+    href: "/faq",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
@@ -1169,7 +1169,6 @@ function Navigation(_ref) {
     },
     __self: this
   }, __jsx("a", {
-    className: "red",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47
