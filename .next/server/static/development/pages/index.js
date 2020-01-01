@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -119,28 +119,28 @@ function Footer() {
   return __jsx("footer", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, __jsx("div", {
     className: "footer-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }, __jsx("div", {
     className: "yui3-g-r",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, __jsx("div", {
     className: "yui3-u-1-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, __jsx("iframe", {
@@ -152,232 +152,232 @@ function Footer() {
       overflow: 'hidden'
     },
     scrolling: "no",
-    allowTransparency: true,
+    allowtransparency: "true",
     loading: "lazy",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   })), __jsx("div", {
     className: "yui3-u-1-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }, "More Information"), __jsx("ul", {
     className: "bullet-list",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }, "Home"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/services",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, "Services"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/rates",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, "Rates"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/forms",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   }, "Forms"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/petsitters",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, "Team"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/far",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 58
     },
     __self: this
-  }, __jsx("a", {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/faq",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
     },
     __self: this
-  }, "FAQs")))), __jsx("br", {
+  }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 60
     },
     __self: this
-  }), __jsx("br", {
+  }, "FAQs")))), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 65
     },
     __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
   }), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
   }, "Our Blog"), __jsx("a", {
     href: "https://gracieslittleworld.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 69
     },
     __self: this
   }, __jsx("img", {
     src: "/images/blog.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 70
     },
     __self: this
   }))), __jsx("div", {
     className: "yui3-u-1-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: this
   }, "Contact"), __jsx("ul", {
     className: "icon-list",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 75
     },
     __self: this
   }, __jsx("li", {
     className: "dog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 76
     },
     __self: this
   }, "425-445-7247"), __jsx("li", {
     className: "cat",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 77
     },
     __self: this
   }, __jsx("a", {
     href: "mailto:info@pawblemsolved.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 78
     },
     __self: this
   }, "info@pawblemsolved.com"))), __jsx("ul", {
     className: "social",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 84
     },
     __self: this
   }, __jsx("li", {
     className: "yelp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 85
     },
     __self: this
   }, __jsx("a", {
@@ -386,21 +386,21 @@ function Footer() {
     title: "People love us on Yelp!",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 86
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-yelp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 91
     },
     __self: this
   }))), __jsx("li", {
     className: "blog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 94
     },
     __self: this
   }, __jsx("a", {
@@ -409,21 +409,21 @@ function Footer() {
     title: "Visit my Blog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 95
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-rss",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: this
   }))), __jsx("li", {
     className: "twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 103
     },
     __self: this
   }, __jsx("a", {
@@ -432,21 +432,21 @@ function Footer() {
     title: "Keep up to date with Twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 109
     },
     __self: this
   }))), __jsx("li", {
     className: "facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 112
     },
     __self: this
   }, __jsx("a", {
@@ -455,37 +455,43 @@ function Footer() {
     title: "See our Facebook Page",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 113
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 118
     },
     __self: this
   })))), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 123
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
-    },
-    __self: this
-  }), __jsx("a", {
-    href: "/request.php",
-    className: "request-button",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 124
     },
     __self: this
-  }, "Ready to Request a Pet Nanny?")))));
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/request",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "request-button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: this
+  }, "Ready to Request a Pet Nanny?"))))));
 }
 
 /***/ }),
@@ -502,14 +508,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navigation */ "./components/navigation.tsx");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navigation */ "./components/navigation.tsx");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/krisgray/Dev/pawblem-jam/components/header.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -519,19 +528,19 @@ function Header({
   return __jsx("header", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, "Pawblem Solved: Dog Walkers and Pet Sitters"), __jsx("link", {
@@ -540,7 +549,7 @@ function Header({
     type: "text/css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }), __jsx("link", {
@@ -548,7 +557,7 @@ function Header({
     href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }), __jsx("link", {
@@ -557,7 +566,7 @@ function Header({
     href: "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }), __jsx("link", {
@@ -566,7 +575,7 @@ function Header({
     href: "//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }), __jsx("link", {
@@ -575,7 +584,7 @@ function Header({
     href: "/images/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }), __jsx("meta", {
@@ -583,7 +592,7 @@ function Header({
     content: "Usmu6yAcz6VKluDFlY8muuovktEPRq8P1Htfh9dbLrs",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }), __jsx("meta", {
@@ -591,7 +600,7 @@ function Header({
     content: "Kirkland Pet Setting, Kirkland Cat Sitting, Kirkland Dog Sitting, Kirkland Dog Walking, Kirkland Pet Walking, Redmond Pet Setting, Redmond Cat Sitting, Redmond Dog Sitting, Redmond Dog Walking, Redmond Pet Walking, Pet Care, Dogs, Cats, House Sitting, Danielle Jaffy, Washington, Redmond, North Kirkland, Kirkland, Juanita, Moss Bay, Seattle, 98052, 98053, 98073, 98033, 98034, 98083, 98004, 98005, 98006, 98007, 98008, 98009, 98015",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }), __jsx("meta", {
@@ -599,7 +608,7 @@ function Header({
     content: "width=device-width, initial-scale=1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }), __jsx("link", {
@@ -607,7 +616,7 @@ function Header({
     href: "/images/banners/cat2.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }), __jsx("link", {
@@ -615,7 +624,7 @@ function Header({
     href: "/images/banners/cat3.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }), __jsx("link", {
@@ -623,7 +632,7 @@ function Header({
     href: "/images/banners/dog25.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: this
   }), __jsx("link", {
@@ -631,7 +640,7 @@ function Header({
     href: "/images/banners/dog2.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }), __jsx("link", {
@@ -639,7 +648,7 @@ function Header({
     href: "/images/banners/dog13.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }), __jsx("link", {
@@ -647,7 +656,7 @@ function Header({
     href: "/images/banners/dog5.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   }), __jsx("link", {
@@ -655,7 +664,7 @@ function Header({
     href: "/images/banners/cat5.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
   }), __jsx("link", {
@@ -663,7 +672,7 @@ function Header({
     href: "/images/banners/dog10.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }), __jsx("link", {
@@ -671,7 +680,7 @@ function Header({
     href: "/images/banners/dog24.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }), __jsx("meta", {
@@ -679,7 +688,7 @@ function Header({
     content: "1710284432544466",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }), __jsx("meta", {
@@ -687,7 +696,7 @@ function Header({
     content: "business.business",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: this
   }), __jsx("meta", {
@@ -695,7 +704,7 @@ function Header({
     content: "Pawblem Solved Pet Sitting and Dog Walking",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 57
     },
     __self: this
   }), __jsx("meta", {
@@ -703,7 +712,7 @@ function Header({
     content: "en_US",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }), __jsx("meta", {
@@ -711,7 +720,7 @@ function Header({
     content: "http://www.pawblemsolveed.com//images/site-logo.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }), __jsx("meta", {
@@ -719,7 +728,7 @@ function Header({
     content: "17220 NE 137th CT",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
   }), __jsx("meta", {
@@ -727,7 +736,7 @@ function Header({
     content: "Redmond",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
   }), __jsx("meta", {
@@ -735,7 +744,7 @@ function Header({
     content: "WA",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 75
     },
     __self: this
   }), __jsx("meta", {
@@ -743,7 +752,7 @@ function Header({
     content: "98052",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 76
     },
     __self: this
   }), __jsx("meta", {
@@ -751,7 +760,7 @@ function Header({
     content: "USA",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 80
     },
     __self: this
   }), __jsx("meta", {
@@ -759,7 +768,7 @@ function Header({
     content: "info@pawblemsolved.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 84
     },
     __self: this
   }), __jsx("meta", {
@@ -767,7 +776,7 @@ function Header({
     content: "425-445-7247",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 88
     },
     __self: this
   }), __jsx("meta", {
@@ -775,7 +784,7 @@ function Header({
     content: "https://www.pawblemsolved.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 92
     },
     __self: this
   }), __jsx("meta", {
@@ -783,7 +792,7 @@ function Header({
     content: "47.723269",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 96
     },
     __self: this
   }), __jsx("meta", {
@@ -791,7 +800,7 @@ function Header({
     content: "-122.109560",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 97
     },
     __self: this
   }), __jsx("meta", {
@@ -799,7 +808,7 @@ function Header({
     content: "1663352948",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 101
     },
     __self: this
   }), __jsx("meta", {
@@ -807,7 +816,7 @@ function Header({
     content: "summary_large_image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 103
     },
     __self: this
   }), __jsx("meta", {
@@ -815,7 +824,7 @@ function Header({
     content: "@PawblemSolved",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: this
   }), __jsx("meta", {
@@ -823,7 +832,7 @@ function Header({
     content: "@PawblemSolved",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: this
   }), __jsx("meta", {
@@ -831,7 +840,7 @@ function Header({
     content: "https://www.pawblemsolved.com//images/site-logo.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 106
     },
     __self: this
   }), __jsx("link", {
@@ -840,7 +849,7 @@ function Header({
     href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 110
     },
     __self: this
   }), __jsx("link", {
@@ -849,14 +858,14 @@ function Header({
     href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 115
     },
     __self: this
   }), __jsx("script", {
     src: "/scripts/google-analytics.js",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 120
     },
     __self: this
   }), __jsx("meta", {
@@ -864,7 +873,7 @@ function Header({
     content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 121
     },
     __self: this
   }), __jsx("meta", {
@@ -872,7 +881,7 @@ function Header({
     content: "Pawblem Solved: Dog Walkers and Pet Sitters",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 125
     },
     __self: this
   }), __jsx("meta", {
@@ -880,7 +889,7 @@ function Header({
     content: "Pawblem Solved: Dog Walkers and Pet Sitters",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 129
     },
     __self: this
   }), __jsx("meta", {
@@ -888,7 +897,7 @@ function Header({
     content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 133
     },
     __self: this
   }), __jsx("meta", {
@@ -896,7 +905,7 @@ function Header({
     content: "Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 137
     },
     __self: this
   }), __jsx("meta", {
@@ -904,34 +913,40 @@ function Header({
     content: "https://www.pawblemsolved.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 141
     },
     __self: this
   })), __jsx("div", {
     className: "header-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "index.php",
-    className: "header-logo",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 146
     },
     __self: this
-  }, __jsx("h1", {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/index",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 147
     },
     __self: this
-  }, __jsx("span", {
+  }, __jsx("a", {
+    className: "header-logo",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 148
+    },
+    __self: this
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149
+    },
+    __self: this
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150
     },
     __self: this
   }, "Pawblem", __jsx("img", {
@@ -942,40 +957,40 @@ function Header({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 152
     },
     __self: this
   }), "Solved")), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 160
     },
     __self: this
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 161
     },
     __self: this
-  }, "Pet Sitting Service")))), __jsx(_navigation__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "Pet Sitting Service"))))), __jsx(_navigation__WEBPACK_IMPORTED_MODULE_2__["default"], {
     selectedTab: selectedTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163
+      lineNumber: 166
     },
     __self: this
   }), __jsx("ul", {
     className: "social",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 167
     },
     __self: this
   }, __jsx("li", {
     className: "yelp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 168
     },
     __self: this
   }, __jsx("a", {
@@ -984,21 +999,21 @@ function Header({
     title: "People love us on Yelp!",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 169
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-yelp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171
+      lineNumber: 174
     },
     __self: this
   }))), __jsx("li", {
     className: "blog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
+      lineNumber: 177
     },
     __self: this
   }, __jsx("a", {
@@ -1007,21 +1022,21 @@ function Header({
     title: "Visit my Blog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 178
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-rss",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180
+      lineNumber: 183
     },
     __self: this
   }))), __jsx("li", {
     className: "twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183
+      lineNumber: 186
     },
     __self: this
   }, __jsx("a", {
@@ -1030,21 +1045,21 @@ function Header({
     title: "Keep up to date with Twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184
+      lineNumber: 187
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 192
     },
     __self: this
   }))), __jsx("li", {
     className: "facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192
+      lineNumber: 195
     },
     __self: this
   }, __jsx("a", {
@@ -1053,20 +1068,20 @@ function Header({
     title: "See our Facebook Page",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193
+      lineNumber: 196
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 198
+      lineNumber: 201
     },
     __self: this
   })))));
 }
 Header.propTypes = {
-  selectedTab: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string.isRequired
+  selectedTab: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired
 };
 
 /***/ }),
@@ -1248,7 +1263,6 @@ function Navigation({
     },
     __self: this
   }, __jsx("a", {
-    className: "red",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47
@@ -4197,7 +4211,7 @@ const Index = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
 
 /***/ }),
 
-/***/ 4:
+/***/ 9:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
