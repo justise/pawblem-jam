@@ -5,6 +5,6 @@ const withImages = require('next-images');
 module.exports = withImages(
     withCSS({
         /* my next config */
-        distDir: 'dist',
+        outDir: 'dist',
     })
 );
