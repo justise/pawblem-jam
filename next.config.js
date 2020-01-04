@@ -12,5 +12,6 @@ module.exports = withPlugins(
     ],
     {
         target: 'serverless',
+        amp: true,
     }
 );
