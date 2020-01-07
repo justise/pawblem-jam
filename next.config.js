@@ -11,6 +11,11 @@ module.exports = withPlugins(
         [withCSS, {}],
     ],
     {
-        amp: true,
+        exportTrailingSlash: true,
+        exportPathMap: function() {
+            return {
+                '/': { page: '/' },
+            };
+        },
     }
 );
