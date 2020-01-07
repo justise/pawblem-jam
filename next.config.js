@@ -11,7 +11,6 @@ module.exports = withPlugins(
         [withCSS, {}],
     ],
     {
-        target: 'serverless',
         amp: true,
     }
 );
