@@ -22,7 +22,7 @@ const Petsitters = () => (
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <img
-                                src="images/tiles/human3.jpg"
+                                src="/images/tiles/human3.jpg"
                                 title="Danielle Jaffy"
                             />
                         </div>
@@ -105,7 +105,7 @@ const Petsitters = () => (
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <img
-                                src="images/tiles/human4.jpg"
+                                src="/images/tiles/human4.jpg"
                                 title="Kris Gray"
                             />
                         </div>
@@ -149,7 +149,7 @@ const Petsitters = () => (
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <img
-                                src="images/tiles/human1.jpg"
+                                src="/images/tiles/human1.jpg"
                                 title="Joan Hornby"
                             />
                         </div>
@@ -193,7 +193,7 @@ const Petsitters = () => (
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <img
-                                src="images/tiles/human6.jpg"
+                                src="/images/tiles/human6.jpg"
                                 title="Lisa Roy"
                                 className="tile"
                             />
@@ -236,7 +236,7 @@ const Petsitters = () => (
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <img
-                                src="images/tiles/human9.jpg"
+                                src="/images/tiles/human9.jpg"
                                 title="Stevie McEldowney"
                                 className="tile"
                             />

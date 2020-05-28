@@ -28,7 +28,7 @@ const Forms = () => (
                                 target="_blank"
                             >
                                 <img
-                                    src="images/tiles/human14.jpg"
+                                    src="/images/tiles/human14.jpg"
                                     alt="Danielle With Dog in Redmond"
                                 />
                             </a>
@@ -55,7 +55,7 @@ const Forms = () => (
                                 target="_blank"
                             >
                                 <img
-                                    src="images/tiles/cat7.jpg"
+                                    src="/images/tiles/cat7.jpg"
                                     alt="Cute Cat in Kirkland"
                                 />
                             </a>
@@ -83,7 +83,7 @@ const Forms = () => (
                                 target="_blank"
                             >
                                 <img
-                                    src="images/tiles/dog22.jpg"
+                                    src="/images/tiles/dog22.jpg"
                                     alt="Dog at Attention in Redmond"
                                 />
                             </a>
