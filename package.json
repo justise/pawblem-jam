@@ -6,29 +6,32 @@
     "scripts": {
         "dev": "next",
         "build": "next build && next export",
-        "start": "next start"
+        "start": "serve out"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "dependencies": {},
+    "dependencies": {
+        "fs-extra": "^9.0.0"
+    },
     "devDependencies": {
+        "@types/node": "^12.12.42",
+        "@types/prop-types": "^15.7.3",
+        "@types/react": "^16.9.35",
         "@zeit/next-css": "^1.0.1",
         "imagemin-mozjpeg": "^8.0.0",
         "imagemin-optipng": "^7.1.0",
-        "imagemin-svgo": "^7.0.0",
-        "next": "^9.3.2",
+        "imagemin-svgo": "^7.1.0",
+        "next": "^9.4.3",
         "next-compose-plugins": "^2.2.0",
-        "next-images": "^1.2.0",
-        "next-optimized-images": "^2.5.4",
+        "next-images": "^1.4.0",
+        "next-optimized-images": "^2.6.0",
         "prop-types": "^15.7.2",
-        "react": "^16.12.0",
-        "react-dom": "^16.12.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
         "react-slick": "^0.25.2",
+        "serve": "^11.3.1",
         "slick-carousel": "^1.8.1",
-        "@types/node": "^12.12.21",
-        "@types/prop-types": "^15.7.3",
-        "@types/react": "^16.9.17",
-        "typescript": "^3.7.4"
+        "typescript": "^3.9.3"
     }
 }

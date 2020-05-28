@@ -28,7 +28,7 @@ const Services = () => (
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <img
-                                src="images/tiles/dog13.jpg"
+                                src="/images/tiles/dog13.jpg"
                                 alt="Cute Dog Pose"
                             />
                         </div>
@@ -99,7 +99,7 @@ const Services = () => (
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <img
-                                src="images/tiles/cat3.jpg"
+                                src="/images/tiles/cat3.jpg"
                                 alt="Cute Cat Pose"
                             />
                         </div>

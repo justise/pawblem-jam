@@ -27,7 +27,7 @@ const Rates = () => (
                     <div className="yui3-u-1-2">
                         <div className="grid-wrapper">
                             <h2>Dog Walking</h2>
-                            <img src="images/tiles/dog15.jpg" />
+                            <img src="/images/tiles/dog15.jpg" />
                             <p>
                                 <ul>
                                     <li>$33 per 30 minute walk</li>
@@ -39,7 +39,7 @@ const Rates = () => (
                     <div className="yui3-u-1-2">
                         <div className="grid-wrapper">
                             <h2>Cat Sitting</h2>
-                            <img src="images/tiles/cat14.jpg" />
+                            <img src="/images/tiles/cat14.jpg" />
                             <p>
                                 <ul>
                                     <li>$33 per 30 minute visit for 2 cats</li>
@@ -55,7 +55,7 @@ const Rates = () => (
                 <div className="yui3-g-r">
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
-                            <img src="images/tiles/cat13.jpg" />
+                            <img src="/images/tiles/cat13.jpg" />
                         </div>
                     </div>
                     <div className="yui3-u-2-3">
@@ -84,7 +84,7 @@ const Rates = () => (
                 <div className="yui3-g-r">
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
-                            <img src="images/tiles/dog23.jpg" />
+                            <img src="/images/tiles/dog23.jpg" />
                         </div>
                     </div>
                     <div className="yui3-u-2-3">
@@ -120,7 +120,7 @@ const Rates = () => (
                 <div className="yui3-g-r">
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
-                            <img src="images/tiles/cat15.jpg" />
+                            <img src="/images/tiles/cat15.jpg" />
                         </div>
                     </div>
                     <div className="yui3-u-2-3">

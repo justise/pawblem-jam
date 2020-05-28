@@ -32,21 +32,12 @@ const Request = () => (
                         <br />
                         <br />
                         <p className="red">
-                            Thank you so much for your interest in Pawblem
-                            Solved!
+                            Due to COVID-19, we will remain closed until
+                            September.
                         </p>
                         <p className="red">
-                            At this time, we are not able to accept new clients,
-                            but please do check back in the future.
-                        </p>
-                        <p className="red">
-                            For current clients, you can email your inquiries
-                            to:
-                        </p>
-                        <p>
-                            <a href="mailto:info@pawblemsolved.com">
-                                info@pawblemsolved.com
-                            </a>
+                            Take care, stay safe &amp; please check back-in down
+                            the road for an updated opening date.
                         </p>
                         <p>Thank you - The Pawblem Solved Team</p>
                         <br />

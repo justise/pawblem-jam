@@ -12,9 +12,15 @@ module.exports = withPlugins(
     ],
     {
         exportTrailingSlash: true,
-        exportPathMap: function() {
+        exportPathMap: function () {
             return {
                 '/': { page: '/' },
+                '/faq': { page: '/faq' },
+                '/forms': { page: '/forms' },
+                '/petsitters': { page: '/petsitters' },
+                '/rates': { page: '/rates' },
+                '/request': { page: '/request' },
+                '/services': { page: '/services' },
             };
         },
     }
