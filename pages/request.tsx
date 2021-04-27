@@ -33,7 +33,7 @@ const Request = () => (
                         <br />
                         <p className="red">
                             Due to COVID-19, we will remain closed until
-                            September.
+                            further notice.
                         </p>
                         <p className="red">
                             Take care, stay safe &amp; please check back-in down
