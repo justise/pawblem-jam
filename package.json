@@ -33,5 +33,9 @@
         "serve": "^11.3.1",
         "slick-carousel": "^1.8.1",
         "typescript": "^3.9.3"
+    },
+    "volta": {
+        "node": "14.17.5",
+        "yarn": "1.22.11"
     }
 }
