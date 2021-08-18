@@ -11,7 +11,7 @@ module.exports = withPlugins(
         [withCSS, {}],
     ],
     {
-        exportTrailingSlash: true,
+        trailingSlash: true,
         exportPathMap: function () {
             return {
                 '/': { page: '/' },
