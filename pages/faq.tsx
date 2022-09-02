@@ -173,12 +173,12 @@ const Faq = () => (
                                 Professional pet sitters are just what the
                                 description implies - professional. While having
                                 friends, family, or neighbors care for your pets
-                                may seem like a logical choice, you will most
-                                likely run into a few areas of concern,
-                                including; trust - will they show up? What if
+                                may seem like a logical choice, however, 
+                                you may run into a few areas of concern; 
+                                trust - will they show up? What if
                                 they don't have experience working with animals?
                                 What happens if there's an emergency? Most
-                                professional pet sitters are licensed, bonded
+                                professional pet sitters are licensed &
                                 and insured. This ensures everyone's protection,
                                 including; the owners, the pets, and the
                                 sitters, and means you can trust us to act
@@ -188,29 +188,11 @@ const Faq = () => (
                             </p>
 
                             <h2 id="bonded">
-                                Is Pawblem Solved Licensed, Bonded and Insured?
+                                Is Pawblem Solved Licensed & Insured?
                             </h2>
                             <p>
-                                Not only is Pawblem Solved Licensed, Bonded and
-                                Insured through the{' '}
-                                <a
-                                    href="http://napps.petsitterinsurance.com/"
-                                    target="_blank"
-                                >
-                                    Business Insurers of the Carolina
-                                </a>
-                                , but we are also a member of the{' '}
-                                <a
-                                    href="http://www.petsitters.org/"
-                                    target="_blank"
-                                >
-                                    National Association of Professional Pet
-                                    Sitters
-                                </a>
-                                . This organization provides continuing
-                                education opportunities, and on-going updated
-                                resources to help better serve our clients and
-                                our four-legged friends.{' '}
+                                Yes! We are licensed & insured through Business 
+                                Insurers of the Carolinas
                             </p>
 
                             <h2 id="time">
@@ -246,30 +228,8 @@ const Faq = () => (
                                 pets?
                             </h2>
                             <p>
-                                All of our dog walkers and sitters go through
-                                history and criminal background checks. They are
-                                also given an in-depth, thorough training
-                                process to provide you, and your pets, the best
-                                care possible. They are all covered under
-                                Pawblem Solved's bond and insurance.
-                            </p>
-
-                            <p>
-                                You will always meet the owner of Pawblem Solved
-                                and your dog walker or sitter prior to starting
-                                the service during your free consultation.
-                            </p>
-
-                            <p>
-                                We do our absolute best to have one specific
-                                walker/sitter care for your pets. Occasionally,
-                                due to scheduling conflicts, illnesses or
-                                emergencies with your assigned sitter, your
-                                dog/pets may be walked, or cared for, by another
-                                walker/sitter. If this occurs, your dog
-                                walker/sitter will know your pet's health
-                                issues, habits, and important contact
-                                information.{' '}
+                                Danielle, founder of Pawblem Solved, currently does 
+                                all pet sits & dog walks.
                             </p>
 
                             <h2 id="aggressive">
@@ -288,9 +248,8 @@ const Faq = () => (
                                 Do you walk in any weather, all year long?{' '}
                             </h2>
                             <p>
-                                We walk in rain, sleet, snow, hail, sunshine,
-                                holidays, weekends, mornings and evenings! We do
-                                ask that you leave a key with a neighbor and
+                                We care for pets all year long in any weather, however, 
+                                We do ask that you leave a key with a neighbor and
                                 provide your walker/sitter with their contact
                                 information in case of extreme weather
                                 conditions.{' '}
@@ -301,31 +260,20 @@ const Faq = () => (
                                 back from you?{' '}
                             </h2>
                             <p>
-                                We ask that you provide two (2) sets of keys
+                                We ask that you provide a set of keys
                                 during the initial consultation. We will return
                                 keys once at no charge. For future pet sitting
-                                assignments a fee of $10 per trip will apply if
+                                assignments a fee of $20 per trip will apply if
                                 you would like us to continue to pick-up and
                                 drop-off your keys. Clients who choose to keep a
                                 key on file with us enjoy the speed and
                                 convenience of booking their next reservation.
                             </p>
 
-                            <h2 id="twokeys">Why do you need two (2) keys?</h2>
-                            <p>
-                                1 key will be given to the primary dog
-                                walker/sitter.
-                                <br />1 key will be kept at the office with
-                                management to ensure your pet(s) will continue
-                                to be taken care of in case there is a
-                                scheduling conflict, illness or emergency with
-                                your assigned walker/sitter.
-                            </p>
-
                             <h2 id="payment">
                                 What type of payment do you accept?{' '}
                             </h2>
-                            <p>We accept cash and check. </p>
+                            <p>We accept cash, check. </p>
 
                             <h2 id="servicehours">
                                 What are your service hours?
@@ -365,8 +313,7 @@ const Faq = () => (
 
                             <h2 id="servicearea">What areas do you service?</h2>
                             <p>
-                                We cover all areas of Redmond and North
-                                Kirkland.
+                                At this time, we only cover the Redmond, WA area. 
                             </p>
                         </div>
                     </div>

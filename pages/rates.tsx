@@ -30,8 +30,8 @@ const Rates = () => (
                             <img src="/images/tiles/dog15.jpg" />
                             <p>
                                 <ul>
-                                    <li>$33 per 30 minute walk</li>
-                                    <li>$5 for each additional dog</li>
+                                    <li>$38 per 30 minute walk</li>
+                                    <li>$3 for each additional dog</li>
                                 </ul>
                             </p>
                         </div>
@@ -42,8 +42,8 @@ const Rates = () => (
                             <img src="/images/tiles/cat14.jpg" />
                             <p>
                                 <ul>
-                                    <li>$33 per 30 minute visit for 2 cats</li>
-                                    <li>$5 for each additional cat</li>
+                                    <li>$38 per 30 minute visit for 2 cats</li>
+                                    <li>$3 for each additional cat</li>
                                 </ul>
                             </p>
                         </div>
@@ -106,8 +106,8 @@ const Rates = () => (
                                 </li>
                                 <li className="sub">
                                     <ul>
-                                        <li>$10.00 Key pick-up</li>
-                                        <li>$10.00 Key drop-off</li>
+                                        <li>$20.00 Key pick-up</li>
+                                        <li>$20.00 Key drop-off</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -138,7 +138,7 @@ const Rates = () => (
                                     <li>Memorial Day,</li>
                                     <li>4th of July,</li>
                                     <li>Labor Day,</li>
-                                    <li>Veterans Day,</li>
+                                
                                     <li>Thanksgiving Day,</li>
                                     <li>Christmas Eve,</li>
                                     <li>Christmas Day,</li>
