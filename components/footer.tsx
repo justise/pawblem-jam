@@ -31,34 +31,22 @@ export default function Footer() {
                         <h3>More Information</h3>
                         <ul className="bullet-list">
                             <li>
-                                <Link href="/">
-                                    <a>Home</a>
-                                </Link>
+                                <Link href="/">Home</Link>
                             </li>
                             <li>
-                                <Link href="/services">
-                                    <a>Services</a>
-                                </Link>
+                                <Link href="/services">Services</Link>
                             </li>
                             <li>
-                                <Link href="/rates">
-                                    <a>Rates</a>
-                                </Link>
+                                <Link href="/rates">Rates</Link>
                             </li>
                             <li>
-                                <Link href="/forms">
-                                    <a>Forms</a>
-                                </Link>
+                                <Link href="/forms">Forms</Link>
                             </li>
                             <li>
-                                <Link href="/petsitters">
-                                    <a>Team</a>
-                                </Link>
+                                <Link href="/petsitters">Team</Link>
                             </li>
                             <li>
-                                <Link href="/faq">
-                                    <a>FAQs</a>
-                                </Link>
+                                <Link href="/faq">FAQs</Link>
                             </li>
                         </ul>
 

@@ -1,8 +1,5 @@
-import Link from 'next/link';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import '../styles/main.css';
-import { Fragment } from 'react';
 
 const Services = () => (
     <div id="container">

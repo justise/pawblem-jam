@@ -1,6 +1,5 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
-import '../styles/main.css';
 
 const Faq = () => (
     <div id="container">
@@ -173,15 +172,14 @@ const Faq = () => (
                                 Professional pet sitters are just what the
                                 description implies - professional. While having
                                 friends, family, or neighbors care for your pets
-                                may seem like a logical choice, however, 
-                                you may run into a few areas of concern; 
-                                trust - will they show up? What if
-                                they don't have experience working with animals?
-                                What happens if there's an emergency? Most
-                                professional pet sitters are licensed &
-                                and insured. This ensures everyone's protection,
-                                including; the owners, the pets, and the
-                                sitters, and means you can trust us to act
+                                may seem like a logical choice, however, you may
+                                run into a few areas of concern; trust - will
+                                they show up? What if they don't have experience
+                                working with animals? What happens if there's an
+                                emergency? Most professional pet sitters are
+                                licensed & and insured. This ensures everyone's
+                                protection, including; the owners, the pets, and
+                                the sitters, and means you can trust us to act
                                 responsibly when we enter your home.
                                 Professional pet sitters care for pets for a
                                 living and take their jobs very seriously.
@@ -191,7 +189,7 @@ const Faq = () => (
                                 Is Pawblem Solved Licensed & Insured?
                             </h2>
                             <p>
-                                Yes! We are licensed & insured through Business 
+                                Yes! We are licensed & insured through Business
                                 Insurers of the Carolinas
                             </p>
 
@@ -228,8 +226,8 @@ const Faq = () => (
                                 pets?
                             </h2>
                             <p>
-                                Danielle, founder of Pawblem Solved, currently does 
-                                all pet sits & dog walks.
+                                Danielle, founder of Pawblem Solved, currently
+                                does all pet sits & dog walks.
                             </p>
 
                             <h2 id="aggressive">
@@ -248,11 +246,11 @@ const Faq = () => (
                                 Do you walk in any weather, all year long?{' '}
                             </h2>
                             <p>
-                                We care for pets all year long in any weather, however, 
-                                We do ask that you leave a key with a neighbor and
-                                provide your walker/sitter with their contact
-                                information in case of extreme weather
-                                conditions.{' '}
+                                We care for pets all year long in any weather,
+                                however, We do ask that you leave a key with a
+                                neighbor and provide your walker/sitter with
+                                their contact information in case of extreme
+                                weather conditions.{' '}
                             </p>
 
                             <h2 id="keys">
@@ -260,14 +258,14 @@ const Faq = () => (
                                 back from you?{' '}
                             </h2>
                             <p>
-                                We ask that you provide a set of keys
-                                during the initial consultation. We will return
-                                keys once at no charge. For future pet sitting
-                                assignments a fee of $20 per trip will apply if
-                                you would like us to continue to pick-up and
-                                drop-off your keys. Clients who choose to keep a
-                                key on file with us enjoy the speed and
-                                convenience of booking their next reservation.
+                                We ask that you provide a set of keys during the
+                                initial consultation. We will return keys once
+                                at no charge. For future pet sitting assignments
+                                a fee of $20 per trip will apply if you would
+                                like us to continue to pick-up and drop-off your
+                                keys. Clients who choose to keep a key on file
+                                with us enjoy the speed and convenience of
+                                booking their next reservation.
                             </p>
 
                             <h2 id="payment">
@@ -313,7 +311,8 @@ const Faq = () => (
 
                             <h2 id="servicearea">What areas do you service?</h2>
                             <p>
-                                At this time, we only cover the Redmond, WA area. 
+                                At this time, we only cover the Redmond, WA
+                                area.
                             </p>
                         </div>
                     </div>

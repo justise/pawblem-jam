@@ -1,4 +1,4 @@
 # netlify.toml
 [build.environment]
-  NODE_VERSION = "14.17.5"
-  YARN_VERSION = "1.22.11"
+  NODE_VERSION = "20.15.1"
+  YARN_VERSION = "1.22.22"

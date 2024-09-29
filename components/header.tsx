@@ -180,23 +180,21 @@ export default function Header({
                 />
             </Head>
             <div className="header-container">
-                <Link href="/index">
-                    <a className="header-logo">
-                        <h1>
-                            <span>
-                                Pawblem
-                                <img
-                                    src="/images/paw-icon.png"
-                                    className="paw-icon"
-                                    style={{ padding: '3px' }}
-                                />
-                                Solved
-                            </span>
-                        </h1>
-                        <h2>
-                            <span>Pet Sitting Service</span>
-                        </h2>
-                    </a>
+                <Link href="/index" className="header-logo">
+                    <h1>
+                        <span>
+                            Pawblem
+                            <img
+                                src="/images/paw-icon.png"
+                                className="paw-icon"
+                                style={{ padding: '3px' }}
+                            />
+                            Solved
+                        </span>
+                    </h1>
+                    <h2>
+                        <span>Pet Sitting Service</span>
+                    </h2>
                 </Link>
             </div>
             <Navigation selectedTab={selectedTab}></Navigation>

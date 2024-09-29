@@ -1,6 +1,5 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
-import '../styles/main.css';
 
 const Request = () => (
     <div id="container">
@@ -32,8 +31,8 @@ const Request = () => (
                         <br />
                         <br />
                         <p className="red">
-                            Due to COVID-19, we will remain closed until
-                            further notice.
+                            Due to COVID-19, we will remain closed until further
+                            notice.
                         </p>
                         <p className="red">
                             Take care, stay safe &amp; please check back-in down
