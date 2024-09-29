@@ -175,21 +175,43 @@ const Index = () => (
                             <div className="yui3-u-1-2">
                                 <div className="review-block">
                                     <a
+                                        rel="noopener"
+                                        title="Facebook reviews"
                                         href="https://www.facebook.com/pg/pawblemsolved/reviews/"
                                         target="_blank"
                                     >
-                                        <img src="/images/icons/facebook.png" />
+                                        <img
+                                            src="/images/icons/facebook.png"
+                                            title="Facebook icon"
+                                        />
                                     </a>
                                     <a
+                                        rel="noopener"
+                                        title="Facebook reviews"
                                         href="https://www.facebook.com/pg/pawblemsolved/reviews/"
                                         target="_blank"
                                     >
-                                        14{' '}
-                                        <img src="/images/icons/facebook-paw.png" />
-                                        <img src="/images/icons/facebook-paw.png" />
-                                        <img src="/images/icons/facebook-paw.png" />
-                                        <img src="/images/icons/facebook-paw.png" />
-                                        <img src="/images/icons/facebook-paw.png" />{' '}
+                                        12{' '}
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />{' '}
                                         Reviews on Facebook
                                     </a>
                                 </div>
@@ -197,21 +219,43 @@ const Index = () => (
                             <div className="yui3-u-1-2">
                                 <div className="review-block">
                                     <a
+                                        rel="noopener"
+                                        title="Yelp Reviews"
                                         href="https://www.yelp.com/biz/pawblem-solved-redmond"
                                         target="_blank"
                                     >
-                                        <img src="/images/icons/yelp.png" />
+                                        <img
+                                            src="/images/icons/yelp.png"
+                                            title="Yelp Icon"
+                                        />
                                     </a>
                                     <a
+                                        rel="noopener"
+                                        title="Yelp Reviews"
                                         href="https://www.yelp.com/biz/pawblem-solved-redmond"
                                         target="_blank"
                                     >
-                                        18{' '}
-                                        <img src="/images/icons/yelp-paw.png" />
-                                        <img src="/images/icons/yelp-paw.png" />
-                                        <img src="/images/icons/yelp-paw.png" />
-                                        <img src="/images/icons/yelp-paw.png" />
-                                        <img src="/images/icons/yelp-paw.png" />{' '}
+                                        17{' '}
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />{' '}
                                         Reviews on Yelp
                                     </a>
                                 </div>

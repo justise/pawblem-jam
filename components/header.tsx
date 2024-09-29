@@ -180,7 +180,7 @@ export default function Header({
                 />
             </Head>
             <div className="header-container">
-                <Link href="/index" className="header-logo">
+                <Link href="/" className="header-logo">
                     <h1>
                         <span>
                             Pawblem
@@ -206,24 +206,6 @@ export default function Header({
                         title="People love us on Yelp!"
                     >
                         <i className="fa fa-yelp"></i>
-                    </a>
-                </li>
-                <li className="blog">
-                    <a
-                        href="http://www.gracieslittleworld.com"
-                        target="_blank"
-                        title="Visit my Blog"
-                    >
-                        <i className="fa fa-rss"></i>
-                    </a>
-                </li>
-                <li className="twitter">
-                    <a
-                        href="http://twitter.com/pawblemsolved"
-                        target="_blank"
-                        title="Keep up to date with Twitter"
-                    >
-                        <i className="fa fa-twitter"></i>
                     </a>
                 </li>
                 <li className="facebook">
