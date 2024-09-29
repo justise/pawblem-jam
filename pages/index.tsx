@@ -2,10 +2,9 @@ import Link from 'next/link';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import ReviewsCarousel from '../components/reviewscarousel';
-import { Fragment } from 'react';
 
 const Index = () => (
-    <Fragment>
+    <>
         <div id="container">
             <Header selectedTab="home"></Header>
             <div id="content">
@@ -283,7 +282,7 @@ const Index = () => (
             </div>
             <Footer></Footer>
         </div>
-    </Fragment>
+    </>
 );
 
 export default Index;
