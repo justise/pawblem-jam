@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import '../styles/main.css';
 
 const Rates = () => (
     <div id="container">
@@ -138,7 +137,7 @@ const Rates = () => (
                                     <li>Memorial Day,</li>
                                     <li>4th of July,</li>
                                     <li>Labor Day,</li>
-                                
+
                                     <li>Thanksgiving Day,</li>
                                     <li>Christmas Eve,</li>
                                     <li>Christmas Day,</li>
@@ -153,9 +152,7 @@ const Rates = () => (
                     <div className="center">
                         Less than 24 hour notice will result in a charge equal
                         to 50% of the reserved service amount. See more on our{' '}
-                        <Link href="/faq#cancellationpolicy">
-                            <a>FAQ page.</a>
-                        </Link>
+                        <Link href="/faq#cancellationpolicy">FAQ page.</Link>
                     </div>
                 </p>
             </div>

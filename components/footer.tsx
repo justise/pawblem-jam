@@ -31,44 +31,24 @@ export default function Footer() {
                         <h3>More Information</h3>
                         <ul className="bullet-list">
                             <li>
-                                <Link href="/">
-                                    <a>Home</a>
-                                </Link>
+                                <Link href="/">Home</Link>
                             </li>
                             <li>
-                                <Link href="/services">
-                                    <a>Services</a>
-                                </Link>
+                                <Link href="/services">Services</Link>
                             </li>
                             <li>
-                                <Link href="/rates">
-                                    <a>Rates</a>
-                                </Link>
+                                <Link href="/rates">Rates</Link>
                             </li>
                             <li>
-                                <Link href="/forms">
-                                    <a>Forms</a>
-                                </Link>
+                                <Link href="/forms">Forms</Link>
                             </li>
                             <li>
-                                <Link href="/petsitters">
-                                    <a>Team</a>
-                                </Link>
+                                <Link href="/petsitters">Team</Link>
                             </li>
                             <li>
-                                <Link href="/faq">
-                                    <a>FAQs</a>
-                                </Link>
+                                <Link href="/faq">FAQs</Link>
                             </li>
                         </ul>
-
-                        <br />
-                        <br />
-
-                        <h3>Our Blog</h3>
-                        <a href="https://gracieslittleworld.com/">
-                            <img src="/images/blog.png" />
-                        </a>
                     </div>
                     <div className="yui3-u-1-3">
                         <h3>Contact</h3>
@@ -91,24 +71,6 @@ export default function Footer() {
                                     <i className="fa fa-yelp"></i>
                                 </a>
                             </li>
-                            <li className="blog">
-                                <a
-                                    href="http://www.gracieslittleworld.com"
-                                    target="_blank"
-                                    title="Visit my Blog"
-                                >
-                                    <i className="fa fa-rss"></i>
-                                </a>
-                            </li>
-                            <li className="twitter">
-                                <a
-                                    href="http://twitter.com/pawblemsolved"
-                                    target="_blank"
-                                    title="Keep up to date with Twitter"
-                                >
-                                    <i className="fa fa-twitter"></i>
-                                </a>
-                            </li>
                             <li className="facebook">
                                 <a
                                     href="https://www.facebook.com/pawblemsolved"
@@ -122,10 +84,8 @@ export default function Footer() {
 
                         <br />
                         <br />
-                        <Link href="/request">
-                            <a className="request-button">
-                                Ready to Request a Pet Nanny?
-                            </a>
+                        <Link href="/request" className="request-button">
+                            Ready to Request a Pet Nanny?
                         </Link>
                     </div>
                 </div>

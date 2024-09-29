@@ -180,23 +180,21 @@ export default function Header({
                 />
             </Head>
             <div className="header-container">
-                <Link href="/index">
-                    <a className="header-logo">
-                        <h1>
-                            <span>
-                                Pawblem
-                                <img
-                                    src="/images/paw-icon.png"
-                                    className="paw-icon"
-                                    style={{ padding: '3px' }}
-                                />
-                                Solved
-                            </span>
-                        </h1>
-                        <h2>
-                            <span>Pet Sitting Service</span>
-                        </h2>
-                    </a>
+                <Link href="/" className="header-logo">
+                    <h1>
+                        <span>
+                            Pawblem
+                            <img
+                                src="/images/paw-icon.png"
+                                className="paw-icon"
+                                style={{ padding: '3px' }}
+                            />
+                            Solved
+                        </span>
+                    </h1>
+                    <h2>
+                        <span>Pet Sitting Service</span>
+                    </h2>
                 </Link>
             </div>
             <Navigation selectedTab={selectedTab}></Navigation>
@@ -208,24 +206,6 @@ export default function Header({
                         title="People love us on Yelp!"
                     >
                         <i className="fa fa-yelp"></i>
-                    </a>
-                </li>
-                <li className="blog">
-                    <a
-                        href="http://www.gracieslittleworld.com"
-                        target="_blank"
-                        title="Visit my Blog"
-                    >
-                        <i className="fa fa-rss"></i>
-                    </a>
-                </li>
-                <li className="twitter">
-                    <a
-                        href="http://twitter.com/pawblemsolved"
-                        target="_blank"
-                        title="Keep up to date with Twitter"
-                    >
-                        <i className="fa fa-twitter"></i>
                     </a>
                 </li>
                 <li className="facebook">

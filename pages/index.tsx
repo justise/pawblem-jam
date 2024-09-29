@@ -1,12 +1,10 @@
 import Link from 'next/link';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import '../styles/main.css';
 import ReviewsCarousel from '../components/reviewscarousel';
-import { Fragment } from 'react';
 
 const Index = () => (
-    <Fragment>
+    <>
         <div id="container">
             <Header selectedTab="home"></Header>
             <div id="content">
@@ -17,10 +15,8 @@ const Index = () => (
                         <h2>Redmond &nbsp; North Kirkland</h2>
                     </div>
                     <div className="banner-footer">
-                        <Link href="/request">
-                            <a className="request-button">
-                                Request a Pet Nanny
-                            </a>
+                        <Link href="/request" className="request-button">
+                            Request a Pet Nanny
                         </Link>
                     </div>
                 </div>
@@ -132,15 +128,13 @@ const Index = () => (
                             <div className="yui3-u-1-3">
                                 <div className="getting-started-card">
                                     <Link href="/request">
-                                        <a>
-                                            <img src="/images/sophie.jpg" />
-                                            <footer>
-                                                <h4>Request Service</h4>
-                                                <p style={{ color: '#ddd' }}>
-                                                    Tell Us About Your Needs
-                                                </p>
-                                            </footer>
-                                        </a>
+                                        <img src="/images/sophie.jpg" />
+                                        <footer>
+                                            <h4>Request Service</h4>
+                                            <p style={{ color: '#ddd' }}>
+                                                Tell Us About Your Needs
+                                            </p>
+                                        </footer>
                                     </Link>
                                 </div>
                             </div>
@@ -148,15 +142,11 @@ const Index = () => (
                             <div className="yui3-u-1-3">
                                 <div className="getting-started-card">
                                     <Link href="/petsitters">
-                                        <a>
-                                            <img src="/images/consultation2.jpg" />
-                                            <footer>
-                                                <h4>Meet Your Nanny</h4>
-                                                <p>
-                                                    Book Your Free Consultation
-                                                </p>
-                                            </footer>
-                                        </a>
+                                        <img src="/images/consultation2.jpg" />
+                                        <footer>
+                                            <h4>Meet Your Nanny</h4>
+                                            <p>Book Your Free Consultation</p>
+                                        </footer>
                                     </Link>
                                 </div>
                             </div>
@@ -184,21 +174,43 @@ const Index = () => (
                             <div className="yui3-u-1-2">
                                 <div className="review-block">
                                     <a
+                                        rel="noopener"
+                                        title="Facebook reviews"
                                         href="https://www.facebook.com/pg/pawblemsolved/reviews/"
                                         target="_blank"
                                     >
-                                        <img src="/images/icons/facebook.png" />
+                                        <img
+                                            src="/images/icons/facebook.png"
+                                            title="Facebook icon"
+                                        />
                                     </a>
                                     <a
+                                        rel="noopener"
+                                        title="Facebook reviews"
                                         href="https://www.facebook.com/pg/pawblemsolved/reviews/"
                                         target="_blank"
                                     >
-                                        14{' '}
-                                        <img src="/images/icons/facebook-paw.png" />
-                                        <img src="/images/icons/facebook-paw.png" />
-                                        <img src="/images/icons/facebook-paw.png" />
-                                        <img src="/images/icons/facebook-paw.png" />
-                                        <img src="/images/icons/facebook-paw.png" />{' '}
+                                        12{' '}
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/facebook-paw.png"
+                                            title="Paw icon"
+                                        />{' '}
                                         Reviews on Facebook
                                     </a>
                                 </div>
@@ -206,21 +218,43 @@ const Index = () => (
                             <div className="yui3-u-1-2">
                                 <div className="review-block">
                                     <a
+                                        rel="noopener"
+                                        title="Yelp Reviews"
                                         href="https://www.yelp.com/biz/pawblem-solved-redmond"
                                         target="_blank"
                                     >
-                                        <img src="/images/icons/yelp.png" />
+                                        <img
+                                            src="/images/icons/yelp.png"
+                                            title="Yelp Icon"
+                                        />
                                     </a>
                                     <a
+                                        rel="noopener"
+                                        title="Yelp Reviews"
                                         href="https://www.yelp.com/biz/pawblem-solved-redmond"
                                         target="_blank"
                                     >
-                                        18{' '}
-                                        <img src="/images/icons/yelp-paw.png" />
-                                        <img src="/images/icons/yelp-paw.png" />
-                                        <img src="/images/icons/yelp-paw.png" />
-                                        <img src="/images/icons/yelp-paw.png" />
-                                        <img src="/images/icons/yelp-paw.png" />{' '}
+                                        17{' '}
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />
+                                        <img
+                                            src="/images/icons/yelp-paw.png"
+                                            title="Paw icon"
+                                        />{' '}
                                         Reviews on Yelp
                                     </a>
                                 </div>
@@ -248,7 +282,7 @@ const Index = () => (
             </div>
             <Footer></Footer>
         </div>
-    </Fragment>
+    </>
 );
 
 export default Index;

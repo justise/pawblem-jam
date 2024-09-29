@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import '../styles/main.css';
 
 const Forms = () => (
     <div id="container">

@@ -5,7 +5,7 @@ import PropTypes, { InferProps } from 'prop-types';
 export default function Navigation({
     selectedTab,
 }: InferProps<typeof Navigation.propTypes>) {
-    const isSelected = tabName => {
+    const isSelected = (tabName) => {
         return selectedTab == tabName ? 'selected' : '';
     };
 
@@ -13,39 +13,25 @@ export default function Navigation({
         <div className="nav-container">
             <ul className="nav">
                 <li className={isSelected('home')}>
-                    <Link href="/">
-                        <a>Home</a>
-                    </Link>
+                    <Link href="/">Home</Link>
                 </li>
                 <li className={isSelected('services')}>
-                    <Link href="/services">
-                        <a>Services</a>
-                    </Link>
+                    <Link href="/services">Services</Link>
                 </li>
                 <li className={isSelected('rates')}>
-                    <Link href="/rates">
-                        <a>Rates</a>
-                    </Link>
+                    <Link href="/rates">Rates</Link>
                 </li>
                 <li className={isSelected('forms')}>
-                    <Link href="/forms">
-                        <a>Forms</a>
-                    </Link>
+                    <Link href="/forms">Forms</Link>
                 </li>
                 <li className={isSelected('team')}>
-                    <Link href="/petsitters">
-                        <a>Team</a>
-                    </Link>
+                    <Link href="/petsitters">Team</Link>
                 </li>
                 <li className={isSelected('faq')}>
-                    <Link href="/faq">
-                        <a>FAQs</a>
-                    </Link>
+                    <Link href="/faq">FAQs</Link>
                 </li>
                 <li className={isSelected('request')}>
-                    <Link href="/request">
-                        <a>Request Service</a>
-                    </Link>
+                    <Link href="/request">Request Service</Link>
                 </li>
             </ul>
         </div>
