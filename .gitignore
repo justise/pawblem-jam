@@ -11,3 +11,8 @@ out
 
 # Random npm files
 *.DS_Store
+
+# Local Netlify folder
+.netlify
+
+.env

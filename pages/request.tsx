@@ -1,6 +1,10 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 
+const handleSubmit = () => {
+    // execute api query
+};
+
 const Request = () => (
     <div id="container">
         <Header selectedTab="request"></Header>
@@ -55,7 +59,11 @@ const Request = () => (
                     <p>The Pawblem Solved Team</p>
                 </div>
 
-                <form action="emailform.php" method="POST">
+                <form
+                    action="emailform.php"
+                    method="POST"
+                    onSubmit={handleSubmit}
+                >
                     <div className="yui3-g-r">
                         <div className="yui3-u-1-2">
                             <div className="grid-wrapper">
@@ -128,11 +136,7 @@ const Request = () => (
                                 ></textarea>
 
                                 <label>How did you hear about us?</label>
-                                <input
-                                    name="whorefer"
-                                    name="whorefer"
-                                    className="text"
-                                />
+                                <input name="whorefer" className="text" />
 
                                 <label>Comments</label>
                                 <textarea name="comments"></textarea>
