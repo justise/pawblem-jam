@@ -115,7 +115,7 @@ const Petsitters = () => (
                     </div>
                 </div>
 
-                <hr />
+                {/* <hr /> */}
             </div>
         </div>
         <Footer></Footer>

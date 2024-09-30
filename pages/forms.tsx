@@ -23,7 +23,7 @@ const Forms = () => (
                         <div className="grid-wrapper">
                             <h2>Form for Humans</h2>
                             <a
-                                href="downloads/PawblemSolvedClientForms.pdf"
+                                href="/downloads/PawblemSolvedClientForms.pdf"
                                 target="_blank"
                             >
                                 <img
@@ -37,7 +37,7 @@ const Forms = () => (
                             </p>
                             <p>
                                 <a
-                                    href="downloads/PawblemSolvedClientForms.pdf"
+                                    href="/downloads/PawblemSolvedClientForms.pdf"
                                     target="_blank"
                                     title="Download PDF"
                                 >
@@ -50,7 +50,7 @@ const Forms = () => (
                         <div className="grid-wrapper">
                             <h2>Form for Cats</h2>
                             <a
-                                href="downloads/CatInformationSheet.pdf"
+                                href="/downloads/CatInformationSheet.pdf"
                                 target="_blank"
                             >
                                 <img
@@ -65,7 +65,7 @@ const Forms = () => (
                             <br />
                             <p>
                                 <a
-                                    href="downloads/CatInformationSheet.pdf"
+                                    href="/downloads/CatInformationSheet.pdf"
                                     target="_blank"
                                     title="Download PDF"
                                 >
@@ -78,7 +78,7 @@ const Forms = () => (
                         <div className="grid-wrapper">
                             <h2>Form for Dogs</h2>
                             <a
-                                href="downloads/DogInformationSheet.pdf"
+                                href="/downloads/DogInformationSheet.pdf"
                                 target="_blank"
                             >
                                 <img
@@ -93,7 +93,7 @@ const Forms = () => (
                             </p>
                             <p>
                                 <a
-                                    href="downloads/DogInformationSheet.pdf"
+                                    href="/downloads/DogInformationSheet.pdf"
                                     target="_blank"
                                     title="Download PDF"
                                 >

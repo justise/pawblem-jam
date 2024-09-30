@@ -27,7 +27,7 @@ const Index = () => (
                         <ol className="yui3-g-r">
                             <li className="yui3-u-1-3">
                                 <h3>
-                                    Expertise 2018 Best Dog
+                                    Expertise.com Best Dog
                                     <br /> Walkers in Redmond
                                 </h3>
                                 <a href="https://www.expertise.com/wa/redmond/dog-walkers#provider1">
@@ -265,14 +265,14 @@ const Index = () => (
                     <hr />
                     <section>
                         <h2>
-                            Servicing <b>Redmond and North Kirkland</b>
+                            Servicing <b>Redmond</b>
                         </h2>
                         <a
-                            href="https://drive.google.com/open?id=1wnVC8kB15O56IOYh7gMVej28eEeJFlrD&usp=sharing"
+                            href="https://www.google.com/maps/d/edit?mid=1awphgF2VfkxgFm5I6rOHmNvOjDJGDnoo&usp=sharing"
                             target="_blank"
                         >
                             <img
-                                src="/images/map4.png"
+                                src="/images/redmond-map-min.png"
                                 id="map"
                                 alt="Image of all the Areas of Redmond and North Kirkland that we service."
                             />

@@ -27,9 +27,6 @@ export default function Navigation({
                 <li className={isSelected('team')}>
                     <Link href="/petsitters">Team</Link>
                 </li>
-                <li className={isSelected('faq')}>
-                    <Link href="/faq">FAQs</Link>
-                </li>
                 <li className={isSelected('request')}>
                     <Link href="/request">Request Service</Link>
                 </li>

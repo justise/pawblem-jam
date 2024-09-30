@@ -23,28 +23,32 @@ const Rates = () => (
                 <br />
 
                 <div className="yui3-g-r">
-                    <div className="yui3-u-1-2">
+                    <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <h2>Dog Walking</h2>
                             <img src="/images/tiles/dog15.jpg" />
+                        </div>
+                    </div>
+                    <div className="yui3-u-2-3">
+                        <div className="grid-wrapper">
+                            <br />
+                            <br />
                             <p>
                                 <ul>
-                                    <li>$38 per 30 minute walk</li>
+                                    <li>
+                                        $45 per 45 minute walk (up to 2 dogs)
+                                    </li>
                                     <li>$3 for each additional dog</li>
                                 </ul>
                             </p>
-                        </div>
-                    </div>
-                    <div className="yui3-u-1-2">
-                        <div className="grid-wrapper">
-                            <h2>Cat Sitting</h2>
+                            {/* <h2>Cat Sitting</h2>
                             <img src="/images/tiles/cat14.jpg" />
                             <p>
                                 <ul>
                                     <li>$38 per 30 minute visit for 2 cats</li>
                                     <li>$3 for each additional cat</li>
                                 </ul>
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
@@ -132,7 +136,6 @@ const Rates = () => (
                             <p>
                                 <ul>
                                     <li>New Years Day, </li>
-                                    <li>Presidents Day,</li>
                                     <li>Easter Sunday,</li>
                                     <li>Memorial Day,</li>
                                     <li>4th of July,</li>
@@ -151,8 +154,7 @@ const Rates = () => (
                 <p>
                     <div className="center">
                         Less than 24 hour notice will result in a charge equal
-                        to 50% of the reserved service amount. See more on our{' '}
-                        <Link href="/faq#cancellationpolicy">FAQ page.</Link>
+                        to 50% of the reserved service amount.
                     </div>
                 </p>
             </div>

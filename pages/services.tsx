@@ -40,21 +40,21 @@ const Services = () => (
                                 legs during the work week.
                             </p>
                             <p>
-                                Walks are typically 30 minutes in duration and
-                                can vary from 1 to 5 times per week depending
-                                upon the owners work schedule and the dogs
-                                needs.
+                                Walks are typically <b>45</b> minutes in
+                                duration and can vary from 1 to 5 times per week
+                                depending upon the owners work schedule and the
+                                dogs needs.
                             </p>
                             <p>
-                                Free daily updates available via Paw Logs, text
-                                message, or email.
+                                Free daily updates available via text message or
+                                email.
                             </p>
 
                             <h2>All Services Include</h2>
                             <ul>
                                 <li>
                                     Private and personalized dog walks for up to
-                                    3 dogs in the same household
+                                    2 dogs in the same household
                                 </li>
                                 <li>
                                     Your dog(s) will be walked on-leash around
@@ -83,16 +83,16 @@ const Services = () => (
                             <br />
                             <p>
                                 <em>
-                                    Please Note: Pawblem Solved does not
-                                    currently offer boarding, day care,
-                                    overnight stays or group park visits.
+                                    Please Note: Pawblem Solved does not offer
+                                    boarding, day care, overnight stays or group
+                                    park visits.
                                 </em>
                             </p>
                         </div>
                     </div>
                 </div>
+                {/* <div className="yui3-g-r">
                 <hr />
-                <div className="yui3-g-r">
                     <div className="yui3-u-1-3">
                         <div className="grid-wrapper">
                             <img
@@ -114,9 +114,9 @@ const Services = () => (
                                 business.
                             </p>
                             <p>
-                                Visits are typically 30 minutes and can range
-                                from 1 to 3 times per day depending upon the
-                                needs of the owner and pet.
+                                Visits are typically <b>45</b> minutes and can
+                                range from 1 to 3 times per day depending upon
+                                the needs of the owner and pet.
                             </p>
                             <p>
                                 We are happy to water plants, pickup mail,
@@ -150,7 +150,7 @@ const Services = () => (
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <hr />
 
@@ -158,7 +158,7 @@ const Services = () => (
                     <br />
                     <em>
                         Please inquire for sitting services regarding any other
-                        pet or additional visiting times.
+                        type of pet or additional visiting times.
                     </em>
                 </div>
             </div>

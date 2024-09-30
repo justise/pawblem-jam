@@ -45,9 +45,6 @@ export default function Footer() {
                             <li>
                                 <Link href="/petsitters">Team</Link>
                             </li>
-                            <li>
-                                <Link href="/faq">FAQs</Link>
-                            </li>
                         </ul>
                     </div>
                     <div className="yui3-u-1-3">
