@@ -16,7 +16,7 @@ const Index = () => (
                     </div>
                     <div className="banner-footer">
                         <Link href="/request" className="request-button">
-                            Request a Pet Nanny
+                            Request a Service
                         </Link>
                     </div>
                 </div>
@@ -141,7 +141,7 @@ const Index = () => (
 
                             <div className="yui3-u-1-3">
                                 <div className="getting-started-card">
-                                    <Link href="/petsitters">
+                                    <Link href="/about">
                                         <img src="/images/consultation2.jpg" />
                                         <footer>
                                             <h4>Meet Your Nanny</h4>

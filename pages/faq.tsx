@@ -27,7 +27,7 @@ const Faq = () => (
                                     Redmond Ridge, Downtown)
                                 </i>
                                 <br />
-                                Kirkland{' '}
+                                North Kirkland{' '}
                                 <i style={{ display: 'none' }}>
                                     (Juanita, Moss Bay, Rose Hill, Totem Lake,
                                     Downtown)
@@ -43,10 +43,7 @@ const Faq = () => (
                                 </a>
                             </div>
 
-                            <p>
-                                Office Hours: Monday - Friday, 9-6 <br />
-                                Working Hours: Monday - Sunday, 9-6
-                            </p>
+                            <p>Visit Hours: 9am - 2pm</p>
                             <div className="paragraph">
                                 <h3>Please Note:</h3>
                                 Due to the nature of our work, we aren't always
@@ -160,7 +157,7 @@ const Faq = () => (
 
                             <h2 id="mission">What is your mission?</h2>
                             <p>
-                                Our pet nannies are here to solve your pawblems
+                                Pawblem Solved is here to solve your pawblems
                                 and provide peace of mind for pet parent and
                                 pet.
                             </p>
@@ -216,9 +213,8 @@ const Faq = () => (
                             <p>
                                 We will walk up to three dogs in the same
                                 household. Some dogs do not behave well with
-                                others, so to ensure the safety of your dog(s)
-                                and our sitters, we only provide individual,
-                                private walks.{' '}
+                                others, so to ensure the safety of your dog(s),
+                                we only provide individual, private walks.{' '}
                             </p>
 
                             <h2 id="who">
@@ -235,11 +231,10 @@ const Faq = () => (
                                 use your service?{' '}
                             </h2>
                             <p>
-                                We take the safety of your pets and our sitters
-                                very seriously. If our sitter feels
-                                uncomfortable about a particular situation, we
-                                reserve the right to discontinue or pass on the
-                                service.
+                                We take the safety of your pets and ourselves
+                                very seriously. If we feel uncomfortable about a
+                                particular situation, we reserve the right to
+                                discontinue or pass on the service.
                             </p>
 
                             <h2 id="weather">
@@ -248,9 +243,9 @@ const Faq = () => (
                             <p>
                                 We care for pets all year long in any weather,
                                 however, We do ask that you leave a key with a
-                                neighbor and provide your walker/sitter with
-                                their contact information in case of extreme
-                                weather conditions.{' '}
+                                neighbor and provide us with their contact
+                                information in case of extreme weather
+                                conditions.{' '}
                             </p>
 
                             <h2 id="keys">
@@ -277,26 +272,24 @@ const Faq = () => (
                                 What are your service hours?
                             </h2>
                             <p>
-                                Pets are generally visited between the hours of
-                                9:00am to 6:00pm and visits are divided into
-                                morning, midday and evening time periods. The
-                                actual time your pet is visited depends on a
-                                variety of logistical situations such as
-                                location, traffic, construction and proximity to
-                                other pet sitting clients. We will try to get as
-                                close to a time that you request but cannot
-                                guarantee it.
+                                Pets are visited between the hours of 9:00am and
+                                2:00pm. The actual time your pet is visited
+                                depends on a variety of logistical situations
+                                such as location, traffic, construction and
+                                proximity to other pet sitting clients. We will
+                                try to get as close to a time that you request
+                                but cannot guarantee it.
                             </p>
 
                             <h2 id="cancellationpolicy">
                                 What is your cancellation policy?
                             </h2>
                             <p>
-                                Your visits are very important to the Pawblem
-                                Solved team and are reserved especially for you
-                                and your pets. We understand that sometimes
-                                schedule adjustments are necessary; therefore,
-                                we respectfully request at least 24 hours notice
+                                Your visits are very important to Pawblem Solved
+                                and are reserved especially for you and your
+                                pets. We understand that sometimes schedule
+                                adjustments are necessary; therefore, we
+                                respectfully request at least 24 hours notice
                                 for cancellations.
                             </p>
                             <p>
@@ -310,10 +303,7 @@ const Faq = () => (
                             </p>
 
                             <h2 id="servicearea">What areas do you service?</h2>
-                            <p>
-                                At this time, we only cover the Redmond, WA
-                                area.
-                            </p>
+                            <p>We serve Redmond and North Kirkland, WA.</p>
                         </div>
                     </div>
                     <div className="yui3-u-1-4">

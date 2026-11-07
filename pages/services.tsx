@@ -71,9 +71,7 @@ const Services = () => (
                                     waste
                                 </li>
                                 <li>
-                                    We have some fabulous photographers on the
-                                    team that love taking pictures of your furry
-                                    family!
+                                    Photo updates of your furry family!
                                 </li>
                                 <li>
                                     And of course, tons of love, attention and
@@ -139,9 +137,7 @@ const Services = () => (
                                 <li>Food refill</li>
                                 <li>Brushing (upon request)</li>
                                 <li>
-                                    We have some fabulous photographers on the
-                                    team that love taking pictures of your furry
-                                    family!
+                                    Photo updates of your furry family!
                                 </li>
                                 <li>
                                     And of course, tons of love, attention and

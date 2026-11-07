@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { NAV_ITEMS } from './navigation';
 
 /**
  * Allow the Loading attribute on iframe
@@ -30,21 +31,11 @@ export default function Footer() {
                     <div className="yui3-u-1-3">
                         <h3>More Information</h3>
                         <ul className="bullet-list">
-                            <li>
-                                <Link href="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link href="/services">Services</Link>
-                            </li>
-                            <li>
-                                <Link href="/rates">Rates</Link>
-                            </li>
-                            <li>
-                                <Link href="/forms">Forms</Link>
-                            </li>
-                            <li>
-                                <Link href="/petsitters">Team</Link>
-                            </li>
+                            {NAV_ITEMS.map((item) => (
+                                <li key={item.id}>
+                                    <Link href={item.href}>{item.label}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div className="yui3-u-1-3">
@@ -82,7 +73,7 @@ export default function Footer() {
                         <br />
                         <br />
                         <Link href="/request" className="request-button">
-                            Ready to Request a Pet Nanny?
+                            Ready to Request a Service?
                         </Link>
                     </div>
                 </div>

@@ -1204,3 +1204,10 @@ ul.icon-list li.cat {
 .center {
     text-align: center;
 }
+
+/* Request form */
+.form-error {
+    color: #b00020;
+    text-align: center;
+    font-weight: bold;
+}

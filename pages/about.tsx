@@ -1,9 +1,9 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-const Petsitters = () => (
+const About = () => (
     <div id="container">
-        <Header selectedTab="team"></Header>
+        <Header selectedTab="about"></Header>
         <div id="content">
             <div className="banner-wrapper">
                 <div className="banner" id="banner-team"></div>
@@ -145,4 +145,4 @@ const Petsitters = () => (
     </div>
 );
 
-export default Petsitters;
+export default About;
