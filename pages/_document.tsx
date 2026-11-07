@@ -4,7 +4,6 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <title>Pawblem Solved: Dog Walkers and Pet Sitters</title>
                 <link
                     href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700"
                     rel="stylesheet"
@@ -32,10 +31,6 @@ export default function Document() {
                 <meta
                     name="keywords"
                     content="Redmond Pet Setting, Redmond Cat Sitting, Redmond Dog Sitting, Redmond Dog Walking, Redmond Pet Walking, Pet Care, Dogs, Cats, House Sitting, Danielle Jaffy, Washington, Redmond, Woodinville, English Hill, Education Hill, Hollywood Hills, Seattle, 98052, 98053, 98073, 98033, 98034, 98083, 98004, 98005, 98006, 98007, 98008, 98009, 98015"
-                />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
                 />
                 <link
                     rel="prefetch"

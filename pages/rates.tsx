@@ -33,22 +33,22 @@ const Rates = () => (
                         <div className="grid-wrapper">
                             <br />
                             <br />
-                            <p>
+                            <div className="paragraph">
                                 <ul>
                                     <li>
                                         $45 per 45 minute walk (up to 2 dogs)
                                     </li>
                                     <li>$3 for each additional dog</li>
                                 </ul>
-                            </p>
+                            </div>
                             {/* <h2>Cat Sitting</h2>
                             <img src="/images/tiles/cat14.jpg" />
-                            <p>
+                            <div className="paragraph">
                                 <ul>
                                     <li>$38 per 30 minute visit for 2 cats</li>
                                     <li>$3 for each additional cat</li>
                                 </ul>
-                            </p> */}
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@ const Rates = () => (
                                 Additional $10 per visit, for each of the
                                 following holidays.
                             </p>
-                            <p>
+                            <div className="paragraph">
                                 <ul>
                                     <li>New Years Day, </li>
                                     <li>Easter Sunday,</li>
@@ -146,17 +146,17 @@ const Rates = () => (
                                     <li>Christmas Day,</li>
                                     <li>New Years Eve</li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <hr />
-                <p>
+                <div className="paragraph">
                     <div className="center">
                         Less than 24 hour notice will result in a charge equal
                         to 50% of the reserved service amount.
                     </div>
-                </p>
+                </div>
             </div>
         </div>
         <Footer></Footer>
