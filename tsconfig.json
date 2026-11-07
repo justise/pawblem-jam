@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "strict": false,
-    "jsx": "preserve",
-    "target": "es5",
+    "jsx": "react-jsx",
+    "target": "ES2017",
     "lib": [
       "dom",
       "dom.iterable",
@@ -14,7 +14,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true

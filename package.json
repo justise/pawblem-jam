@@ -2,37 +2,30 @@
     "name": "pawblem-jam",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
+        "start": "next start"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "fs-extra": "^11.2.0",
-        "html-webpack-plugin": "^5.6.0",
-        "imagemin-mozjpeg": "^10.0.0",
-        "imagemin-optipng": "^8.0.0",
-        "imagemin-svgo": "^11.0.1",
-        "netlify-cli": "^17.36.2",
-        "next": "^14.2.13",
-        "next-compose-plugins": "^2.2.1",
-        "next-images": "^1.8.5",
-        "prop-types": "^15.8.1",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "react-slick": "^0.30.2",
-        "resend": "^4.0.0",
-        "slick-carousel": "^1.8.1"
+        "next": "^16.4.5",
+        "react": "^19.3.1",
+        "react-dom": "^19.3.1",
+        "react-slick": "^0.31.0",
+        "resend": "^6.37.0",
+        "slick-carousel": "^2.0.0"
     },
     "devDependencies": {
-        "@types/node": "^22.7.4",
-        "@types/prop-types": "^15.7.13",
-        "@types/react": "^18.3.10",
-        "typescript": "^5.6.2"
+        "@types/node": "^24.19.2",
+        "@types/react": "^19.3.0",
+        "@types/react-dom": "^19.3.0",
+        "typescript": "^7.0.2"
+    },
+    "private": true,
+    "engines": {
+        "node": "24.x"
     }
 }

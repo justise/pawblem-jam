@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Navigation from './navigation';
-import Head from 'next/head';
-import PropTypes, { InferProps } from 'prop-types';
 
 export default function Header({
     selectedTab,
-}: InferProps<typeof Navigation.propTypes>) {
+}: {
+    selectedTab: string;
+}) {
     return (
         <header>
             <div className="header-container">
@@ -53,7 +53,3 @@ export default function Header({
         </header>
     );
 }
-
-Header.propTypes = {
-    selectedTab: PropTypes.string.isRequired,
-};

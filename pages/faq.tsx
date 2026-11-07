@@ -19,7 +19,7 @@ const Faq = () => (
                     <div className="yui3-u-2-3">
                         <div className="summary">
                             <h2>Pawblem Solved</h2>
-                            <p>
+                            <div className="paragraph">
                                 <h3>Serving:</h3>
                                 Redmond{' '}
                                 <i style={{ display: 'none' }}>
@@ -33,21 +33,21 @@ const Faq = () => (
                                     Downtown)
                                 </i>
                                 <br />
-                            </p>
-                            <p>
+                            </div>
+                            <div className="paragraph">
                                 <h3>Contact:</h3>
                                 (425) 445-7247
                                 <br />
                                 <a href="mailto:info@pawblemsolved.com">
                                     info@pawblemsolved.com
                                 </a>
-                            </p>
+                            </div>
 
                             <p>
                                 Office Hours: Monday - Friday, 9-6 <br />
                                 Working Hours: Monday - Sunday, 9-6
                             </p>
-                            <p>
+                            <div className="paragraph">
                                 <h3>Please Note:</h3>
                                 Due to the nature of our work, we aren't always
                                 able to answer the phone, so please leave a
@@ -56,7 +56,7 @@ const Faq = () => (
                                 <br />
                                 <br />
                                 Email is preferred for inquiries.
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div className="yui3-u-1-3">
@@ -74,7 +74,7 @@ const Faq = () => (
                     <div className="yui3-u-3-4">
                         <div className="grid-wrapper">
                             <h2>Frequently Asked Questions</h2>
-                            <p>
+                            <div className="paragraph">
                                 <ul>
                                     <li>
                                         <a href="#mission">
@@ -155,7 +155,7 @@ const Faq = () => (
                                         </a>
                                     </li>
                                 </ul>
-                            </p>
+                            </div>
                             <br />
 
                             <h2 id="mission">What is your mission?</h2>

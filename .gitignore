@@ -12,7 +12,10 @@ out
 # Random npm files
 *.DS_Store
 
-# Local Netlify folder
-.netlify
-
+# Environment variables
 .env
+
+# Vercel
+.vercel
+.env*.local
+next-env.d.ts

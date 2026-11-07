@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import PropTypes, { InferProps } from 'prop-types';
 
 export default function Navigation({
     selectedTab,
-}: InferProps<typeof Navigation.propTypes>) {
-    const isSelected = (tabName) => {
+}: {
+    selectedTab: string;
+}) {
+    const isSelected = (tabName: string) => {
         return selectedTab == tabName ? 'selected' : '';
     };
 
@@ -34,7 +35,3 @@ export default function Navigation({
         </div>
     );
 }
-
-Navigation.propTypes = {
-    selectedTab: PropTypes.string.isRequired,
-};
