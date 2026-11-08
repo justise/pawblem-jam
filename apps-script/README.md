@@ -13,7 +13,9 @@ costs nothing and needs no third-party services.
 | Settings | Owner email, calendar ID, **Tracking Start Date** (calendar events before this date are ignored for billing) |
 | Clients | One row per household. New website requests come in as `Prospect`; change Status to `Active` once they're a client |
 | Requests | Every service request submitted on the website |
-| Pets | One row per pet (filled by the online pet forms, coming next) |
+| Pets | One row per pet, filled by the online forms at `/forms`. `Calendar Name` is set automatically (pet name, plus client last name if another client's pet already has that name). `Pet Sheet` links to a printable Google Doc in the **Pawblem Solved – Pet Sheets** Drive folder |
+
+Clients also gets the household/vet/agreement columns from the online forms. Form questions are defined in `lib/intake.ts`; the script creates any missing columns automatically.
 
 Columns are matched by header name, so you can add your own columns to the
 right or reorder freely. Don't rename the existing headers.
@@ -56,6 +58,8 @@ pets with the same name, set the Calendar Name to include the last name
 Edit the code, then **Deploy → Manage deployments → ✏️ → Version: New
 version → Deploy**. Editing *the existing* deployment keeps the same URL, so
 Netlify doesn't need changing.
+
+Sheet menu **Pawblem Solved → Refresh all pet sheets** rebuilds the printable Docs after you edit the Sheet by hand.
 
 Optional: use [`clasp`](https://github.com/google/clasp) (`clasp push`) from
 this folder instead of copy/paste.

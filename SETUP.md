@@ -22,6 +22,17 @@ Details for steps 1–6: [apps-script/README.md](apps-script/README.md).
 - [ ]   11. **Verify on Netlify:** submit the form on the deploy preview; confirm row + email
 - [ ]   12. Point the `pawblemsolved.com` DNS at Netlify (do this when ready to go live; not blocking Phase 3)
 
+## Phase 3 — Online client & pet forms  (BLOCKING Phase 4)
+
+The script gained new code and needs Google Docs + Drive permissions (for the
+printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
+
+- [ ] 1. Apps Script editor: replace `Code.gs` with the new `apps-script/Code.gs`, and `appsscript.json` with the new `apps-script/appsscript.json`. Save.
+- [ ] 2. Run `setup` once and **approve the new permissions** (Docs + Drive). Adds `Pet Sheet` and `Updated` columns to Pets.
+- [ ] 3. Deploy → Manage deployments → ✏️ → Version: **New version** → Deploy (same URL, keep access **Anyone**)
+- [ ] 4. **Verify locally:** ask Claude to run the forms end-to-end test. It submits a test household with a dog and a cat. You confirm the rows, an email "Forms submitted: …", and that two pet sheets appear in Drive folder **Pawblem Solved – Pet Sheets** (then delete test rows + docs)
+- [ ] 5. Danielle reviews the agreement wording on `/forms` (adapted from the paper agreement; text lives in `lib/intake.ts` → `AGREEMENT_TEXT`)
+
 ## Decisions needed from Danielle (not blocking)
 
 - [ ] Kris's bio on About ("Part-Time Pet Nanny and Dog Walker"): keep, edit, or remove?

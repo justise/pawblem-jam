@@ -1211,3 +1211,124 @@ ul.icon-list li.cat {
     text-align: center;
     font-weight: bold;
 }
+
+/* Intake forms */
+.hp-field {
+    position: absolute;
+    left: -9999px;
+}
+.intake-form {
+    max-width: 860px;
+    margin: 0 auto;
+}
+.intake-section {
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 1em 1.25em 1.25em;
+    margin: 1.5em 0;
+    background: #fff;
+}
+.intake-section h2 {
+    margin-top: 0;
+}
+.intake-section h3 {
+    margin: 1.25em 0 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.25em;
+}
+.intake-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1.25em;
+}
+.intake-field.wide {
+    grid-column: 1 / -1;
+}
+.intake-field input.text,
+.intake-field select,
+.intake-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    font-size: 16px; /* prevents iOS zoom on focus */
+}
+.intake-form fieldset {
+    margin-top: 10px;
+}
+.intake-form legend {
+    font-weight: bold;
+}
+.intake-form fieldset.yesno {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 1em;
+    border-bottom: 1px dotted #eee;
+    padding: 4px 0;
+}
+.intake-form fieldset.yesno legend {
+    float: left;
+    font-weight: normal;
+    margin-right: auto;
+    padding-right: 1em;
+}
+.intake-form label.inline {
+    display: inline-block;
+    font-weight: normal;
+    margin: 6px 1.25em 0 0;
+}
+.intake-form label.agree {
+    font-weight: bold;
+    margin: 1em 0;
+}
+.field-help {
+    display: block;
+    color: #777;
+}
+.required-mark {
+    color: #b00020;
+}
+.pet-card {
+    background: #fffaf9;
+}
+.pet-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.species-toggle legend {
+    margin-bottom: 0;
+}
+.link-button {
+    background: none;
+    border: none;
+    color: #b00020;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.secondary-button {
+    border: 1px solid #b8b8b8;
+    background: #eee;
+    border-radius: 7px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .intake-grid {
+        grid-template-columns: 1fr;
+    }
+    .intake-section {
+        padding: 0.75em;
+    }
+}
+.intake-form,
+.intake-form label,
+.intake-form legend,
+.intake-form fieldset,
+.intake-form .field-help,
+.intake-form p {
+    text-align: left;
+}
+.intake-form .center {
+    text-align: center;
+}
