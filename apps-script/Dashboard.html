@@ -302,15 +302,19 @@
     $main.innerHTML = html;
   }
 
-  document.querySelectorAll('nav button').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      document.querySelectorAll('nav button').forEach(function (b) { b.classList.remove('on'); });
-      btn.classList.add('on');
-      state.tab = btn.getAttribute('data-tab');
-      load();
+  function selectTab(tab) {
+    document.querySelectorAll('nav button').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-tab') === tab);
     });
+    state.tab = tab;
+    load();
+  }
+  document.querySelectorAll('nav button').forEach(function (btn) {
+    btn.addEventListener('click', function () { selectTab(btn.getAttribute('data-tab')); });
   });
-  load();
+  // Optional #clients / #billing in the URL opens that tab (handy in the preview).
+  var initial = (location.hash || '').slice(1);
+  selectTab(['upcoming', 'clients', 'billing'].indexOf(initial) !== -1 ? initial : 'upcoming');
 </script>
 </body>
 </html>

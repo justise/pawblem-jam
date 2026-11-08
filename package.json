@@ -5,7 +5,9 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "next start"
+        "start": "next start",
+        "preview:dashboard": "node apps-script/preview/server.mjs",
+        "test:script": "node apps-script/test/intake.test.js && node apps-script/test/billing.test.js"
     },
     "keywords": [],
     "author": "",

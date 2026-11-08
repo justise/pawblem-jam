@@ -167,15 +167,22 @@ function matchPetsPure_(title, pets) {
         );
         var m = text.match(re);
         if (m) {
-            found.push(p);
             var at = m.index + m[1].length;
+            found.push({ pet: p, at: at });
             text =
                 text.slice(0, at) +
                 Array(name.length + 1).join('#') +
                 text.slice(at + name.length);
         }
     });
-    return found;
+    // Report pets in the order they appear in the title.
+    return found
+        .sort(function (a, b) {
+            return a.at - b.at;
+        })
+        .map(function (f) {
+            return f.pet;
+        });
 }
 
 /** US holidays from the Rates page, as yyyy-MM-dd keys. */

@@ -71,6 +71,23 @@ pet sheet), **Clients** (balances, contact, record a payment), **Billing**
 `DASHBOARD_URL`). From the editor, run `logBillingThisMonth` to see the
 current month's billing in the log.
 
+## Developing the dashboard locally
+
+```
+npm run preview:dashboard     # http://localhost:4000
+npm run test:script           # intake + billing tests
+```
+
+The preview serves `Dashboard.html` and runs the real `Code.gs`,
+`Billing.gs` and `DashboardApp.gs` against sample data in
+`preview/fixtures.mjs` (fake Sheet + Calendar). Every refresh re-reads the
+files and rebuilds the sample data. Narrow the browser window for the phone
+layout; `#clients` or `#billing` in the URL opens that tab. Nothing touches
+the real Sheet or Calendar.
+
+When a round of changes is done, paste the changed files into Apps Script
+and create a new version of the Dashboard deployment.
+
 ## One-time setup (Kris, signed in as pawblemsolved@gmail.com)
 
 1. Create a new Google Sheet named **Pawblem Solved – Clients**.
