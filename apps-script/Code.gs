@@ -487,9 +487,10 @@ function writePetSheet_(pets, pet, client) {
         .setMarginBottom(36)
         .setMarginLeft(48)
         .setMarginRight(48);
-    body.getParagraphs()[0]
-        .setText(pet['Pet Name'] + ' – ' + pet['Species'])
-        .setHeading(DocumentApp.ParagraphHeading.TITLE);
+    // Paragraph.setText() returns nothing, so don't chain off it.
+    var titlePara = body.getParagraphs()[0];
+    titlePara.setText(pet['Pet Name'] + ' – ' + pet['Species']);
+    titlePara.setHeading(DocumentApp.ParagraphHeading.TITLE);
     body.appendParagraph(
         client['Name'] +
             ' · Calendar name: ' +
