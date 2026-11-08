@@ -1,7 +1,8 @@
 # Pawblem Solved back office (Google Sheet + Apps Script)
 
 The Google Sheet **"Pawblem Solved – Clients"** in the pawblemsolved@gmail.com
-Drive is the business database. The Apps Script bound to it receives website
+Drive is the business database
+([open Sheet](https://docs.google.com/spreadsheets/d/1PEBeLvcSF5aigG6ydhvHGXcz8TgyPKMCDs0TXNpYTVA/edit)). The Apps Script bound to it receives website
 submissions, writes them to the Sheet, and emails Danielle through Gmail. It
 costs nothing and needs no third-party services.
 
@@ -34,8 +35,12 @@ pets with the same name, set the Calendar Name to include the last name
    prompt. The tabs appear in the Sheet (reload it to see the
    **Pawblem Solved** menu).
 4. Fill in **Tracking Start Date** on the Settings tab.
-5. **Project Settings → Script properties →** add `SHARED_SECRET` with a long
-   random value (e.g. `openssl rand -hex 32`).
+5. **Project Settings** (gear icon, left sidebar) → scroll to **Script
+   properties** → **Add script property**. Property: `SHARED_SECRET`, Value:
+   a long random string (generate with `openssl rand -hex 32`). Put the
+   **same** value in `APPS_SCRIPT_SECRET` in `.env`/Netlify. It's a password
+   the website sends with every request so only our site can write to the
+   Sheet.
 6. **Deploy → New deployment → Web app.** Execute as *Me*, access *Anyone*.
    Copy the `/exec` URL.
    (Anyone can reach the URL, but every request must carry the shared secret,
@@ -54,3 +59,15 @@ Netlify doesn't need changing.
 
 Optional: use [`clasp`](https://github.com/google/clasp) (`clasp push`) from
 this folder instead of copy/paste.
+
+## Troubleshooting
+
+- **Website says "Could not send request" and the server log shows HTTP 401 /
+  a Google sign-in page:** the deployment's *Who has access* is not
+  **Anyone**. Choosing "Anyone with Google account" or "Only myself" makes
+  Google demand a login. Fix: Deploy → Manage deployments → ✏️ → Who has
+  access: **Anyone** → Version: New version → Deploy (the URL stays the same).
+- **`{"ok":false,"error":"unauthorized"}`:** `APPS_SCRIPT_SECRET` doesn't match
+  the `SHARED_SECRET` script property exactly (watch for spaces).
+- **Still 401 right after changing access:** a redeploy can take a minute to
+  take effect. Retry before changing anything else.
