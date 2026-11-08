@@ -1,11 +1,7 @@
 import Link from 'next/link';
 import Navigation from './navigation';
 
-export default function Header({
-    selectedTab,
-}: {
-    selectedTab: string;
-}) {
+export default function Header({ selectedTab }: { selectedTab: string }) {
     return (
         <header>
             <div className="header-container">

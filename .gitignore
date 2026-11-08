@@ -19,3 +19,4 @@ out
 .vercel
 .env*.local
 next-env.d.ts
+!.env.example

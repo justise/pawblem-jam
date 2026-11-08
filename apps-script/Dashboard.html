@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg: #faf7f5; --card: #fff; --ink: #2e2a24; --muted: #7a7166;
+    --line: #e8e1da; --accent: #d9534f; --accent-soft: #fdecea;
+    --ok: #2e7d32; --warn: #b26a00; --chip: #f1ece7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1a18; --card: #262321; --ink: #f1ece7; --muted: #a89f95;
+      --line: #3a3532; --accent: #ff7a73; --accent-soft: #3a2422;
+      --ok: #81c784; --warn: #ffb74d; --chip: #34302c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  header { position: sticky; top: 0; z-index: 2; background: var(--card);
+    border-bottom: 1px solid var(--line); }
+  .top { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px 0; }
+  .top h1 { font-size: 18px; margin: 0; }
+  .top button { background: none; border: 0; color: var(--muted); font-size: 14px; padding: 6px; }
+  nav { display: flex; }
+  nav button { flex: 1; background: none; border: 0; border-bottom: 3px solid transparent;
+    padding: 10px 0; font-size: 15px; color: var(--muted); }
+  nav button.on { color: var(--ink); border-color: var(--accent); font-weight: 600; }
+  main { padding: 12px 16px 40px; max-width: 720px; margin: 0 auto; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px 14px; margin-bottom: 10px; }
+  .day { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+    margin: 16px 0 6px; }
+  .row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+  .title { font-weight: 600; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .chip { background: var(--chip); border-radius: 999px; padding: 4px 10px; font-size: 14px;
+    color: var(--ink); text-decoration: none; }
+  .tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--chip); }
+  .tag.late { background: var(--accent-soft); color: var(--accent); }
+  .tag.cancel { text-decoration: line-through; }
+  .money { font-variant-numeric: tabular-nums; }
+  .owed { color: var(--accent); font-weight: 600; }
+  .paid { color: var(--ok); }
+  input, select, textarea { font: inherit; padding: 8px; border: 1px solid var(--line);
+    border-radius: 8px; background: var(--card); color: var(--ink); width: 100%; }
+  label { display: block; font-size: 13px; color: var(--muted); margin: 8px 0 2px; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; border: 0;
+    border-radius: 8px; padding: 9px 14px; font: inherit; font-weight: 600; }
+  .btn.ghost { background: var(--chip); color: var(--ink); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  details summary { cursor: pointer; }
+  pre { white-space: pre-wrap; background: var(--chip); padding: 10px; border-radius: 8px;
+    font-size: 13px; }
+  .empty { text-align: center; color: var(--muted); padding: 30px 0; }
+  .error { background: var(--accent-soft); color: var(--accent); padding: 10px; border-radius: 8px; }
+  .search { margin-bottom: 10px; }
+  .total { font-size: 18px; font-weight: 700; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>🐾 Pawblem Solved</h1>
+    <button onclick="refresh()">↻ Refresh</button>
+  </div>
+  <nav>
+    <button data-tab="upcoming" class="on">Upcoming</button>
+    <button data-tab="clients">Clients</button>
+    <button data-tab="billing">Billing</button>
+  </nav>
+</header>
+<main id="main"><p class="empty">Loading…</p></main>
+
+<script>
+  var state = { tab: 'upcoming', overview: null, billing: null, search: '', open: {} };
+  var $main = document.getElementById('main');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function money(n) { return '$' + Number(n || 0).toFixed(2); }
+  function balanceLabel(b) {
+    if (b > 0.005) return '<span class="money owed">' + money(b) + ' owed</span>';
+    if (b < -0.005) return '<span class="money paid">' + money(-b) + ' credit</span>';
+    return '<span class="money paid">Paid up</span>';
+  }
+  function time(ms) {
+    return new Date(ms).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+  }
+  function dayLabel(ms) {
+    var d = new Date(ms), t = new Date(); t.setHours(0, 0, 0, 0);
+    var diff = Math.round((new Date(d).setHours(0, 0, 0, 0) - t) / 864e5);
+    var name = d.toLocaleDateString([], { weekday: 'long', month: 'short', day: 'numeric' });
+    return diff === 0 ? 'Today · ' + name : diff === 1 ? 'Tomorrow · ' + name : name;
+  }
+  function iso(d) {
+    return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+  }
+  function mapsLink(addr) {
+    return 'https://maps.google.com/?q=' + encodeURIComponent(addr);
+  }
+  function telLink(p) { return 'tel:' + String(p).replace(/[^\d+]/g, ''); }
+
+  function call(fn, args, ok) {
+    var runner = google.script.run
+      .withSuccessHandler(ok)
+      .withFailureHandler(function (e) {
+        $main.innerHTML = '<p class="error">' + esc(e && e.message || e) + '</p>';
+      });
+    runner[fn].apply(runner, args || []);
+  }
+
+  function refresh() {
+    state.overview = null; state.billing = null;
+    load();
+  }
+
+  function load() {
+    if (state.tab === 'billing') {
+      if (!state.billing) {
+        var now = new Date();
+        var from = state.billingFrom || iso(new Date(now.getFullYear(), now.getMonth(), 1));
+        var to = state.billingTo || iso(new Date(now.getFullYear(), now.getMonth() + 1, 0));
+        state.billingFrom = from; state.billingTo = to;
+        $main.innerHTML = '<p class="empty">Loading billing…</p>';
+        return call('api_billing', [from, to], function (b) { state.billing = b; render(); });
+      }
+    } else if (!state.overview) {
+      $main.innerHTML = '<p class="empty">Loading…</p>';
+      return call('api_overview', [], function (o) { state.overview = o; render(); });
+    }
+    render();
+  }
+
+  function render() {
+    if (state.tab === 'upcoming') renderUpcoming();
+    if (state.tab === 'clients') renderClients();
+    if (state.tab === 'billing') renderBilling();
+  }
+
+  function renderUpcoming() {
+    var o = state.overview, html = '', lastDay = '';
+    if (!o.upcoming.length) html = '<p class="empty">No visits in the next week.</p>';
+    o.upcoming.forEach(function (v) {
+      var dl = dayLabel(v.start);
+      if (dl !== lastDay) { html += '<div class="day">' + esc(dl) + '</div>'; lastDay = dl; }
+      var tag = v.status === 'Late Cancel' ? '<span class="tag late">Late cancel</span>'
+        : v.status === 'Completed' ? '<span class="tag">Done</span>' : '';
+      html += '<div class="card"><div class="row"><span class="title">' + esc(v.pets.join(' & ')) +
+        '</span><span class="muted">' + time(v.start) + '–' + time(v.end) + '</span></div>' +
+        '<div class="muted">' + esc(v.clientName) + (v.holiday ? ' · 🎉 ' + esc(v.holiday) : '') + ' ' + tag + '</div>' +
+        '<div class="chips">' +
+        (v.phone ? '<a class="chip" href="' + telLink(v.phone) + '">📞 Call</a><a class="chip" href="sms:' +
+          esc(String(v.phone).replace(/[^\d+]/g, '')) + '">💬 Text</a>' : '') +
+        (v.address ? '<a class="chip" target="_blank" href="' + mapsLink(v.address) + '">📍 Map</a>' : '') +
+        v.sheets.map(function (s) {
+          return '<a class="chip" target="_blank" href="' + esc(s.url) + '">📄 ' + esc(s.name) + '</a>';
+        }).join('') + '</div></div>';
+    });
+    if (o.unmatchedCount) {
+      html += '<p class="muted">⚠ ' + o.unmatchedCount + ' upcoming calendar event(s) don\'t match a pet name. ' +
+        'See Billing → Unmatched.</p>';
+    }
+    html += '<p class="muted">Updated ' + time(o.generatedAt) + ' · <a target="_blank" href="' +
+      esc(o.sheetUrl) + '">Open Sheet</a></p>';
+    $main.innerHTML = html;
+  }
+
+  function renderClients() {
+    var o = state.overview, q = state.search.toLowerCase();
+    var html = '<input class="search" placeholder="Search clients or pets" value="' + esc(state.search) +
+      '" oninput="state.search=this.value;renderClientsList()">' + '<div id="clist"></div>';
+    $main.innerHTML = html;
+    renderClientsList();
+  }
+
+  function renderClientsList() {
+    var o = state.overview, q = state.search.toLowerCase();
+    var list = o.clients.filter(function (c) {
+      return !q || (c.name + ' ' + c.pets.map(function (p) { return p.name; }).join(' ')).toLowerCase().indexOf(q) !== -1;
+    });
+    var html = list.length ? '' : '<p class="empty">No clients yet.</p>';
+    list.forEach(function (c) {
+      var open = state.open[c.id];
+      html += '<div class="card"><div class="row" onclick="toggle(\'' + esc(c.id) + '\')" style="cursor:pointer">' +
+        '<span><span class="title">' + esc(c.name) + '</span> <span class="tag">' + esc(c.status) + '</span><br>' +
+        '<span class="muted">' + esc(c.pets.map(function (p) { return p.name; }).join(', ') || 'No pets yet') + '</span></span>' +
+        (c.totalCharged || c.totalPaid ? balanceLabel(c.balance) : '') + '</div>';
+      if (open) {
+        html += '<div class="chips">' +
+          (c.phone ? '<a class="chip" href="' + telLink(c.phone) + '">📞 ' + esc(c.phone) + '</a>' : '') +
+          (c.email ? '<a class="chip" href="mailto:' + esc(c.email) + '">✉️ Email</a>' : '') +
+          (c.address ? '<a class="chip" target="_blank" href="' + mapsLink(c.address) + '">📍 Map</a>' : '') +
+          c.pets.filter(function (p) { return p.sheet; }).map(function (p) {
+            return '<a class="chip" target="_blank" href="' + esc(p.sheet) + '">📄 ' + esc(p.name) + '</a>';
+          }).join('') + '</div>' +
+          '<p class="muted">' +
+          (c.address ? esc(c.address) + '<br>' : '') +
+          (c.key ? '🔑 ' + esc(c.key) + '<br>' : '') +
+          (c.emergency ? '🚨 ' + esc(c.emergency) + '<br>' : '') +
+          (c.vet ? '🏥 ' + esc(c.vet) + '<br>' : '') +
+          'Calendar names: ' + esc(c.pets.map(function (p) { return '"' + p.calendarName + '"'; }).join(', ') || '—') + '<br>' +
+          'Lifetime: charged ' + money(c.totalCharged) + ' · paid ' + money(c.totalPaid) + '</p>' +
+          '<details><summary class="muted">Record a payment</summary>' +
+          '<div class="grid2"><div><label>Amount</label><input id="amt-' + esc(c.id) + '" type="number" inputmode="decimal" step="0.01" value="' + (c.balance > 0 ? c.balance.toFixed(2) : '') + '"></div>' +
+          '<div><label>Date</label><input id="date-' + esc(c.id) + '" type="date" value="' + iso(new Date()) + '"></div></div>' +
+          '<label>Method</label><select id="method-' + esc(c.id) + '"><option>Check</option><option>Cash</option><option>Venmo</option><option>Zelle</option><option>Other</option></select>' +
+          '<label>Notes</label><input id="notes-' + esc(c.id) + '">' +
+          '<p><button class="btn" onclick="pay(\'' + esc(c.id) + '\', this)">Save payment</button></p></details>';
+      }
+      html += '</div>';
+    });
+    document.getElementById('clist').innerHTML = html;
+  }
+
+  function toggle(id) { state.open[id] = !state.open[id]; renderClientsList(); }
+
+  function pay(id, btn) {
+    var amount = document.getElementById('amt-' + id).value;
+    btn.disabled = true; btn.textContent = 'Saving…';
+    google.script.run
+      .withSuccessHandler(function () { state.billing = null; state.overview = null; load(); })
+      .withFailureHandler(function (e) { btn.disabled = false; btn.textContent = 'Save payment'; alert(e.message || e); })
+      .api_recordPayment({
+        clientId: id, amount: amount,
+        date: document.getElementById('date-' + id).value,
+        method: document.getElementById('method-' + id).value,
+        notes: document.getElementById('notes-' + id).value,
+      });
+  }
+
+  function setMonth(offset) {
+    var base = new Date(state.billingFrom + 'T00:00:00');
+    var f = new Date(base.getFullYear(), base.getMonth() + offset, 1);
+    state.billingFrom = iso(f);
+    state.billingTo = iso(new Date(f.getFullYear(), f.getMonth() + 1, 0));
+    state.billing = null; load();
+  }
+
+  function setRange() {
+    state.billingFrom = document.getElementById('bfrom').value;
+    state.billingTo = document.getElementById('bto').value;
+    state.billing = null; load();
+  }
+
+  function copyText(id, btn) {
+    var text = document.getElementById(id).textContent;
+    (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject())
+      .then(function () { btn.textContent = 'Copied!'; })
+      .catch(function () {
+        var r = document.createRange(); r.selectNode(document.getElementById(id));
+        getSelection().removeAllRanges(); getSelection().addRange(r);
+        btn.textContent = 'Selected – tap Copy';
+      });
+  }
+
+  function renderBilling() {
+    var b = state.billing;
+    var html = '<div class="card"><div class="row"><button class="btn ghost" onclick="setMonth(-1)">‹ Prev</button>' +
+      '<span class="title">' + esc(b.label) + '</span><button class="btn ghost" onclick="setMonth(1)">Next ›</button></div>' +
+      '<details><summary class="muted">Custom dates</summary><div class="grid2">' +
+      '<div><label>From</label><input id="bfrom" type="date" value="' + esc(state.billingFrom) + '"></div>' +
+      '<div><label>To</label><input id="bto" type="date" value="' + esc(state.billingTo) + '"></div></div>' +
+      '<p><button class="btn ghost" onclick="setRange()">Apply</button></p></details>' +
+      '<div class="row" style="margin-top:8px"><span class="muted">Charges this period</span><span class="total money">' + money(b.totalCharges) + '</span></div>' +
+      '<div class="muted">Counting events from ' + esc(b.trackingStart) + ' (Tracking Start Date)</div></div>';
+    if (!b.rows.length) html += '<p class="empty">No visits or balances in this period.</p>';
+    b.rows.forEach(function (r, i) {
+      html += '<div class="card"><div class="row"><span class="title">' + esc(r.name) + '</span>' +
+        '<span class="money total">' + money(r.charges) + '</span></div>' +
+        '<div class="muted">' + r.completed + ' completed' +
+        (r.lateCancels ? ' · ' + r.lateCancels + ' late cancel' : '') +
+        (r.cancelled ? ' · ' + r.cancelled + ' cancelled' : '') +
+        (r.scheduled ? ' · ' + r.scheduled + ' still scheduled' : '') +
+        (r.holidays ? ' · ' + r.holidays + ' holiday' : '') + '</div>' +
+        '<div class="muted">Balance now: <span class="' + (r.balance > 0 ? 'owed' : 'paid') + '">' + money(r.balance) + '</span> · lifetime paid ' + money(r.totalPaid) + '</div>' +
+        '<details><summary class="muted">Visits & invoice</summary>' +
+        r.visits.map(function (v) {
+          var cls = v.status === 'Late Cancel' ? 'late' : v.status === 'Cancelled' ? 'cancel' : '';
+          return '<div class="row muted"><span>' + esc(v.day) + ' ' + esc(v.pets.join(' & ')) +
+            ' <span class="tag ' + cls + '">' + esc(v.status) + '</span>' + (v.holiday ? ' 🎉' : '') +
+            '</span><span class="money">' + money(v.amount) + '</span></div>';
+        }).join('') +
+        '<pre id="inv-' + i + '">' + esc(r.invoice) + '</pre>' +
+        '<button class="btn ghost" onclick="copyText(\'inv-' + i + '\', this)">Copy invoice text</button></details></div>';
+    });
+    if (b.unmatched.length) {
+      html += '<div class="card"><details><summary class="title">⚠ Unmatched events (' + b.unmatched.length + ')</summary>' +
+        '<p class="muted">These events don\'t contain any pet\'s Calendar Name, so they aren\'t billed. ' +
+        'Fix the event title, or ignore if it isn\'t a pet visit.</p>' +
+        b.unmatched.map(function (u) {
+          return '<div class="muted">' + esc(u.day) + ' · ' + esc(u.title) + '</div>';
+        }).join('') + '</details></div>';
+    }
+    $main.innerHTML = html;
+  }
+
+  function selectTab(tab) {
+    document.querySelectorAll('nav button').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-tab') === tab);
+    });
+    state.tab = tab;
+    load();
+  }
+  document.querySelectorAll('nav button').forEach(function (btn) {
+    btn.addEventListener('click', function () { selectTab(btn.getAttribute('data-tab')); });
+  });
+  // Optional #clients / #billing in the URL opens that tab (handy in the preview).
+  var initial = (location.hash || '').slice(1);
+  selectTab(['upcoming', 'clients', 'billing'].indexOf(initial) !== -1 ? initial : 'upcoming');
+</script>
+</body>
+</html>

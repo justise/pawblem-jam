@@ -30,7 +30,7 @@ export default function Document() {
                 />
                 <meta
                     name="keywords"
-                    content="Redmond Pet Setting, Redmond Cat Sitting, Redmond Dog Sitting, Redmond Dog Walking, Redmond Pet Walking, Pet Care, Dogs, Cats, House Sitting, Danielle Jaffy, Washington, Redmond, Woodinville, English Hill, Education Hill, Hollywood Hills, Seattle, 98052, 98053, 98073, 98033, 98034, 98083, 98004, 98005, 98006, 98007, 98008, 98009, 98015"
+                    content="Redmond Dog Walking, Redmond Cat Sitting, Kirkland Dog Walking, Kirkland Cat Sitting, Pet Care, Dogs, Cats, Danielle Jaffy, Redmond, North Kirkland, Education Hill, English Hill, Washington, 98052, 98053, 98033, 98034"
                 />
                 <link
                     rel="prefetch"
