@@ -125,7 +125,7 @@ function billingConfigPure_(s) {
         extraCat: num_(s['Additional Cat Fee'], 3),
         holiday: num_(s['Holiday Surcharge'], 10),
         lateCancelPct: num_(s['Late Cancel Percent'], 50),
-        cancelledColor: colorId_(s['Cancelled Color'], EVENT_COLORS.tomato),
+        cancelledColor: colorId_(s['Cancelled Color'], EVENT_COLORS.flamingo),
         lateCancelColor: colorId_(
             s['Late Cancel Color'],
             EVENT_COLORS.tangerine

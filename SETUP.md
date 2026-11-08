@@ -51,9 +51,10 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 
 - [x] 1. Apps Script editor: replace `Code.gs` and `appsscript.json`; add **+ → Script** files `Billing` and `DashboardApp` (paste `Billing.gs`, `DashboardApp.gs`); add **+ → HTML** file named `Dashboard` (paste `Dashboard.html`). Save. (A script and an HTML file can't share a name.)
 - [x] 2. Run `setup` and **approve the new Calendar permission**. Adds the Payments tab, rate rows on Settings, and a Visit Rate column on Clients. Check the rates on Settings.
-- [x] 3. Calendar: use pawblemsolved's default calendar (`primary`); color labels **Pawblem Walks** (green), **Walk Cancelled** (red), **Walk Cancelled - Late Fee** (orange). (Decided 2026-11-07.)
-  - [ ] 3a. Re-paste `Code.gs` and `Billing.gs`, run `setup` (adds the **Walk Color** row to Settings), then Deploy → Manage deployments → **Dashboard** → ✏️ → New version → Deploy. (Website deployment doesn't need it this time.)
-  - [ ] 3b. Create the step 7 test events, with `TestDog` events colored **Pawblem Walks**, plus one extra event colored **Tomato**. Run `logEventColors` and paste the log to Claude, who will say what to put in Walk / Cancelled / Late Cancel Color.
+- [x] 3. Calendar: use pawblemsolved's default calendar (`primary`); color labels **Pawblem Walks** (green, `10`), **Walk Cancelled** (pink, `4`), **Walk Cancelled - Late Fee** (orange, `6`). Labels must use classic colors; the extended palette reads as blank. (Decided 2026-11-07.)
+  - [x] 3a. Re-paste `Code.gs` and `Billing.gs`, run `setup` (adds the **Walk Color** row to Settings), then Deploy → Manage deployments → **Dashboard** → ✏️ → New version → Deploy. (Website deployment doesn't need it this time.)
+  - [x] 3b. Colors confirmed via logEventColors: Walk 10, Late Fee 6, Cancelled 4.
+  - [ ] 3c. Settings: Walk Color = `10` (done), **Cancelled Color = `4`**, Late Cancel Color = `6`.
 - [x] 4. Website deployment: Deploy → Manage deployments → (website) → ✏️ → New version → Deploy.
 - [x] 5. Dashboard deployment: Deploy → **New deployment** → Web app → Description `Dashboard`, Execute as **Me**, Who has access **Only myself** → Deploy. Copy the URL.
 - [x] 6. Script properties: add `DASHBOARD_URL` = that URL.
