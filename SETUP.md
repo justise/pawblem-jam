@@ -47,7 +47,7 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
   - [x] 4h. Kris: open the TestDog Doc from the Pets tab and confirm it looks right; confirm the folder holds only the 2 linked Docs; confirm a "Forms submitted" email arrived. Then delete test rows (Clients C0001–C0002, Requests R0001, Pets P0001–P0002) and the 2 Docs.
 - [ ] 5. Danielle reviews the agreement wording on `/forms` (adapted from the paper agreement; text lives in `lib/intake.ts` → `AGREEMENT_TEXT`)
 
-## Phase 4 — Calendar billing + phone dashboard  (BLOCKING Phase 5)
+## Phase 4 — Calendar billing + phone dashboard  ✅ working 2026-11-07 (UI needs iteration)
 
 - [x] 1. Apps Script editor: replace `Code.gs` and `appsscript.json`; add **+ → Script** files `Billing` and `DashboardApp` (paste `Billing.gs`, `DashboardApp.gs`); add **+ → HTML** file named `Dashboard` (paste `Dashboard.html`). Save. (A script and an HTML file can't share a name.)
 - [x] 2. Run `setup` and **approve the new Calendar permission**. Adds the Payments tab, rate rows on Settings, and a Visit Rate column on Clients. Check the rates on Settings.
@@ -60,7 +60,7 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 - [x] 6. Script properties: add `DASHBOARD_URL` = that URL.
 - [x] 7. In the walks calendar, create test events (after Tracking Start Date): `TestDog` earlier today (**Pawblem Walks**), `TestDog` tomorrow (**Pawblem Walks**), `TestCat` earlier today labeled **Walk Cancelled - Late Fee**, `Dentist` today (default color), and `TestDog` today at a later hour labeled **Walk Cancelled**. (TestDog/TestCat pets were re-added by Claude on 2026-11-07.)
 - [x] 8. Editor: run `logBillingThisMonth`; paste the log to Claude. Expected (once Walk Color is set): TestDog $45 completed + 1 scheduled + 1 cancelled, TestCat $19 late cancel (50% of $38), Dentist ignored.
-- [ ] 9. Redeploy **Dashboard** (Manage deployments → Dashboard → ✏️ → New version) so it has the latest Billing.gs, then open the dashboard URL on the phone **signed in as pawblemsolved@gmail.com** → check Upcoming / Clients / Billing; record a $1 test payment. Then **Add to Home Screen**.
+- [x] 9. Redeploy **Dashboard** (Manage deployments → Dashboard → ✏️ → New version) so it has the latest Billing.gs, then open the dashboard URL on the phone **signed in as pawblemsolved@gmail.com** → check Upcoming / Clients / Billing; record a $1 test payment. Then **Add to Home Screen**.
 - [ ] 10. Clean up: delete test events, test rows (Clients/Pets/Payments) and test Docs.
 
 ## Decisions needed from Danielle (not blocking)
