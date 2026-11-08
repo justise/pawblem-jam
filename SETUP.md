@@ -54,13 +54,13 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 - [x] 3. Calendar: use pawblemsolved's default calendar (`primary`); color labels **Pawblem Walks** (green, `6`), **Walk Cancelled** (pink, `4`), **Walk Cancelled - Late Fee** (orange, `10`). Labels must use classic colors; the extended palette reads as blank. (Decided 2026-11-07.)
   - [x] 3a. Re-paste `Code.gs` and `Billing.gs`, run `setup` (adds the **Walk Color** row to Settings), then Deploy → Manage deployments → **Dashboard** → ✏️ → New version → Deploy. (Website deployment doesn't need it this time.)
   - [x] 3b. Colors confirmed via logEventColors: Walk 6, Late Fee 10, Cancelled 4 (initially misread as 10/6).
-  - [ ] 3c. Settings: **Walk Color = `6`**, Cancelled Color = `4`, **Late Cancel Color = `10`**; rerun `logEventColors` to confirm.
+  - [x] 3c. Settings: **Walk Color = `6`**, Cancelled Color = `4`, **Late Cancel Color = `10`**; rerun `logEventColors` to confirm.
 - [x] 4. Website deployment: Deploy → Manage deployments → (website) → ✏️ → New version → Deploy.
 - [x] 5. Dashboard deployment: Deploy → **New deployment** → Web app → Description `Dashboard`, Execute as **Me**, Who has access **Only myself** → Deploy. Copy the URL.
 - [x] 6. Script properties: add `DASHBOARD_URL` = that URL.
-- [ ] 7. In the walks calendar, create test events (after Tracking Start Date): `TestDog` earlier today (**Pawblem Walks**), `TestDog` tomorrow (**Pawblem Walks**), `TestCat` earlier today labeled **Walk Cancelled - Late Fee**, `Dentist` today (default color), and `TestDog` today at a later hour labeled **Walk Cancelled**. (TestDog/TestCat pets were re-added by Claude on 2026-11-07.)
-- [ ] 8. Editor: run `logBillingThisMonth`; paste the log to Claude. Expected (once Walk Color is set): TestDog $45 completed + 1 scheduled + 1 cancelled, TestCat $19 late cancel (50% of $38), Dentist ignored.
-- [ ] 9. Open the dashboard URL on the phone **signed in as pawblemsolved@gmail.com** → check Upcoming / Clients / Billing; record a $1 test payment. Then **Add to Home Screen**.
+- [x] 7. In the walks calendar, create test events (after Tracking Start Date): `TestDog` earlier today (**Pawblem Walks**), `TestDog` tomorrow (**Pawblem Walks**), `TestCat` earlier today labeled **Walk Cancelled - Late Fee**, `Dentist` today (default color), and `TestDog` today at a later hour labeled **Walk Cancelled**. (TestDog/TestCat pets were re-added by Claude on 2026-11-07.)
+- [x] 8. Editor: run `logBillingThisMonth`; paste the log to Claude. Expected (once Walk Color is set): TestDog $45 completed + 1 scheduled + 1 cancelled, TestCat $19 late cancel (50% of $38), Dentist ignored.
+- [ ] 9. Redeploy **Dashboard** (Manage deployments → Dashboard → ✏️ → New version) so it has the latest Billing.gs, then open the dashboard URL on the phone **signed in as pawblemsolved@gmail.com** → check Upcoming / Clients / Billing; record a $1 test payment. Then **Add to Home Screen**.
 - [ ] 10. Clean up: delete test events, test rows (Clients/Pets/Payments) and test Docs.
 
 ## Decisions needed from Danielle (not blocking)
