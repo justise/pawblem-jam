@@ -1332,3 +1332,30 @@ ul.icon-list li.cat {
 .intake-form .center {
     text-align: center;
 }
+
+/* Temporary closure notice (components/closedNotice.tsx) */
+.closed-notice {
+    clear: both;
+    background: #fff3e0;
+    border-top: 1px solid #ffd8a8;
+    border-bottom: 1px solid #ffd8a8;
+    color: #5c3d00;
+    padding: 10px 16px;
+    font-size: 0.85em;
+    line-height: 1.4;
+    text-align: center;
+}
+.closed-notice a {
+    text-decoration: underline;
+}
+.closed-request-note {
+    background: #fff3e0;
+    border: 1px solid #ffd8a8;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #5c3d00;
+}
+.closed-notice strong,
+.closed-request-note strong {
+    font-weight: 700;
+}
