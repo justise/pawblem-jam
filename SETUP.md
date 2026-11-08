@@ -33,8 +33,12 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 - [ ] 4. **Verify locally:** ask Claude to run the forms end-to-end test. It submits a test household with a dog and a cat. You confirm the rows, an email "Forms submitted: …", and that two pet sheets appear in Drive folder **Pawblem Solved – Pet Sheets** (then delete test rows + docs)
   - ✅ 2026-11-07: client C0002 + pets P0001/P0002 written with all columns.
   - ❌ Pet sheets not linked: bug (Doc URL read after close). Fixed in code.
-  - [ ] 4a. Re-paste `apps-script/Code.gs` (manifest unchanged) → Deploy → Manage deployments → ✏️ → New version → Deploy
-  - [ ] 4b. Delete any half-made Docs in Drive folder **Pawblem Solved – Pet Sheets**, then tell Claude to rerun the test
+  - [x] 4a. Re-paste `apps-script/Code.gs` (manifest unchanged) → Deploy → Manage deployments → ✏️ → New version → Deploy
+  - [x] 4b. Delete any half-made Docs in Drive folder **Pawblem Solved – Pet Sheets**, then tell Claude to rerun the test
+  - [x] 4c. Script properties: set `PET_SHEETS_FOLDER_ID` = `14jELzEDMJtPi-bLq44uFAgesHteiiKS-` (edit the existing value), then delete the auto-created **Pawblem Solved – Pet Sheets** folder
+  - ❌ 2nd test: rows updated, Pet Sheet still empty. Likely `setItalic` on a Paragraph (not a valid method). Fixed in code.
+  - [ ] 4d. Re-paste `apps-script/Code.gs` → in the editor, select `refreshAllPetSheets` → **Run** (shows any error right there) → if OK, Deploy → Manage deployments → ✏️ → New version → Deploy
+  - [ ] 4e. Delete any TestDog/TestCat Docs from the failed runs (your folder, and the root of pawblemsolved's My Drive), then tell Claude to rerun the test
 - [ ] 5. Danielle reviews the agreement wording on `/forms` (adapted from the paper agreement; text lives in `lib/intake.ts` → `AGREEMENT_TEXT`)
 
 ## Decisions needed from Danielle (not blocking)

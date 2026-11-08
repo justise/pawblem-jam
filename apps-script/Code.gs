@@ -429,14 +429,25 @@ function petSheetsFolder_() {
     var props = PropertiesService.getScriptProperties();
     var id = props.getProperty('PET_SHEETS_FOLDER_ID');
     if (id) {
+        var folder;
         try {
-            var f = DriveApp.getFolderById(id);
-            if (!f.isTrashed()) return f;
-        } catch (e) {}
+            folder = DriveApp.getFolderById(id);
+        } catch (e) {
+            throw new Error(
+                'Cannot open pet sheets folder ' +
+                    id +
+                    ' (check PET_SHEETS_FOLDER_ID and that pawblemsolved@gmail.com can edit it): ' +
+                    e.message
+            );
+        }
+        if (folder.isTrashed()) {
+            throw new Error('Pet sheets folder ' + id + ' is in the trash.');
+        }
+        return folder;
     }
-    var folder = DriveApp.createFolder('Pawblem Solved – Pet Sheets');
-    props.setProperty('PET_SHEETS_FOLDER_ID', folder.getId());
-    return folder;
+    var created = DriveApp.createFolder('Pawblem Solved – Pet Sheets');
+    props.setProperty('PET_SHEETS_FOLDER_ID', created.getId());
+    return created;
 }
 
 function writePetSheet_(pets, pet, client) {
@@ -463,8 +474,9 @@ function writePetSheet_(pets, pet, client) {
         }
     }
     if (!doc) {
+        var folder = petSheetsFolder_(); // before creating, so failures leave no orphan Doc
         doc = DocumentApp.create(title);
-        DriveApp.getFileById(doc.getId()).moveTo(petSheetsFolder_());
+        DriveApp.getFileById(doc.getId()).moveTo(folder);
     } else {
         doc.setName(title);
     }
@@ -488,7 +500,9 @@ function writePetSheet_(pets, pet, client) {
                 'America/Los_Angeles',
                 'MMM d, yyyy'
             )
-    ).setItalic(true);
+    )
+        .editAsText()
+        .setItalic(true);
 
     var petSections = (layout.pet && layout.pet[pet['Species']]) || [
         { title: 'Details', columns: pets.headers },

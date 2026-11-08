@@ -59,6 +59,12 @@ Edit the code, then **Deploy → Manage deployments → ✏️ → Version: New
 version → Deploy**. Editing *the existing* deployment keeps the same URL, so
 Netlify doesn't need changing.
 
+Pet sheet Docs are created in the Drive folder whose ID is in the script property
+`PET_SHEETS_FOLDER_ID` (currently
+[this folder](https://drive.google.com/drive/folders/14jELzEDMJtPi-bLq44uFAgesHteiiKS-)).
+If the property is missing, the script creates a folder and saves its ID there.
+Changing it takes effect immediately; no redeploy needed.
+
 Sheet menu **Pawblem Solved → Refresh all pet sheets** rebuilds the printable Docs after you edit the Sheet by hand.
 
 Optional: use [`clasp`](https://github.com/google/clasp) (`clasp push`) from
