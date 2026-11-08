@@ -81,8 +81,9 @@ current month's billing in the log.
 
 ### Updating the script later
 
-The project has these files: `Code.gs`, `Billing.gs`, `Dashboard.gs`,
-`Dashboard.html` (HTML file named `Dashboard`), and `appsscript.json`.
+The project has these files: `Code.gs`, `Billing.gs`, `DashboardApp.gs`,
+`Dashboard.html` (HTML file named `Dashboard`), and `appsscript.json`. A script
+file and an HTML file can't share a name, hence `DashboardApp`.
 
 Edit the code, then for **each** deployment (Website and Dashboard):
 **Deploy → Manage deployments → select it → ✏️ → Version: New version →

@@ -49,8 +49,8 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 
 ## Phase 4 — Calendar billing + phone dashboard  (BLOCKING Phase 5)
 
-- [ ] 1. Apps Script editor: replace `Code.gs` and `appsscript.json`; add **+ → Script** files `Billing` and `Dashboard` (paste `Billing.gs`, `Dashboard.gs`); add **+ → HTML** file named `Dashboard` (paste `Dashboard.html`). Save.
-- [ ] 2. Run `setup` and **approve the new Calendar permission**. Adds the Payments tab, rate rows on Settings, and a Visit Rate column on Clients. Check the rates on Settings.
+- [x] 1. Apps Script editor: replace `Code.gs` and `appsscript.json`; add **+ → Script** files `Billing` and `DashboardApp` (paste `Billing.gs`, `DashboardApp.gs`); add **+ → HTML** file named `Dashboard` (paste `Dashboard.html`). Save. (A script and an HTML file can't share a name.)
+- [x] 2. Run `setup` and **approve the new Calendar permission**. Adds the Payments tab, rate rows on Settings, and a Visit Rate column on Clients. Check the rates on Settings.
 - [ ] 3. Settings → Calendar ID: leave `primary` if walks are on Danielle's main calendar; otherwise paste the walks calendar's ID (Calendar settings → Integrate calendar → Calendar ID).
 - [ ] 4. Website deployment: Deploy → Manage deployments → (website) → ✏️ → New version → Deploy.
 - [ ] 5. Dashboard deployment: Deploy → **New deployment** → Web app → Description `Dashboard`, Execute as **Me**, Who has access **Only myself** → Deploy. Copy the URL.

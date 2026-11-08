@@ -1,5 +1,6 @@
 /**
- * Owner dashboard (phone-friendly), served by a SEPARATE web app deployment:
+ * DashboardApp.gs (named differently from Dashboard.html, which Apps Script
+ * requires). Owner dashboard (phone-friendly), served by a SEPARATE web app deployment:
  *   Execute as: Me · Who has access: Only myself
  * The website deployment ("Anyone") shares this code, so every entry point
  * checks the viewer is the owner; anonymous visitors get nothing.
