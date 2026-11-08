@@ -464,7 +464,8 @@ function writePetSheet_(pets, pet, client) {
 
     var doc = null;
     var url = String(pet['Pet Sheet'] || '');
-    var match = url.match(/\/d\/([\w-]+)/);
+    // Accept both .../d/<id>/... and ...open?id=<id> (what Doc.getUrl() returns).
+    var match = url.match(/(?:\/d\/|[?&]id=)([\w-]+)/);
     if (match) {
         try {
             doc = DocumentApp.openById(match[1]);

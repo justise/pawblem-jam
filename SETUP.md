@@ -38,8 +38,11 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
   - [x] 4c. Script properties: set `PET_SHEETS_FOLDER_ID` = `14jELzEDMJtPi-bLq44uFAgesHteiiKS-` (edit the existing value), then delete the auto-created **Pawblem Solved – Pet Sheets** folder
   - ❌ 2nd test: rows updated, Pet Sheet still empty. Likely `setItalic` on a Paragraph (not a valid method). Fixed in code.
   - ❌ 4d run: `setHeading` of null — `Paragraph.setText()` returns nothing; fixed in code.
-  - [ ] 4d. Re-paste `apps-script/Code.gs` → in the editor, select `refreshAllPetSheets` → **Run** (shows any error right there) → if OK, Deploy → Manage deployments → ✏️ → New version → Deploy
-  - [ ] 4e. Delete any TestDog/TestCat Docs from the failed runs (your folder, and the root of pawblemsolved's My Drive), then tell Claude to rerun the test
+  - [x] 4d. Re-paste `apps-script/Code.gs` → in the editor, select `refreshAllPetSheets` → **Run** (shows any error right there) → if OK, Deploy → Manage deployments → ✏️ → New version → Deploy
+    - ✅ 3rd test: Pet Sheet links filled. ❌ But resubmits create a NEW Doc each time (Doc.getUrl() returns `open?id=` links the reuse check didn't recognise). Fixed in code.
+  - [ ] 4f. Re-paste `apps-script/Code.gs` → Deploy → Manage deployments → ✏️ → New version → Deploy
+  - [ ] 4g. Share the pet sheets folder with kgray.justise@gmail.com (Viewer) so Claude can verify the Docs
+- [ ] 4e. Delete any TestDog/TestCat Docs from the failed runs (your folder, and the root of pawblemsolved's My Drive), then tell Claude to rerun the test
 - [ ] 5. Danielle reviews the agreement wording on `/forms` (adapted from the paper agreement; text lives in `lib/intake.ts` → `AGREEMENT_TEXT`)
 
 ## Decisions needed from Danielle (not blocking)
