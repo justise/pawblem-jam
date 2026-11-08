@@ -102,17 +102,17 @@ var DEFAULT_SETTINGS = [
     ],
     [
         'Walk Color',
-        'Basil',
+        '6',
         'Event color marking pet visits on a shared calendar. Blank = all events count. Run logEventColors to see values.',
     ],
     [
         'Cancelled Color',
-        'Flamingo',
+        '4',
         'Calendar event color meaning cancelled, no charge.',
     ],
     [
         'Late Cancel Color',
-        'Tangerine',
+        '10',
         'Calendar event color meaning late cancellation.',
     ],
 ];

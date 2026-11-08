@@ -33,16 +33,24 @@ this automatically.
   (extra words like "walk" are fine). Pets of one household in one event are
   billed as one visit ($45 up to 2 dogs, +$3 per extra dog).
 - **Color**: walks live on pawblemsolved's main calendar alongside other
-  events, so visits use named color labels. **Each label must use one of
-  Google's 11 classic event colors**: the newer extended palette is invisible
-  to scripts (both CalendarApp and the Calendar API report no color).
-  - **Pawblem Walks**: green, Basil = `10`. A visit, charged once it has
-    ended (Settings **Walk Color**).
-  - **Walk Cancelled**: pink, Flamingo = `4`. No charge (**Cancelled Color**).
-  - **Walk Cancelled - Late Fee**: orange, Tangerine = `6`. Charged Late
-    Cancel Percent, 50% (**Late Cancel Color**).
-  Classic ids: 1 Lavender, 2 Sage, 3 Grape, 4 Flamingo, 5 Banana,
-  6 Tangerine, 7 Peacock, 8 Graphite, 9 Blueberry, 10 Basil, 11 Tomato. Events in any other color are ignored. Leaving
+  events, so visits use named color labels. Billing compares the color id
+  Google stores on each event, as shown by `logEventColors`:
+  - **Pawblem Walks** (green) = `6`: a visit, charged once it has ended
+    (Settings **Walk Color**)
+  - **Walk Cancelled** (pink) = `4`: no charge (**Cancelled Color**)
+  - **Walk Cancelled - Late Fee** (orange) = `10`: charged Late Cancel
+    Percent, 50% (**Late Cancel Color**)
+
+  Lessons from setup (2026-11-07):
+  - Labels must use a color scripts can see. Some palette colors read as
+    blank from both CalendarApp and the Calendar API.
+  - The ids did **not** match Google's documented classic color names
+    (green read as 6, orange as 10), so always verify with
+    `logEventColors` instead of going by color names.
+  - **Don't change label colors once they're in use.** An event can keep
+    its old stored id while Calendar draws the label's new color, and
+    billing reads the stored id. If it happens, set the event to Default,
+    then re-apply the label. Events in any other color are ignored. Leaving
   Walk Color blank makes every event count. Run `logEventColors` in the
   editor to see the exact color values the script reads.
 - Holidays from the Rates page add the Holiday Surcharge automatically.
