@@ -97,8 +97,9 @@ function colorId_(v, fallback) {
         .toLowerCase();
     if (!s) return fallback;
     if (EVENT_COLORS[s]) return EVENT_COLORS[s];
-    if (/^\d+$/.test(s)) return s;
-    return fallback;
+    // Anything else (an id like "11", or whatever logEventColors() shows for
+    // newer color labels) is compared as-is.
+    return s;
 }
 
 function parseDate_(v) {
@@ -129,6 +130,9 @@ function billingConfigPure_(s) {
             s['Late Cancel Color'],
             EVENT_COLORS.tangerine
         ),
+        // Blank = every event is considered. Set = only events with the walk,
+        // cancelled or late-cancel color count; all others are ignored.
+        walkColor: colorId_(s['Walk Color'], ''),
     };
 }
 
@@ -251,6 +255,15 @@ function computeVisitsPure_(data, now, keyOf) {
 
     data.events.forEach(function (ev) {
         if (ev.allDay || ev.start < cfg.trackingStart) return;
+        var color = String(ev.color || '').toLowerCase();
+        if (
+            cfg.walkColor &&
+            color !== cfg.walkColor &&
+            color !== cfg.cancelledColor &&
+            color !== cfg.lateCancelColor
+        ) {
+            return; // not a walk (e.g. a personal event on the same calendar)
+        }
         var pets = matchPetsPure_(ev.title, data.pets);
         if (!pets.length) {
             unmatched.push({
@@ -265,7 +278,6 @@ function computeVisitsPure_(data, now, keyOf) {
             (byClient[p['Client ID']] = byClient[p['Client ID']] || []).push(p);
         });
 
-        var color = String(ev.color || '');
         var status =
             color === cfg.cancelledColor
                 ? STATUS.CANCELLED
@@ -417,4 +429,43 @@ function invoiceTextPure_(row, periodLabel, cfg) {
         'Thank you!'
     );
     return lines.join('\n');
+}
+
+/**
+ * Run from the editor: lists events from 7 days ago to 7 days ahead with the
+ * color value the script sees, so Walk/Cancelled/Late Cancel Color can be set
+ * to exactly those values.
+ */
+function logEventColors() {
+    var cfg = billingConfig_();
+    var cal =
+        cfg.calendarId === 'primary' || !cfg.calendarId
+            ? CalendarApp.getDefaultCalendar()
+            : CalendarApp.getCalendarById(cfg.calendarId);
+    var now = new Date();
+    var events = cal.getEvents(
+        new Date(now.getTime() - 7 * 864e5),
+        new Date(now.getTime() + 7 * 864e5)
+    );
+    console.log(
+        'Calendar: ' + cal.getName() + ' · ' + events.length + ' event(s)'
+    );
+    events.forEach(function (e) {
+        console.log(
+            Utilities.formatDate(e.getStartTime(), TZ, 'MMM d h:mma') +
+                '  color="' +
+                e.getColor() +
+                '"  ' +
+                e.getTitle()
+        );
+    });
+    console.log(
+        'Settings now: Walk Color="' +
+            cfg.walkColor +
+            '", Cancelled Color="' +
+            cfg.cancelledColor +
+            '", Late Cancel Color="' +
+            cfg.lateCancelColor +
+            '"'
+    );
 }

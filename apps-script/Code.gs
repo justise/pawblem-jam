@@ -101,6 +101,11 @@ var DEFAULT_SETTINGS = [
         'Charged for late cancellations (event colored "Late Cancel Color").',
     ],
     [
+        'Walk Color',
+        '',
+        'Event color marking pet visits on a shared calendar. Blank = all events count. Run logEventColors to see values.',
+    ],
+    [
         'Cancelled Color',
         'Tomato',
         'Calendar event color meaning cancelled, no charge.',
