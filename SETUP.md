@@ -52,10 +52,10 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 - [x] 1. Apps Script editor: replace `Code.gs` and `appsscript.json`; add **+ → Script** files `Billing` and `DashboardApp` (paste `Billing.gs`, `DashboardApp.gs`); add **+ → HTML** file named `Dashboard` (paste `Dashboard.html`). Save. (A script and an HTML file can't share a name.)
 - [x] 2. Run `setup` and **approve the new Calendar permission**. Adds the Payments tab, rate rows on Settings, and a Visit Rate column on Clients. Check the rates on Settings.
 - [ ] 3. Settings → Calendar ID: leave `primary` if walks are on Danielle's main calendar; otherwise paste the walks calendar's ID (Calendar settings → Integrate calendar → Calendar ID).
-- [ ] 4. Website deployment: Deploy → Manage deployments → (website) → ✏️ → New version → Deploy.
+- [x] 4. Website deployment: Deploy → Manage deployments → (website) → ✏️ → New version → Deploy.
 - [ ] 5. Dashboard deployment: Deploy → **New deployment** → Web app → Description `Dashboard`, Execute as **Me**, Who has access **Only myself** → Deploy. Copy the URL.
 - [ ] 6. Script properties: add `DASHBOARD_URL` = that URL.
-- [ ] 7. In the walks calendar, create test events (after Tracking Start Date): `TestDog` earlier today (default color), `TestDog` tomorrow, `TestCat` earlier today colored **Tangerine**, `Dentist` today. Need the TestDog/TestCat pets back first: ask Claude to resubmit the forms test.
+- [ ] 7. In the walks calendar, create test events (after Tracking Start Date): `TestDog` earlier today (default color), `TestDog` tomorrow, `TestCat` earlier today colored **Tangerine**, `Dentist` today. (TestDog/TestCat pets were re-added by Claude on 2026-11-07.)
 - [ ] 8. Editor: run `logBillingThisMonth`; paste the log to Claude. Expected: TestDog $45 completed + 1 scheduled, TestCat $19 late cancel (50% of $38), Dentist unmatched.
 - [ ] 9. Open the dashboard URL on the phone **signed in as pawblemsolved@gmail.com** → check Upcoming / Clients / Billing; record a $1 test payment. Then **Add to Home Screen**.
 - [ ] 10. Clean up: delete test events, test rows (Clients/Pets/Payments) and test Docs.
