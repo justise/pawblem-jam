@@ -13,6 +13,7 @@ costs nothing and needs no third-party services.
 | Settings | Owner email, calendar ID, **Tracking Start Date** (calendar events before this date are ignored for billing) |
 | Clients | One row per household. New website requests come in as `Prospect`; change Status to `Active` once they're a client |
 | Requests | Every service request submitted on the website |
+| Payments | One row per payment received (recorded from the dashboard or typed in directly) |
 | Pets | One row per pet, filled by the online forms at `/forms`. `Calendar Name` is set automatically (pet name, plus client last name if another client's pet already has that name). `Pet Sheet` links to a printable Google Doc in the **Pawblem Solved – Pet Sheets** Drive folder |
 
 Clients also gets the household/vet/agreement columns from the online forms. Form questions are defined in `lib/intake.ts`; the script creates any missing columns automatically.
@@ -20,12 +21,37 @@ Clients also gets the household/vet/agreement columns from the online forms. For
 Columns are matched by header name, so you can add your own columns to the
 right or reorder freely. Don't rename the existing headers.
 
-### Calendar naming convention (for billing, coming later)
+### Calendar naming convention (billing)
 
 Walk/visit events are matched to pets by the **Calendar Name** column on the
 Pets tab. It defaults to the pet's name (e.g. `Buddy`). When two clients have
 pets with the same name, set the Calendar Name to include the last name
-(e.g. `Buddy Smith`) and title calendar events the same way.
+(e.g. `Buddy Smith`) and title calendar events the same way. The forms set
+this automatically.
+
+- **Title**: include each pet's Calendar Name, e.g. `Buddy` or `Buddy & Max`
+  (extra words like "walk" are fine). Pets of one household in one event are
+  billed as one visit ($45 up to 2 dogs, +$3 per extra dog).
+- **Color**: leave the default color for a normal visit (charged once it has
+  ended). **Tomato** (red) = cancelled, no charge. **Tangerine** (orange) =
+  late cancellation, charged Late Cancel Percent (50%).
+- Holidays from the Rates page add the Holiday Surcharge automatically.
+- Events before **Tracking Start Date**, all-day events, and events that
+  name no pet are not billed. Non-matching events are listed under
+  Billing → Unmatched in the dashboard.
+
+Rates are on the Settings tab. A client-specific price can go in the Clients
+**Visit Rate** column (replaces the base walk/visit price for that client).
+
+## Dashboard (phone)
+
+A second web app deployment of the same script, visible only to the
+pawblemsolved@gmail.com account: **Upcoming** visits (call / text / map /
+pet sheet), **Clients** (balances, contact, record a payment), **Billing**
+(per-month totals, copyable invoice text, unmatched events). Sheet menu
+**Pawblem Solved → Open dashboard link** shows the URL (script property
+`DASHBOARD_URL`). From the editor, run `logBillingThisMonth` to see the
+current month's billing in the log.
 
 ## One-time setup (Kris, signed in as pawblemsolved@gmail.com)
 
@@ -55,9 +81,13 @@ pets with the same name, set the Calendar Name to include the last name
 
 ### Updating the script later
 
-Edit the code, then **Deploy → Manage deployments → ✏️ → Version: New
-version → Deploy**. Editing *the existing* deployment keeps the same URL, so
-Netlify doesn't need changing.
+The project has these files: `Code.gs`, `Billing.gs`, `Dashboard.gs`,
+`Dashboard.html` (HTML file named `Dashboard`), and `appsscript.json`.
+
+Edit the code, then for **each** deployment (Website and Dashboard):
+**Deploy → Manage deployments → select it → ✏️ → Version: New version →
+Deploy**. Editing the existing deployment keeps the same URL, so Netlify and
+Danielle's home-screen shortcut don't need changing.
 
 Pet sheet Docs are created in the Drive folder whose ID is in the script property
 `PET_SHEETS_FOLDER_ID` (currently

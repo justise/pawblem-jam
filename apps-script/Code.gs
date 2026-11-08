@@ -26,6 +26,7 @@ var TABS = {
         'Address',
         'Referred By',
         'Notes',
+        'Visit Rate',
     ],
     Requests: [
         'Request ID',
@@ -38,6 +39,15 @@ var TABS = {
         'Dogs',
         'Cats / Other',
         'Comments',
+    ],
+    Payments: [
+        'Payment ID',
+        'Date',
+        'Client ID',
+        'Client Name',
+        'Amount',
+        'Method',
+        'Notes',
     ],
     Pets: [
         'Pet ID',
@@ -70,6 +80,36 @@ var DEFAULT_SETTINGS = [
         '',
         'Calendar events BEFORE this date are ignored for billing (yyyy-mm-dd).',
     ],
+    ['Dog Walk Rate', 45, 'Price per dog walk (covers up to "Dogs Included").'],
+    ['Dogs Included', 2, 'Dogs covered by the base walk price.'],
+    ['Additional Dog Fee', 3, 'Per extra dog beyond "Dogs Included".'],
+    [
+        'Cat Visit Rate',
+        38,
+        'Price per cat visit (covers up to "Cats Included").',
+    ],
+    ['Cats Included', 2, 'Cats covered by the base visit price.'],
+    ['Additional Cat Fee', 3, 'Per extra cat beyond "Cats Included".'],
+    [
+        'Holiday Surcharge',
+        10,
+        'Added per visit on the holidays listed on the Rates page.',
+    ],
+    [
+        'Late Cancel Percent',
+        50,
+        'Charged for late cancellations (event colored "Late Cancel Color").',
+    ],
+    [
+        'Cancelled Color',
+        'Tomato',
+        'Calendar event color meaning cancelled, no charge.',
+    ],
+    [
+        'Late Cancel Color',
+        'Tangerine',
+        'Calendar event color meaning late cancellation.',
+    ],
 ];
 
 var CLIENT_STATUS = {
@@ -87,6 +127,7 @@ function onOpen() {
         .createMenu('Pawblem Solved')
         .addItem('Set up / repair tabs', 'setup')
         .addItem('Refresh all pet sheets', 'refreshAllPetSheets')
+        .addItem('Open dashboard link', 'showDashboardLink')
         .addToUi();
 }
 

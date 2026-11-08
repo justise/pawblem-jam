@@ -22,7 +22,7 @@ Details for steps 1–6: [apps-script/README.md](apps-script/README.md).
 - [ ]   11. **Verify on Netlify:** submit the form on the deploy preview; confirm row + email
 - [ ]   12. Point the `pawblemsolved.com` DNS at Netlify (do this when ready to go live; not blocking Phase 3)
 
-## Phase 3 — Online client & pet forms  (BLOCKING Phase 4)
+## Phase 3 — Online client & pet forms  ✅ verified 2026-11-07
 
 The script gained new code and needs Google Docs + Drive permissions (for the
 printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
@@ -44,8 +44,21 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
   - [ ] 4g. Share the pet sheets folder with kgray.justise@gmail.com (Viewer) so Claude can verify the Docs (optional)
   - [ ] 4e. Delete any TestDog/TestCat Docs from the failed runs (your folder, and the root of pawblemsolved's My Drive), then tell Claude to rerun the test
   - ✅ 4th test (3 submits): Pet Sheet links stable across resubmits (Docs reused); rows updated in place.
-  - [ ] 4h. Kris: open the TestDog Doc from the Pets tab and confirm it looks right; confirm the folder holds only the 2 linked Docs; confirm a "Forms submitted" email arrived. Then delete test rows (Clients C0001–C0002, Requests R0001, Pets P0001–P0002) and the 2 Docs.
+  - [x] 4h. Kris: open the TestDog Doc from the Pets tab and confirm it looks right; confirm the folder holds only the 2 linked Docs; confirm a "Forms submitted" email arrived. Then delete test rows (Clients C0001–C0002, Requests R0001, Pets P0001–P0002) and the 2 Docs.
 - [ ] 5. Danielle reviews the agreement wording on `/forms` (adapted from the paper agreement; text lives in `lib/intake.ts` → `AGREEMENT_TEXT`)
+
+## Phase 4 — Calendar billing + phone dashboard  (BLOCKING Phase 5)
+
+- [ ] 1. Apps Script editor: replace `Code.gs` and `appsscript.json`; add **+ → Script** files `Billing` and `Dashboard` (paste `Billing.gs`, `Dashboard.gs`); add **+ → HTML** file named `Dashboard` (paste `Dashboard.html`). Save.
+- [ ] 2. Run `setup` and **approve the new Calendar permission**. Adds the Payments tab, rate rows on Settings, and a Visit Rate column on Clients. Check the rates on Settings.
+- [ ] 3. Settings → Calendar ID: leave `primary` if walks are on Danielle's main calendar; otherwise paste the walks calendar's ID (Calendar settings → Integrate calendar → Calendar ID).
+- [ ] 4. Website deployment: Deploy → Manage deployments → (website) → ✏️ → New version → Deploy.
+- [ ] 5. Dashboard deployment: Deploy → **New deployment** → Web app → Description `Dashboard`, Execute as **Me**, Who has access **Only myself** → Deploy. Copy the URL.
+- [ ] 6. Script properties: add `DASHBOARD_URL` = that URL.
+- [ ] 7. In the walks calendar, create test events (after Tracking Start Date): `TestDog` earlier today (default color), `TestDog` tomorrow, `TestCat` earlier today colored **Tangerine**, `Dentist` today. Need the TestDog/TestCat pets back first: ask Claude to resubmit the forms test.
+- [ ] 8. Editor: run `logBillingThisMonth`; paste the log to Claude. Expected: TestDog $45 completed + 1 scheduled, TestCat $19 late cancel (50% of $38), Dentist unmatched.
+- [ ] 9. Open the dashboard URL on the phone **signed in as pawblemsolved@gmail.com** → check Upcoming / Clients / Billing; record a $1 test payment. Then **Add to Home Screen**.
+- [ ] 10. Clean up: delete test events, test rows (Clients/Pets/Payments) and test Docs.
 
 ## Decisions needed from Danielle (not blocking)
 
