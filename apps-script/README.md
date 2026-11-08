@@ -33,10 +33,12 @@ this automatically.
   (extra words like "walk" are fine). Pets of one household in one event are
   billed as one visit ($45 up to 2 dogs, +$3 per extra dog).
 - **Color**: walks live on pawblemsolved's main calendar alongside other
-  events, so a visit is marked with the **Pawblem Walks** color label
-  (Settings **Walk Color**; charged once it has ended). **Tomato** (red) =
-  cancelled, no charge. **Tangerine** (orange) = late cancellation, charged
-  Late Cancel Percent (50%). Events in any other color are ignored. Leaving
+  events, so visits use named color labels:
+  - **Pawblem Walks** (green) = a visit, charged once it has ended
+    (Settings **Walk Color**)
+  - **Walk Cancelled** (red) = cancelled, no charge (**Cancelled Color**)
+  - **Walk Cancelled - Late Fee** (orange) = late cancellation, charged Late
+    Cancel Percent, 50% (**Late Cancel Color**) Events in any other color are ignored. Leaving
   Walk Color blank makes every event count. Run `logEventColors` in the
   editor to see the exact color values the script reads.
 - Holidays from the Rates page add the Holiday Surcharge automatically.
