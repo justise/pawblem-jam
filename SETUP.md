@@ -27,10 +27,14 @@ Details for steps 1–6: [apps-script/README.md](apps-script/README.md).
 The script gained new code and needs Google Docs + Drive permissions (for the
 printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 
-- [ ] 1. Apps Script editor: replace `Code.gs` with the new `apps-script/Code.gs`, and `appsscript.json` with the new `apps-script/appsscript.json`. Save.
-- [ ] 2. Run `setup` once and **approve the new permissions** (Docs + Drive). Adds `Pet Sheet` and `Updated` columns to Pets.
-- [ ] 3. Deploy → Manage deployments → ✏️ → Version: **New version** → Deploy (same URL, keep access **Anyone**)
+- [x] 1. Apps Script editor: replace `Code.gs` with the new `apps-script/Code.gs`, and `appsscript.json` with the new `apps-script/appsscript.json`. Save.
+- [x] 2. Run `setup` once and **approve the new permissions** (Docs + Drive). Adds `Pet Sheet` and `Updated` columns to Pets.
+- [x] 3. Deploy → Manage deployments → ✏️ → Version: **New version** → Deploy (same URL, keep access **Anyone**)
 - [ ] 4. **Verify locally:** ask Claude to run the forms end-to-end test. It submits a test household with a dog and a cat. You confirm the rows, an email "Forms submitted: …", and that two pet sheets appear in Drive folder **Pawblem Solved – Pet Sheets** (then delete test rows + docs)
+  - ✅ 2026-11-07: client C0002 + pets P0001/P0002 written with all columns.
+  - ❌ Pet sheets not linked: bug (Doc URL read after close). Fixed in code.
+  - [ ] 4a. Re-paste `apps-script/Code.gs` (manifest unchanged) → Deploy → Manage deployments → ✏️ → New version → Deploy
+  - [ ] 4b. Delete any half-made Docs in Drive folder **Pawblem Solved – Pet Sheets**, then tell Claude to rerun the test
 - [ ] 5. Danielle reviews the agreement wording on `/forms` (adapted from the paper agreement; text lives in `lib/intake.ts` → `AGREEMENT_TEXT`)
 
 ## Decisions needed from Danielle (not blocking)

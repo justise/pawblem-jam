@@ -87,7 +87,9 @@ export default async function handler(
     const client = {
         ...household.row,
         [AGREEMENT_FIELDS.signature.column]: signature,
-        [AGREEMENT_FIELDS.dateColumn]: new Date().toISOString().slice(0, 10),
+        [AGREEMENT_FIELDS.dateColumn]: new Date().toLocaleDateString('en-CA', {
+            timeZone: 'America/Los_Angeles',
+        }),
     };
 
     try {

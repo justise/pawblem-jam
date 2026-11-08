@@ -312,6 +312,7 @@ function handleIntakeForms_(data) {
             r.sheetUrl = writePetSheet_(r.pets, r.pet, client);
         } catch (err) {
             console.error('Pet sheet failed for ' + r.pet['Pet ID'], err);
+            r.sheetError = String((err && err.message) || err);
         }
     });
 
@@ -398,6 +399,8 @@ function notifyIntake_(client, petResults, isNewClient) {
             );
         }
         if (r.sheetUrl) lines.push('   Printable sheet: ' + r.sheetUrl);
+        if (r.sheetError)
+            lines.push('   ⚠ Printable sheet failed: ' + r.sheetError);
     });
     lines.push('', SpreadsheetApp.getActive().getUrl());
     MailApp.sendEmail({
@@ -497,8 +500,9 @@ function writePetSheet_(pets, pet, client) {
         appendSection_(body, s.title, s.columns, client);
     });
 
-    doc.saveAndClose();
+    // Read the URL before closing: a closed Document throws on any access.
     var docUrl = doc.getUrl();
+    doc.saveAndClose();
     pets.update(pet, { 'Pet Sheet': docUrl });
     return docUrl;
 }
