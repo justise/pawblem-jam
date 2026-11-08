@@ -432,9 +432,11 @@ function invoiceTextPure_(row, periodLabel, cfg) {
 }
 
 /**
- * Run from the editor: lists events from 7 days ago to 7 days ahead with the
- * color value the script sees, so Walk/Cancelled/Late Cancel Color can be set
- * to exactly those values.
+ * Run from the editor. For each event from 7 days ago to 7 days ahead, logs
+ * the raw color, whether billing counts it (and why not), matched pets,
+ * status and amount. If the "Google Calendar API" advanced service is
+ * enabled (Editor → Services → +), also logs the API's colorId for
+ * comparison with CalendarApp's getColor().
  */
 function logEventColors() {
     var cfg = billingConfig_();
@@ -443,29 +445,174 @@ function logEventColors() {
             ? CalendarApp.getDefaultCalendar()
             : CalendarApp.getCalendarById(cfg.calendarId);
     var now = new Date();
-    var events = cal.getEvents(
-        new Date(now.getTime() - 7 * 864e5),
-        new Date(now.getTime() + 7 * 864e5)
+    var from = new Date(now.getTime() - 7 * 864e5);
+    var to = new Date(now.getTime() + 7 * 864e5);
+    var events = cal.getEvents(from, to);
+    var pets = table_('Pets').rows;
+    var clients = table_('Clients').rows;
+
+    console.log('=== Settings ===');
+    console.log(
+        'Calendar ID setting="' +
+            cfg.calendarId +
+            '" → using "' +
+            cal.getName() +
+            '" (id ' +
+            cal.getId() +
+            ')'
     );
     console.log(
-        'Calendar: ' + cal.getName() + ' · ' + events.length + ' event(s)'
+        'Tracking Start Date: ' +
+            Utilities.formatDate(cfg.trackingStart, TZ, 'yyyy-MM-dd')
     );
-    events.forEach(function (e) {
-        console.log(
-            Utilities.formatDate(e.getStartTime(), TZ, 'MMM d h:mma') +
-                '  color="' +
-                e.getColor() +
-                '"  ' +
-                e.getTitle()
-        );
-    });
     console.log(
-        'Settings now: Walk Color="' +
+        'Walk Color="' +
             cfg.walkColor +
-            '", Cancelled Color="' +
+            '"' +
+            (cfg.walkColor ? '' : ' (blank: every event counts)') +
+            ' · Cancelled Color="' +
             cfg.cancelledColor +
-            '", Late Cancel Color="' +
+            '" · Late Cancel Color="' +
             cfg.lateCancelColor +
             '"'
     );
+    console.log(
+        'Rates: dog $' +
+            cfg.dogRate +
+            ' (≤' +
+            cfg.dogsIncluded +
+            ' dogs, +$' +
+            cfg.extraDog +
+            ') · cat $' +
+            cfg.catRate +
+            ' (≤' +
+            cfg.catsIncluded +
+            ' cats, +$' +
+            cfg.extraCat +
+            ') · holiday +$' +
+            cfg.holiday +
+            ' · late cancel ' +
+            cfg.lateCancelPct +
+            '%'
+    );
+    console.log(
+        'Active pets / Calendar Names: ' +
+            pets
+                .filter(function (p) {
+                    return String(p['Active']).toLowerCase() !== 'no';
+                })
+                .map(function (p) {
+                    return (
+                        '"' +
+                        p['Calendar Name'] +
+                        '" (' +
+                        p['Species'] +
+                        ', ' +
+                        p['Client ID'] +
+                        ')'
+                    );
+                })
+                .join(', ')
+    );
+
+    // Optional: colorIds straight from the Calendar API (advanced service).
+    var apiColors = {};
+    var apiNote =
+        'Advanced "Google Calendar API" service not enabled; API colorId not shown.';
+    if (typeof Calendar !== 'undefined') {
+        try {
+            var items =
+                Calendar.Events.list(cal.getId(), {
+                    timeMin: from.toISOString(),
+                    timeMax: to.toISOString(),
+                    singleEvents: true,
+                    maxResults: 250,
+                }).items || [];
+            items.forEach(function (it) {
+                var start = it.start && (it.start.dateTime || it.start.date);
+                apiColors[it.summary + '|' + new Date(start).getTime()] =
+                    it.colorId || '';
+            });
+            apiNote = 'Calendar API returned ' + items.length + ' event(s).';
+        } catch (e) {
+            apiNote = 'Calendar API call failed: ' + e.message;
+        }
+    }
+    console.log(apiNote);
+
+    console.log('=== ' + events.length + ' event(s) ===');
+    var counted = 0;
+    events.forEach(function (e) {
+        var start = e.getStartTime();
+        var color = String(e.getColor() || '').toLowerCase();
+        var api = apiColors[e.getTitle() + '|' + start.getTime()];
+        var line =
+            Utilities.formatDate(start, TZ, 'EEE MMM d h:mma') +
+            '  "' +
+            e.getTitle() +
+            '"  getColor="' +
+            color +
+            '"' +
+            (api !== undefined ? '  apiColorId="' + api + '"' : '') +
+            (e.isRecurringEvent() ? '  (recurring)' : '');
+
+        var verdict;
+        if (e.isAllDayEvent()) verdict = 'IGNORED: all-day event';
+        else if (start < cfg.trackingStart)
+            verdict = 'IGNORED: before Tracking Start Date';
+        else if (
+            cfg.walkColor &&
+            color !== cfg.walkColor &&
+            color !== cfg.cancelledColor &&
+            color !== cfg.lateCancelColor
+        )
+            verdict =
+                'IGNORED: color "' +
+                color +
+                '" is not Walk/Cancelled/Late Cancel Color';
+        else {
+            var matched = matchPetsPure_(e.getTitle(), pets);
+            if (!matched.length) {
+                verdict = 'UNMATCHED: no Calendar Name found in title';
+            } else {
+                var r = computeVisitsPure_(
+                    {
+                        cfg: cfg,
+                        clients: clients,
+                        pets: pets,
+                        events: [
+                            {
+                                id: 'x',
+                                title: e.getTitle(),
+                                start: start,
+                                end: e.getEndTime(),
+                                color: color,
+                                allDay: false,
+                            },
+                        ],
+                    },
+                    now,
+                    dayKey_
+                );
+                verdict = r.visits
+                    .map(function (v) {
+                        return (
+                            'COUNTED: ' +
+                            v.clientName +
+                            ' · ' +
+                            v.pets.join(' & ') +
+                            ' · ' +
+                            v.status +
+                            ' · $' +
+                            v.amount.toFixed(2) +
+                            (v.holiday ? ' (' + v.holiday + ')' : '')
+                        );
+                    })
+                    .join(' | ');
+                counted++;
+            }
+        }
+        console.log(line + '\n      → ' + verdict);
+    });
+    console.log('=== ' + counted + ' counted ===');
 }
