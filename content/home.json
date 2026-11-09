@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Dog Walkers & Cat Sitters",
+    "subtitle": "Redmond   North Kirkland",
+    "buttonText": "Request a Service"
+  },
+  "accolades": [
+    {
+      "title": "Expertise.com Best Dog\nWalkers in Redmond",
+      "image": "/images/accolades/Expertise.png",
+      "link": "https://www.expertise.com/wa/redmond/dog-walkers#provider1"
+    },
+    {
+      "title": "Over 25,000 Pawblems\nSolved Since 2010",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Purrfect 5 Star Rating by\nOur Furry Friends and Pet Parents",
+      "image": "/images/accolades/yelp5star.png",
+      "link": "https://www.yelp.com/biz/pawblem-solved-redmond"
+    }
+  ],
+  "whyHeading": "**Why Pawblem Solved** for your pets?",
+  "features": [
+    {
+      "icon": "/images/icons/dog.png",
+      "title": "Responsible",
+      "text": "No Overloaded Schedules"
+    },
+    {
+      "icon": "/images/icons/cat.png",
+      "title": "Trusted",
+      "text": "Licensed, Bonded, Insured"
+    },
+    {
+      "icon": "/images/icons/bulldog.png",
+      "title": "Convienence",
+      "text": "In Home Care & Private Walks\nin Your Neighboorhood"
+    },
+    {
+      "icon": "/images/icons/cat2.png",
+      "title": "Dependable",
+      "text": "Same Walker & Backup\nCoverage for Every Visit."
+    },
+    {
+      "icon": "/images/icons/dog2.png",
+      "title": "Confidence",
+      "text": "Free Meet & Greets to Make Sure\nit's a Great Fit for Pet & Parent."
+    },
+    {
+      "icon": "/images/icons/cat3.png",
+      "title": "Quality",
+      "text": "Founded in 2010 with\nConsistent 5-Star Reviews"
+    }
+  ],
+  "stepsHeading": "**3 simple steps to get started** with Pawblem Solved",
+  "steps": [
+    {
+      "image": "/images/sophie.jpg",
+      "title": "Request Service",
+      "text": "Tell Us About Your Needs",
+      "link": "/request/"
+    },
+    {
+      "image": "/images/consultation2.jpg",
+      "title": "Meet Your Nanny",
+      "text": "Book Your Free Consultation",
+      "link": "/about/"
+    },
+    {
+      "image": "/images/dancingdog.jpg",
+      "title": "Happy Pets",
+      "text": "Begin Operation Tippy Taps",
+      "link": ""
+    }
+  ],
+  "reviewsHeading": "Our customers **love us!**",
+  "facebookReviewCount": 12,
+  "yelpReviewCount": 17,
+  "mapHeading": "Servicing **Redmond**",
+  "mapImage": "/images/redmond-map-min.png",
+  "mapLink": "https://www.google.com/maps/d/edit?mid=1awphgF2VfkxgFm5I6rOHmNvOjDJGDnoo&usp=sharing"
+}
