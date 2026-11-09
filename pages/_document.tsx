@@ -144,6 +144,13 @@ export default function Document() {
                     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
                 />
                 <script src="/scripts/google-analytics.js"></script>
+                {/* Editor invite / password links from Netlify Identity land on
+                    the home page; send them on to the editor at /admin/. */}
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `if(/(invite|recovery|confirmation|email_change)_token=/.test(location.hash))location.replace('/admin/'+location.hash);`,
+                    }}
+                />
                 <meta
                     name="Description"
                     content="Premier Pet Sitting and Dog Walking in the Redmond and North Kirkland areas. Specializing in in-home pet care for your cats and mid-day Mon-Fri dog walks."

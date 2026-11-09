@@ -1,0 +1,144 @@
+# Decap CMS: the site editor at pawblemsolved.com/admin
+# Each "Publish" saves a commit to master; Netlify then rebuilds the site
+# (live in about 1-2 minutes). Docs: https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: git-gateway # sign-in via Netlify Identity (Google login)
+  branch: master
+
+# `npx decap-server` + `npm run dev` lets you edit local files at
+# http://localhost:3000/admin/ without signing in. Ignored on the live site.
+local_backend: true
+
+site_url: https://pawblemsolved.com
+display_url: https://pawblemsolved.com
+logo_url: /images/bigLogo.png
+
+# Uploaded photos go here. The site serves them resized automatically.
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: pages
+    label: Pages
+    description: The text and photos on each page of the website.
+    editor:
+      preview: false
+    files:
+      - name: home
+        label: Home
+        file: content/home.json
+        fields:
+          - label: Top banner
+            name: hero
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - { label: Button text, name: buttonText, widget: string }
+          - label: Highlights (row of three under the banner)
+            name: accolades
+            widget: list
+            allow_add: false
+            summary: '{{fields.title}}'
+            fields:
+              - { label: Title, name: title, widget: text, hint: 'Each new line starts a new line on the page.' }
+              - { label: Image, name: image, widget: image, required: false, hint: 'Leave empty to show the walking-dog icon.' }
+              - { label: Link, name: link, widget: string, required: false }
+          - { label: '"Why us" heading', name: whyHeading, widget: string, hint: 'For bold, put two stars on each side, like `**this**`.' }
+          - label: '"Why us" reasons'
+            name: features
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - { label: Icon, name: icon, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text, hint: 'Each new line starts a new line on the page.' }
+          - { label: '"Getting started" heading', name: stepsHeading, widget: string, hint: 'For bold, put two stars on each side, like `**this**`.' }
+          - label: Getting started steps
+            name: steps
+            widget: list
+            allow_add: false
+            summary: '{{fields.title}}'
+            fields:
+              - { label: Photo, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: string }
+              - { label: Link, name: link, widget: string, required: false, hint: 'A page like /request/ or /about/, or empty for no link.' }
+          - { label: Reviews heading, name: reviewsHeading, widget: string, hint: 'For bold, put two stars on each side, like `**this**`.' }
+          - { label: Number of Facebook reviews, name: facebookReviewCount, widget: number, value_type: int }
+          - { label: Number of Yelp reviews, name: yelpReviewCount, widget: number, value_type: int }
+          - { label: Map heading, name: mapHeading, widget: string, hint: 'For bold, put two stars on each side, like `**this**`.' }
+          - { label: Map image, name: mapImage, widget: image }
+          - { label: Map link, name: mapLink, widget: string }
+
+      - name: services
+        label: Services
+        file: content/services.json
+        fields:
+          - { label: Banner title, name: bannerTitle, widget: string }
+          - { label: Headline, name: statement, widget: text }
+          - { label: Photo, name: image, widget: image }
+          - { label: Photo description, name: imageAlt, widget: string, hint: 'Describes the photo for screen readers and Google.' }
+          - { label: Main text, name: body, widget: richtext, buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list] }
+          - { label: Note at the bottom, name: footnote, widget: richtext, buttons: [bold, italic, link] }
+
+      - name: about
+        label: About
+        file: content/about.json
+        fields:
+          - { label: Banner title, name: bannerTitle, widget: string }
+          - { label: Headline, name: statement, widget: string }
+          - label: People
+            name: people
+            widget: list
+            summary: '{{fields.name}}'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Photo, name: photo, widget: image }
+              - { label: Bio, name: bio, widget: richtext, buttons: [bold, italic, link, heading-five, bulleted-list, numbered-list, quote] }
+
+      - name: faq
+        label: FAQs
+        file: content/faq.json
+        fields:
+          - { label: Banner title, name: bannerTitle, widget: string }
+          - { label: Contact box title, name: summaryTitle, widget: string }
+          - { label: Contact box, name: summary, widget: richtext, buttons: [bold, italic, link, heading-three, bulleted-list] }
+          - { label: Contact box photo, name: summaryImage, widget: image }
+          - { label: Questions title, name: questionsTitle, widget: string }
+          - label: Questions
+            name: questions
+            widget: list
+            summary: '{{fields.question}}'
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: richtext, buttons: [bold, italic, link, bulleted-list, numbered-list] }
+          - label: Side photos
+            name: sideImages
+            widget: list
+            field: { label: Photo, name: image, widget: image }
+
+  - name: settings
+    label: Closed banner
+    description: The "we're closed" notice across the top of every page.
+    editor:
+      preview: false
+    files:
+      - name: closed-notice
+        label: Closed banner
+        file: content/closed-notice.json
+        fields:
+          - { label: Show the banner, name: show, widget: boolean }
+          - { label: Bold headline, name: headline, widget: string }
+          - { label: Message, name: message, widget: string, hint: 'To add a link, type it like this: `[new clients](/request/)`. For bold, put two stars on each side, like `**this**`.' }
+          - label: Hide automatically on
+            name: hideOn
+            widget: datetime
+            required: false
+            date_format: MMMM D, YYYY
+            time_format: false
+            format: YYYY-MM-DD
+            hint: 'The banner disappears by itself on this day. Leave empty to keep it until you switch it off.'
+          - { label: Note on the Request page, name: requestPageNote, widget: text, required: false, hint: 'For bold, put two stars on each side, like `**this**`.' }

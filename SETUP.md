@@ -17,10 +17,10 @@ Details for steps 1–6: [apps-script/README.md](apps-script/README.md).
 - [x]   7. Local `.env`: add `APPS_SCRIPT_URL` and `APPS_SCRIPT_SECRET` (see `.env.example`)
 - [x]   8. **Verify locally:** ask Claude to run the end-to-end test. It submits a test request, and you confirm a row in Clients + Requests and an email at pawblemsolved@gmail.com (then delete the test rows)
   - ✅ 2026-11-07: rows C0001 / R0001 written and email received. Delete the two test rows when convenient.
-- [ ]   9. Netlify: create a site from this repo (build settings come from `netlify.toml`)
-- [ ]   10. Netlify → Site configuration → Environment variables: add `APPS_SCRIPT_URL` and `APPS_SCRIPT_SECRET`
-- [ ]   11. **Verify on Netlify:** submit the form on the deploy preview; confirm row + email
-- [ ]   12. Point the `pawblemsolved.com` DNS at Netlify (do this when ready to go live; not blocking Phase 3)
+- [x]   9. Netlify: create a site from this repo (build settings come from `netlify.toml`)
+- [x]   10. Netlify → Site configuration → Environment variables: add `APPS_SCRIPT_URL` and `APPS_SCRIPT_SECRET`
+- [x]   11. **Verify on Netlify:** submit the form on the deploy preview; confirm row + email
+- [x]   12. Point the `pawblemsolved.com` DNS at Netlify (live 2026-11-08; request form verified on pawblemsolved.com)
 
 ## Phase 3 — Online client & pet forms  ✅ verified 2026-11-07
 
@@ -62,6 +62,19 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 - [x] 8. Editor: run `logBillingThisMonth`; paste the log to Claude. Expected (once Walk Color is set): TestDog $45 completed + 1 scheduled + 1 cancelled, TestCat $19 late cancel (50% of $38), Dentist ignored.
 - [x] 9. Redeploy **Dashboard** (Manage deployments → Dashboard → ✏️ → New version) so it has the latest Billing.gs, then open the dashboard URL on the phone **signed in as pawblemsolved@gmail.com** → check Upcoming / Clients / Billing; record a $1 test payment. Then **Add to Home Screen**.
 - [ ] 10. Clean up: delete test events, test rows (Clients/Pets/Payments) and test Docs.
+
+## Phase 5 — Site editor for Danielle (BLOCKING dashboard iterations)
+
+Editor: Decap CMS at **pawblemsolved.com/admin**, sign-in with Google via Netlify Identity, installable as a desktop app. Editable: Home, Services, About, FAQs text and photos, and the closed banner (`content/*.json`). Each Publish commits to `master` and Netlify redeploys (~1–2 min).
+
+- [ ] 1. Merge the `cms-editor` PR and let Netlify deploy it
+- [ ] 2. Netlify → Project configuration → **Identity** → Enable Identity
+- [ ] 3. Identity → Registration → **Invite only**
+- [ ] 4. Identity → External providers → Add provider → **Google** (default Netlify credentials are fine)
+- [ ] 5. Identity → Services → **Git Gateway** → Enable (branch `master`)
+- [ ] 6. Identity → **Invite users** → Danielle's Gmail address (and yours, to test)
+- [ ] 7. **Verify (Kris):** accept your invite email → you land on `/admin/` → sign in with Google → edit the Closed banner headline → Publish → the change is live within ~2 minutes → change it back
+- [ ] 8. Danielle: accept invite on her computer in Chrome → sign in with Google → click **Install** (address bar icon, or ⋮ → Cast, save and share → Install page as app) to get the **Pawblem Editor** app in her Dock
 
 ## Decisions needed from Danielle (not blocking)
 

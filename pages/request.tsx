@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import { REOPEN_LABEL } from '../lib/siteStatus';
+import { ClosedRequestNote } from '../components/closedNotice';
 
 type Status = 'idle' | 'sending' | 'sent' | 'error';
 
@@ -69,11 +69,7 @@ const Request = () => {
                         </h1>
                     </div>
 
-                    <p className="closed-request-note">
-                        <strong>We reopen {REOPEN_LABEL}.</strong> Requests sent
-                        now are for service starting in January, and we&apos;ll
-                        be in touch before then to set up a free consultation.
-                    </p>
+                    <ClosedRequestNote />
 
                     <div>
                         <br />

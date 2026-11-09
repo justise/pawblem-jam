@@ -1,15 +1,18 @@
 /**
- * Temporary closure. The notice shows until REOPEN_DATE (Pacific time) and
- * then hides itself in the browser, so no redeploy is needed on the day.
- * To remove it for good, delete <ClosedNotice /> from components/header.tsx.
+ * Temporary closure notice. Danielle controls it in the editor
+ * (content/closed-notice.json): "show" turns it on or off, and "hideOn" makes
+ * it disappear by itself on that date (Pacific time) without a redeploy.
  */
-export const REOPEN_DATE = '2027-01-01';
-export const REOPEN_LABEL = 'January 1, 2027';
+import notice from '../content/closed-notice.json';
 
-/** True while the business is still closed (checked in the visitor's browser). */
+export const closedNotice = notice;
+
+/** True while the notice should show (checked again in the visitor's browser). */
 export function isClosed(now: Date = new Date()): boolean {
+    if (!notice.show) return false;
+    if (!notice.hideOn) return true;
     const todayPacific = now.toLocaleDateString('en-CA', {
         timeZone: 'America/Los_Angeles',
     });
-    return todayPacific < REOPEN_DATE;
+    return todayPacific < String(notice.hideOn).slice(0, 10);
 }
