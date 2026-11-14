@@ -1,0 +1,42 @@
+{
+    "bannerTitle": "Rates",
+    "statement": "100% of our time and attention devoted to your pets during every visit.",
+    "sections": [
+        {
+            "name": "Dog walking",
+            "show": true,
+            "image": "/images/tiles/dog15.jpg",
+            "imageAlt": "Dog walking",
+            "body": "## Dog Walking\n\n* $45 per 45 minute walk (up to 2 dogs)\n* $3 for each additional dog"
+        },
+        {
+            "name": "Cat sitting",
+            "show": false,
+            "image": "/images/tiles/cat14.jpg",
+            "imageAlt": "Cat sitting",
+            "body": "## Cat Sitting\n\n* $38 per 30 minute visit for 2 cats\n* $3 for each additional cat"
+        },
+        {
+            "name": "Consultations",
+            "show": true,
+            "image": "/images/tiles/cat13.jpg",
+            "imageAlt": "Cat",
+            "body": "## Consultations\n\nFree: We offer a free in-home consultation, to make sure it's a good fit. This also gives us a chance to meet your pets in their own environment, and view where everything is located; (i.e. leashes, food & water dishes, toys, brushes, etc.).\n\n*Additional Consultations are $10.00 if required; (i.e. you have moved to a new location, situation has changed, additional services are requested, etc.).*"
+        },
+        {
+            "name": "Keys",
+            "show": true,
+            "image": "/images/tiles/dog23.jpg",
+            "imageAlt": "Dog",
+            "body": "## Key Pick-up and Drop-off Information:\n\n* Two (2) keys are requested at the time of the consultation.\n* If you choose to leave the keys with us, they are kept in a safe and secure area. There is no charge for this service.\n* If you would prefer we pick the keys up and drop them off, the following charges apply:\n    * $20.00 Key pick-up\n    * $20.00 Key drop-off"
+        },
+        {
+            "name": "Holiday surcharge",
+            "show": true,
+            "image": "/images/tiles/cat15.jpg",
+            "imageAlt": "Cat",
+            "body": "## Holiday Surcharge\n\nAdditional $10 per visit, for each of the following holidays.\n\n* New Years Day\n* Easter Sunday\n* Memorial Day\n* 4th of July\n* Labor Day\n* Thanksgiving Day\n* Christmas Eve\n* Christmas Day\n* New Years Eve"
+        }
+    ],
+    "footnote": "Less than 24 hour notice will result in a charge equal to 50% of the reserved service amount."
+}

@@ -96,7 +96,7 @@
         'html, body { margin: 0; padding: 0; overflow: hidden; }',
         { raw: true },
     );
-    ['home', 'services', 'about', 'faq', 'closed-notice'].forEach(function (
+    ['home', 'services', 'rates', 'about', 'faq', 'closed-notice'].forEach(function (
         page,
     ) {
         CMS.registerPreviewTemplate(page, pagePreview(page));

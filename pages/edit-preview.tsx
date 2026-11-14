@@ -9,6 +9,7 @@ import {
     AboutBody,
     FaqBody,
     HomeBody,
+    RatesBody,
     ServicesBody,
 } from '../components/pageBodies';
 import {
@@ -60,6 +61,8 @@ function Body({ page, data }: { page: string; data: any }) {
             );
         case 'services':
             return <ServicesBody services={data} />;
+        case 'rates':
+            return <RatesBody rates={data} />;
         case 'about':
             return <AboutBody about={data} />;
         case 'faq':

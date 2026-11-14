@@ -9,11 +9,13 @@ import Link from 'next/link';
 import { InlineMarkdown, Lines, Markdown, imageUrl, slugify } from '../lib/content';
 import type home from '../content/home.json';
 import type services from '../content/services.json';
+import type rates from '../content/rates.json';
 import type about from '../content/about.json';
 import type faq from '../content/faq.json';
 
 export type HomeContent = typeof home;
 export type ServicesContent = typeof services;
+export type RatesContent = typeof rates;
 export type AboutContent = typeof about;
 export type FaqContent = typeof faq;
 
@@ -213,6 +215,49 @@ export function HomeBody({
     );
 }
 
+type PhotoSection = {
+    show?: boolean;
+    image: string;
+    imageAlt: string;
+    body: string;
+};
+
+/** Photo on the left, text on the right, one row per section that's switched on. */
+function PhotoSections({ sections }: { sections?: PhotoSection[] }) {
+    return (
+        <>
+            {(sections || [])
+                .filter((s) => s.show !== false)
+                .map((s, i) => (
+                    <Fragment key={i}>
+                        {i > 0 && (
+                            <>
+                                <hr />
+                                <br />
+                            </>
+                        )}
+                        <div className="yui3-g-r">
+                            <div className="yui3-u-1-3">
+                                <div className="grid-wrapper">
+                                    <img
+                                        src={imageUrl(s.image, 600)}
+                                        alt={s.imageAlt}
+                                    />
+                                </div>
+                            </div>
+                            <div className="yui3-u-2-3">
+                                <Markdown
+                                    className="grid-wrapper"
+                                    text={s.body}
+                                />
+                            </div>
+                        </div>
+                    </Fragment>
+                ))}
+        </>
+    );
+}
+
 export function ServicesBody({ services }: { services: ServicesContent }) {
     return (
         <>
@@ -229,34 +274,7 @@ export function ServicesBody({ services }: { services: ServicesContent }) {
                 <hr />
                 <br />
 
-                {(services.sections || [])
-                    .filter((s) => s.show !== false)
-                    .map((s, i) => (
-                        <Fragment key={i}>
-                            {i > 0 && (
-                                <>
-                                    <hr />
-                                    <br />
-                                </>
-                            )}
-                            <div className="yui3-g-r">
-                                <div className="yui3-u-1-3">
-                                    <div className="grid-wrapper">
-                                        <img
-                                            src={imageUrl(s.image, 600)}
-                                            alt={s.imageAlt}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="yui3-u-2-3">
-                                    <Markdown
-                                        className="grid-wrapper"
-                                        text={s.body}
-                                    />
-                                </div>
-                            </div>
-                        </Fragment>
-                    ))}
+                <PhotoSections sections={services.sections} />
 
                 <hr />
 
@@ -264,6 +282,31 @@ export function ServicesBody({ services }: { services: ServicesContent }) {
                     <br />
                     <Markdown text={services.footnote} />
                 </div>
+            </div>
+        </>
+    );
+}
+
+export function RatesBody({ rates }: { rates: RatesContent }) {
+    return (
+        <>
+            <div className="banner-wrapper">
+                <div className="banner" id="banner-rates"></div>
+                <div className="banner-text">
+                    <h1>{rates.bannerTitle}</h1>
+                </div>
+            </div>
+            <div className="content-text">
+                <div className="statement">
+                    <h1>{rates.statement}</h1>
+                </div>
+                <hr />
+                <br />
+
+                <PhotoSections sections={rates.sections} />
+
+                <hr />
+                <Markdown className="center" text={rates.footnote} />
             </div>
         </>
     );
