@@ -12,6 +12,45 @@
     <link rel="apple-touch-icon" href="/admin/icon-192.png" />
     <!-- Sign-in (Netlify Identity, with Google) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Login page: black top half so the logo's black background blends in,
+         sign-in button on white below. Selectors match Decap 3.17.3's
+         emotion class labels; recheck them when upgrading Decap. -->
+    <style>
+      section[class*='StyledAuthenticationPage'] {
+        justify-content: flex-start;
+        gap: 0;
+        height: auto;
+        min-height: 100vh;
+        box-sizing: border-box;
+        padding: 0 0 72px; /* room for the Decap credit pinned to the bottom */
+        background: linear-gradient(to bottom, #000 50vh, #fff 50vh);
+      }
+      [class*='StyledAuthenticationPage'] > [class*='CustomIconWrapper'] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 50vh;
+        width: 100%;
+        margin: 0;
+        padding: 0 16px;
+      }
+      [class*='StyledAuthenticationPage'] > [class*='CustomIconWrapper'] img {
+        max-width: min(540px, 100%);
+        height: auto;
+      }
+      [class*='StyledAuthenticationPage'] > [class*='LoginButton'] {
+        margin-top: 64px;
+        padding: 0 28px;
+        height: 48px;
+        font-size: 16px;
+        background-color: #000;
+        color: #fff;
+      }
+      [class*='StyledAuthenticationPage'] > [class*='GoBackButtonStyle'] {
+        margin-top: 24px;
+      }
+    </style>
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
