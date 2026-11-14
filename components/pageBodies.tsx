@@ -144,7 +144,7 @@ export function HomeBody({
                         {(home.steps || []).map((s, i) => {
                             const card = (
                                 <>
-                                    <img src={imageUrl(s.image, 800)} />
+                                    <img src={imageUrl(s.image, 800)} loading="lazy" decoding="async" />
                                     <footer>
                                         <h4>{s.title}</h4>
                                         <p>{s.text}</p>
@@ -205,6 +205,8 @@ export function HomeBody({
                     <a href={home.mapLink} target="_blank">
                         <img
                             src={imageUrl(home.mapImage, 1200)}
+                            loading="lazy"
+                            decoding="async"
                             id="map"
                             alt="Image of all the Areas of Redmond and North Kirkland that we service."
                         />
@@ -241,6 +243,8 @@ function PhotoSections({ sections }: { sections?: PhotoSection[] }) {
                                 <div className="grid-wrapper">
                                     <img
                                         src={imageUrl(s.image, 600)}
+                                        loading="lazy"
+                                        decoding="async"
                                         alt={s.imageAlt}
                                     />
                                 </div>
@@ -340,6 +344,8 @@ export function AboutBody({ about }: { about: AboutContent }) {
                                 <div className="grid-wrapper">
                                     <img
                                         src={imageUrl(person.photo, 600)}
+                                        loading="lazy"
+                                        decoding="async"
                                         title={person.name}
                                     />
                                 </div>
@@ -387,6 +393,8 @@ export function FaqBody({ faq }: { faq: FaqContent }) {
                             <h2>&nbsp;</h2>
                             <img
                                 src={imageUrl(faq.summaryImage, 600)}
+                                loading="lazy"
+                                decoding="async"
                                 alt="Cat Sitting in Redmond"
                             />
                         </div>
@@ -432,7 +440,7 @@ export function FaqBody({ faq }: { faq: FaqContent }) {
                                             <br />
                                         </>
                                     )}
-                                    <img src={imageUrl(src, 400)} />
+                                    <img src={imageUrl(src, 400)} loading="lazy" decoding="async" />
                                 </Fragment>
                             ))}
                         </div>

@@ -32,51 +32,6 @@ export default function Document() {
                     name="keywords"
                     content="Redmond Dog Walking, Redmond Cat Sitting, Kirkland Dog Walking, Kirkland Cat Sitting, Pet Care, Dogs, Cats, Danielle Jaffy, Redmond, North Kirkland, Education Hill, English Hill, Washington, 98052, 98053, 98033, 98034"
                 />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/cat2.jpg"
-                    as="image"
-                />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/cat3.jpg"
-                    as="image"
-                />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/dog25.jpg"
-                    as="image"
-                />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/dog2.jpg"
-                    as="image"
-                />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/dog13.jpg"
-                    as="image"
-                />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/dog5.jpg"
-                    as="image"
-                />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/cat5.jpg"
-                    as="image"
-                />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/dog10.jpg"
-                    as="image"
-                />
-                <link
-                    rel="prefetch"
-                    href="/images/banners/dog24.jpg"
-                    as="image"
-                />
 
                 <meta property="fb:app_id" content="1710284432544466" />
                 <meta property="og:type" content="business.business" />

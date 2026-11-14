@@ -1039,10 +1039,12 @@ input {
 /* Banners */
 #content .banner#banner-faq {
     background-image: url(/images/banners/cat2.jpg);
+    background-image: image-set(url(/images/banners/cat2.webp) type('image/webp'), url(/images/banners/cat2.jpg) type('image/jpeg'));
 }
 
 #content .banner#banner-forms {
     background-image: url(/images/banners/dog2.jpg);
+    background-image: image-set(url(/images/banners/dog2.webp) type('image/webp'), url(/images/banners/dog2.jpg) type('image/jpeg'));
 }
 
 #content .banner#banner-home {
@@ -1051,14 +1053,17 @@ input {
 
 #content .banner#banner-jobs {
     background-image: url(/images/banners/dog1.jpg);
+    background-image: image-set(url(/images/banners/dog1.webp) type('image/webp'), url(/images/banners/dog1.jpg) type('image/jpeg'));
 }
 
 #content .banner#banner-team {
     background-image: url(/images/banners/cat3.jpg);
+    background-image: image-set(url(/images/banners/cat3.webp) type('image/webp'), url(/images/banners/cat3.jpg) type('image/jpeg'));
 }
 
 #content .banner#banner-services {
     background-image: url(/images/banners/cat5.jpg);
+    background-image: image-set(url(/images/banners/cat5.webp) type('image/webp'), url(/images/banners/cat5.jpg) type('image/jpeg'));
 }
 
 #content .banner#banner-request {
@@ -1067,6 +1072,7 @@ input {
 
 #content .banner#banner-rates {
     background-image: url(/images/banners/dog25.jpg);
+    background-image: image-set(url(/images/banners/dog25.webp) type('image/webp'), url(/images/banners/dog25.jpg) type('image/jpeg'));
 }
 
 /* Social Icons */
@@ -1125,6 +1131,7 @@ img#map {
     /* Banners */
     #content .banner#banner-faq {
         background-image: url(/images/bannersMobile/dog23.jpg);
+        background-image: image-set(url(/images/bannersMobile/dog23.webp) type('image/webp'), url(/images/bannersMobile/dog23.jpg) type('image/jpeg'));
     }
     #content .banner#banner-forms {
         background-image: url(/images/bannersMobile/dog2.jpg);
@@ -1134,18 +1141,22 @@ img#map {
     }
     #content .banner#banner-jobs {
         background-image: url(/images/bannersMobile/dog1.jpg);
+        background-image: image-set(url(/images/bannersMobile/dog1.webp) type('image/webp'), url(/images/bannersMobile/dog1.jpg) type('image/jpeg'));
     }
     #content .banner#banner-team {
         background-image: url(/images/bannersMobile/cat3.jpg);
+        background-image: image-set(url(/images/bannersMobile/cat3.webp) type('image/webp'), url(/images/bannersMobile/cat3.jpg) type('image/jpeg'));
     }
     #content .banner#banner-services {
         background-image: url(/images/bannersMobile/cat5.jpg);
+        background-image: image-set(url(/images/bannersMobile/cat5.webp) type('image/webp'), url(/images/bannersMobile/cat5.jpg) type('image/jpeg'));
     }
     #content .banner#banner-request {
         background-image: url(/images/bannersMobile/dog24.jpg);
     }
     #content .banner#banner-rates {
         background-image: url(/images/bannersMobile/dog25.jpg);
+        background-image: image-set(url(/images/bannersMobile/dog25.webp) type('image/webp'), url(/images/bannersMobile/dog25.jpg) type('image/jpeg'));
     }
 }
 
