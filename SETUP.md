@@ -63,18 +63,22 @@ printable pet sheets), so it must be re-pasted, re-authorized and redeployed.
 - [x] 9. Redeploy **Dashboard** (Manage deployments → Dashboard → ✏️ → New version) so it has the latest Billing.gs, then open the dashboard URL on the phone **signed in as pawblemsolved@gmail.com** → check Upcoming / Clients / Billing; record a $1 test payment. Then **Add to Home Screen**.
 - [ ] 10. Clean up: delete test events, test rows (Clients/Pets/Payments) and test Docs.
 
-## Phase 5 — Site editor for Danielle (BLOCKING dashboard iterations)
+## Phase 5 — Site editor for Danielle  ✅ done 2026-11-14 (Danielle using it)
 
 Editor: Decap CMS at **pawblemsolved.com/admin**, sign-in with Google via Netlify Identity, installable as a desktop app. Editable: Home, Services, About, FAQs text and photos, and the closed banner (`content/*.json`). Each Publish commits to `master` and Netlify redeploys (~1–2 min).
 
-- [ ] 1. Merge the `cms-editor` PR and let Netlify deploy it
-- [ ] 2. Netlify → Project configuration → **Identity** → Enable Identity
-- [ ] 3. Identity → Registration → **Invite only**
-- [ ] 4. Identity → External providers → Add provider → **Google** (default Netlify credentials are fine)
-- [ ] 5. Identity → Services → **Git Gateway** → Enable (branch `master`)
-- [ ] 6. Identity → **Invite users** → Danielle's Gmail address (and yours, to test)
-- [ ] 7. **Verify (Kris):** accept your invite email → you land on `/admin/` → sign in with Google → edit the Closed banner headline → Publish → the change is live within ~2 minutes → change it back
-- [ ] 8. Danielle: accept invite on her computer in Chrome → sign in with Google → click **Install** (address bar icon, or ⋮ → Cast, save and share → Install page as app) to get the **Pawblem Editor** app in her Dock
+- [x] 1. Merge the `cms-editor` PR and let Netlify deploy it
+- [x] 2. Netlify → Project configuration → **Identity** → Enable Identity
+- [x] 3. Identity → Registration → **Invite only** (confirmed `disable_signup: true` 2026-11-14)
+- [x] 4. Identity → External providers → Add provider → **Google** (default Netlify credentials are fine)
+- [x] 5. Identity → Services → **Git Gateway** → Enable (branch `master`)
+- [x] 6. Identity → **Invite users** → Danielle's Gmail address (and yours, to test)
+- [x] 7. **Verify (Kris):** (publishing works: editor commit `63e6d97` by pawblemsolved, 2026-11-14) accept your invite email → you land on `/admin/` → sign in with Google → edit the Closed banner headline → Publish → the change is live within ~2 minutes → change it back
+- [x] 8. Danielle: accept invite on her computer in Chrome → sign in with Google → click **Install** (address bar icon, or ⋮ → Cast, save and share → Install page as app) to get the **Pawblem Editor** app in her Dock
+
+## Dashboard iterations
+
+- [ ] 1. Site theme (2026-11-14): Apps Script editor → open the `Dashboard` HTML file → replace its contents with `apps-script/Dashboard.html` → Save → Deploy → Manage deployments → **Dashboard** → ✏️ → New version → Deploy. (Website deployment doesn't need it.) Then open the dashboard and check it looks like the preview.
 
 ## Decisions needed from Danielle (not blocking)
 
