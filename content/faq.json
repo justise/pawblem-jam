@@ -1,0 +1,70 @@
+{
+  "bannerTitle": "Frequently Asked Questions",
+  "summaryTitle": "Pawblem Solved",
+  "summary": "### Serving:\n\nRedmond\nNorth Kirkland\n\n### Contact:\n\n(425) 445-7247\n[info@pawblemsolved.com](mailto:info@pawblemsolved.com)\n\nVisit Hours: 9am - 2pm\n\n### Please Note:\n\nDue to the nature of our work, we aren't always able to answer the phone, so please leave a message. If you call on a Friday, we will return your call the following business day.\n\nEmail is preferred for inquiries.",
+  "summaryImage": "/images/tiles/cat18.jpg",
+  "questionsTitle": "Frequently Asked Questions",
+  "questions": [
+    {
+      "question": "What is your mission?",
+      "answer": "Pawblem Solved is here to solve your pawblems and provide peace of mind for pet parent and pet."
+    },
+    {
+      "question": "Why should I hire a professional pet sitter?",
+      "answer": "Professional pet sitters are just what the description implies - professional. While having friends, family, or neighbors care for your pets may seem like a logical choice, however, you may run into a few areas of concern; trust - will they show up? What if they don't have experience working with animals? What happens if there's an emergency? Most professional pet sitters are licensed & and insured. This ensures everyone's protection, including; the owners, the pets, and the sitters, and means you can trust us to act responsibly when we enter your home. Professional pet sitters care for pets for a living and take their jobs very seriously."
+    },
+    {
+      "question": "Is Pawblem Solved Licensed & Insured?",
+      "answer": "Yes! We are licensed & insured through Business Insurers of the Carolinas"
+    },
+    {
+      "question": "How much time do you spend at each visit with my pet?",
+      "answer": "The standard visiting time is 30 minutes. We believe this gives your pet just the right amount of time to provide meals, exercise, play-time, human interaction, attention and lots of snuggles. As long as we have the availability, we are definitely open to spending more time with your pet; however, there will be an additional charge. Please note; 30 minutes is the minimum time we offer."
+    },
+    {
+      "question": "Will my dog be walked individually or in a group?",
+      "answer": "We will walk up to three dogs in the same household. Some dogs do not behave well with others, so to ensure the safety of your dog(s), we only provide individual, private walks."
+    },
+    {
+      "question": "Who will be walking my dog or taking care of my pets?",
+      "answer": "Danielle, founder of Pawblem Solved, currently does all pet sits & dog walks."
+    },
+    {
+      "question": "If my pet has been / is aggressive, can I still use your service?",
+      "answer": "We take the safety of your pets and ourselves very seriously. If we feel uncomfortable about a particular situation, we reserve the right to discontinue or pass on the service."
+    },
+    {
+      "question": "Do you walk in any weather, all year long?",
+      "answer": "We care for pets all year long in any weather, however, We do ask that you leave a key with a neighbor and provide us with their contact information in case of extreme weather conditions."
+    },
+    {
+      "question": "When do I give you my keys? How do I get them back from you?",
+      "answer": "We ask that you provide a set of keys during the initial consultation. We will return keys once at no charge. For future pet sitting assignments a fee of $20 per trip will apply if you would like us to continue to pick-up and drop-off your keys. Clients who choose to keep a key on file with us enjoy the speed and convenience of booking their next reservation."
+    },
+    {
+      "question": "What type of payment do you accept?",
+      "answer": "We accept cash, check."
+    },
+    {
+      "question": "What are your service hours?",
+      "answer": "Pets are visited between the hours of 9:00am and 2:00pm. The actual time your pet is visited depends on a variety of logistical situations such as location, traffic, construction and proximity to other pet sitting clients. We will try to get as close to a time that you request but cannot guarantee it."
+    },
+    {
+      "question": "What is your cancellation policy?",
+      "answer": "Your visits are very important to Pawblem Solved and are reserved especially for you and your pets. We understand that sometimes schedule adjustments are necessary; therefore, we respectfully request at least 24 hours notice for cancellations.\n\nPlease understand that when you cancel your visit without giving enough notice, we miss the opportunity to fill that time.\n\nLess than 24 hour notice will result in a charge equal to 50% of the reserved service amount."
+    },
+    {
+      "question": "What areas do you service?",
+      "answer": "We serve Redmond and North Kirkland, WA."
+    }
+  ],
+  "sideImages": [
+    "/images/tiles/cat12.jpg",
+    "/images/tiles/cat10.jpg",
+    "/images/tiles/dog7.jpg",
+    "/images/tiles/cat8.jpg",
+    "/images/tiles/dog14.jpg",
+    "/images/tiles/cat11.jpg",
+    "/images/tiles/dog19.jpg"
+  ]
+}

@@ -1356,6 +1356,10 @@ ul.icon-list li.cat {
     color: #5c3d00;
 }
 .closed-notice strong,
-.closed-request-note strong {
+.closed-request-note strong,
+.closed-request-note b {
     font-weight: 700;
+}
+.content-text .closed-request-note b {
+    color: #d42c2c;
 }
