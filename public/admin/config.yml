@@ -76,9 +76,17 @@ collections:
         fields:
           - { label: Banner title, name: bannerTitle, widget: string }
           - { label: Headline, name: statement, widget: text }
-          - { label: Photo, name: image, widget: image }
-          - { label: Photo description, name: imageAlt, widget: string, hint: 'Describes the photo for screen readers and Google.' }
-          - { label: Main text, name: body, widget: richtext, modes: [rich_text], editor_components: [], buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list] }
+          - label: Services
+            name: sections
+            widget: list
+            summary: '{{fields.name}}'
+            hint: 'Each service is a photo with text beside it. Drag to reorder.'
+            fields:
+              - { label: Name, name: name, widget: string, hint: 'Only shown here in the editor, to tell the services apart.' }
+              - { label: Show on site, name: show, widget: boolean, default: true, hint: 'Turn off to hide this service without deleting its text.' }
+              - { label: Photo, name: image, widget: image }
+              - { label: Photo description, name: imageAlt, widget: string, hint: 'Describes the photo for screen readers and Google.' }
+              - { label: Text, name: body, widget: richtext, modes: [rich_text], editor_components: [], buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list] }
           - { label: Note at the bottom, name: footnote, widget: richtext, modes: [rich_text], editor_components: [], buttons: [bold, italic, link] }
 
       - name: about

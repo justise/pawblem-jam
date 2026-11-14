@@ -1,8 +1,21 @@
 {
-  "bannerTitle": "Services",
-  "statement": "Offering the best in on-leash walks right in your neighborhood, and loving in-home pet care.",
-  "image": "/images/tiles/dog13.jpg",
-  "imageAlt": "Cute Dog Pose",
-  "body": "## Monday Through Friday Mid-Day Dog Walks\n\nThis service is for those pets that need a little TLC, fresh air and time to stretch their legs during the work week.\n\nWalks are typically **45** minutes in duration and can vary from 1 to 5 times per week depending upon the owners work schedule and the dogs needs.\n\nFree daily updates available via text message or email.\n\n## All Services Include\n\n* Private and personalized dog walks for up to 2 dogs in the same household\n* Your dog(s) will be walked on-leash around its own neighborhood to ensure its safety and comfort\n* Reinforced training (if applicable)\n* Fresh water & treats\n* Food refill & brushing (upon request)\n* We provide poop bags and discard of all waste\n* Photo updates of your furry family!\n* And of course, tons of love, attention and playtime!\n\n*Please Note: Pawblem Solved does not offer boarding, day care, overnight stays or group park visits.*",
-  "footnote": "*Please inquire for sitting services regarding any other type of pet or additional visiting times.*"
+    "bannerTitle": "Services",
+    "statement": "Offering the best in on-leash walks right in your neighborhood, and loving in-home pet care.",
+    "sections": [
+        {
+            "name": "Dog walks",
+            "show": true,
+            "image": "/images/tiles/dog13.jpg",
+            "imageAlt": "Cute Dog Pose",
+            "body": "## Monday Through Friday Mid-Day Dog Walks\n\nThis service is for those pets that need a little TLC, fresh air and time to stretch their legs during the work week.\n\nWalks are typically **45** minutes in duration and can vary from 1 to 5 times per week depending upon the owners work schedule and the dogs needs.\n\nFree daily updates available via text message or email.\n\n## All Services Include\n\n* Private and personalized dog walks for up to 2 dogs in the same household\n* Your dog(s) will be walked on-leash around its own neighborhood to ensure its safety and comfort\n* Reinforced training (if applicable)\n* Fresh water & treats\n* Food refill & brushing (upon request)\n* We provide poop bags and discard of all waste\n* Photo updates of your furry family!\n* And of course, tons of love, attention and playtime!\n\n*Please Note: Pawblem Solved does not offer boarding, day care, overnight stays or group park visits.*"
+        },
+        {
+            "name": "Cat & small animal sitting",
+            "show": true,
+            "image": "/images/tiles/cat3.jpg",
+            "imageAlt": "Cute Cat Pose",
+            "body": "## In-Home Pet Sitting for Cats and Other Small Animals\n\nThis is a great option for pet parents that prefer to keep their furry family in the comforts of their own home while on vacation or business.\n\nVisits are typically **45** minutes and can range from 1 to 3 times per day depending upon the needs of the owner and pet.\n\nWe are happy to water plants, pickup mail, alternate house lights and collect newspapers at no additional charge.\n\nFree daily updates available via Paw Logs, text message, or email.\n\n## All Services Include\n\n* Private and personalized in-home care for up to 5 cats in the same household\n* Daily cleaning of the litter box(s)\n* Fresh water & treats\n* Food refill\n* Brushing (upon request)\n* Photo updates of your furry family!\n* And of course, tons of love, attention and playtime!"
+        }
+    ],
+    "footnote": "*Please inquire for sitting services regarding any other type of pet or additional visiting times.*"
 }

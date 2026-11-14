@@ -229,22 +229,34 @@ export function ServicesBody({ services }: { services: ServicesContent }) {
                 <hr />
                 <br />
 
-                <div className="yui3-g-r">
-                    <div className="yui3-u-1-3">
-                        <div className="grid-wrapper">
-                            <img
-                                src={imageUrl(services.image, 600)}
-                                alt={services.imageAlt}
-                            />
-                        </div>
-                    </div>
-                    <div className="yui3-u-2-3">
-                        <Markdown
-                            className="grid-wrapper"
-                            text={services.body}
-                        />
-                    </div>
-                </div>
+                {(services.sections || [])
+                    .filter((s) => s.show !== false)
+                    .map((s, i) => (
+                        <Fragment key={i}>
+                            {i > 0 && (
+                                <>
+                                    <hr />
+                                    <br />
+                                </>
+                            )}
+                            <div className="yui3-g-r">
+                                <div className="yui3-u-1-3">
+                                    <div className="grid-wrapper">
+                                        <img
+                                            src={imageUrl(s.image, 600)}
+                                            alt={s.imageAlt}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="yui3-u-2-3">
+                                    <Markdown
+                                        className="grid-wrapper"
+                                        text={s.body}
+                                    />
+                                </div>
+                            </div>
+                        </Fragment>
+                    ))}
 
                 <hr />
 
