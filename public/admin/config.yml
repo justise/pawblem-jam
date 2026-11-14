@@ -145,6 +145,16 @@ collections:
             widget: list
             field: { label: Photo, name: image, widget: image }
 
+      - name: request
+        label: Request a Service
+        file: content/request.json
+        fields:
+          - { label: Banner title, name: bannerTitle, widget: string }
+          - { label: Headline, name: statement, widget: text }
+          - { label: Text above the form, name: intro, widget: richtext, modes: [rich_text], editor_components: [], buttons: [bold, italic, link, heading-three, bulleted-list, numbered-list], hint: 'Welcome note and current availability. The form itself can’t be changed here.' }
+          - { label: Thank-you headline, name: thankYouTitle, widget: string, hint: 'Shown after someone sends the form.' }
+          - { label: Thank-you message, name: thankYouMessage, widget: text }
+
   - name: settings
     label: Closed banner
     description: The "we're closed" notice across the top of every page.

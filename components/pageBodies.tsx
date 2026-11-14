@@ -6,18 +6,26 @@
  */
 import { Fragment, type ReactNode } from 'react';
 import Link from 'next/link';
-import { InlineMarkdown, Lines, Markdown, imageUrl, slugify } from '../lib/content';
+import {
+    InlineMarkdown,
+    Lines,
+    Markdown,
+    imageUrl,
+    slugify,
+} from '../lib/content';
 import type home from '../content/home.json';
 import type services from '../content/services.json';
 import type rates from '../content/rates.json';
 import type about from '../content/about.json';
 import type faq from '../content/faq.json';
+import type request from '../content/request.json';
 
 export type HomeContent = typeof home;
 export type ServicesContent = typeof services;
 export type RatesContent = typeof rates;
 export type AboutContent = typeof about;
 export type FaqContent = typeof faq;
+export type RequestContent = typeof request;
 
 /** Rows of three, matching the original grid. */
 function rowsOf3<T>(items: T[]): T[][] {
@@ -144,7 +152,11 @@ export function HomeBody({
                         {(home.steps || []).map((s, i) => {
                             const card = (
                                 <>
-                                    <img src={imageUrl(s.image, 800)} loading="lazy" decoding="async" />
+                                    <img
+                                        src={imageUrl(s.image, 800)}
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
                                     <footer>
                                         <h4>{s.title}</h4>
                                         <p>{s.text}</p>
@@ -409,7 +421,9 @@ export function FaqBody({ faq }: { faq: FaqContent }) {
                                 <ul>
                                     {questions.map((q, i) => (
                                         <li key={i}>
-                                            <a href={`#${slugify(q.question || '')}`}>
+                                            <a
+                                                href={`#${slugify(q.question || '')}`}
+                                            >
                                                 {q.question}
                                             </a>
                                         </li>
@@ -440,7 +454,11 @@ export function FaqBody({ faq }: { faq: FaqContent }) {
                                             <br />
                                         </>
                                     )}
-                                    <img src={imageUrl(src, 400)} loading="lazy" decoding="async" />
+                                    <img
+                                        src={imageUrl(src, 400)}
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
                                 </Fragment>
                             ))}
                         </div>
@@ -448,5 +466,50 @@ export function FaqBody({ faq }: { faq: FaqContent }) {
                 </div>
             </div>
         </>
+    );
+}
+
+/** Request page banner and headline. */
+export function RequestTop({ request }: { request: RequestContent }) {
+    return (
+        <div className="banner-wrapper">
+            <div className="banner" id="banner-request"></div>
+            <div className="banner-text">
+                <h1>{request.bannerTitle}</h1>
+            </div>
+        </div>
+    );
+}
+
+export function RequestStatement({ request }: { request: RequestContent }) {
+    return (
+        <div className="statement">
+            <h1>{request.statement}</h1>
+        </div>
+    );
+}
+
+/** Shown in place of the form once a request is sent. */
+export function RequestThankYou({ request }: { request: RequestContent }) {
+    return (
+        <div className="statement request-confirmation">
+            <h1>
+                <strong>{request.thankYouTitle}</strong>
+                <br />
+                <Lines text={request.thankYouMessage} />
+            </h1>
+            <br />
+            <br />
+        </div>
+    );
+}
+
+/** Welcome and availability text above the form. */
+export function RequestIntro({ request }: { request: RequestContent }) {
+    return (
+        <div className="request-intro">
+            <br />
+            <Markdown text={request.intro} />
+        </div>
     );
 }

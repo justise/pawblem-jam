@@ -67,10 +67,10 @@
                         page: page,
                         data: resolveImages(
                             data ? data.toJS() : {},
-                            this.props.getAsset,
+                            this.props.getAsset
                         ),
                     },
-                    ORIGIN,
+                    ORIGIN
                 );
             },
             render: function () {
@@ -94,11 +94,17 @@
 
     CMS.registerPreviewStyle(
         'html, body { margin: 0; padding: 0; overflow: hidden; }',
-        { raw: true },
+        { raw: true }
     );
-    ['home', 'services', 'rates', 'about', 'faq', 'closed-notice'].forEach(function (
-        page,
-    ) {
+    [
+        'home',
+        'services',
+        'rates',
+        'about',
+        'faq',
+        'request',
+        'closed-notice',
+    ].forEach(function (page) {
         CMS.registerPreviewTemplate(page, pagePreview(page));
     });
 })();

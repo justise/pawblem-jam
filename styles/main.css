@@ -1374,3 +1374,8 @@ ul.icon-list li.cat {
 .content-text .closed-request-note b {
     color: #d42c2c;
 }
+
+/* Headings in the Request page's editable text, e.g. "Dog Walks". */
+.content-text .request-intro h3 {
+    margin: 0 0 24px 0;
+}

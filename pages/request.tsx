@@ -2,6 +2,13 @@ import { useState, type FormEvent } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { ClosedRequestNote } from '../components/closedNotice';
+import {
+    RequestIntro,
+    RequestStatement,
+    RequestThankYou,
+    RequestTop,
+} from '../components/pageBodies';
+import request from '../content/request.json';
 
 type Status = 'idle' | 'sending' | 'sent' | 'error';
 
@@ -38,65 +45,16 @@ const Request = () => {
         <div id="container">
             <Header selectedTab="request"></Header>
             <div id="content">
-                <div className="banner-wrapper">
-                    <div className="banner" id="banner-request"></div>
-                    <div className="banner-text">
-                        <h1>Request a Service</h1>
-                    </div>
-                </div>
+                <RequestTop request={request} />
 
                 <div className="content-text">
-                    {status === 'sent' && (
-                        <div className="statement request-confirmation">
-                            <h1>
-                                <strong>
-                                    Thank you so much for your request!
-                                </strong>
-                                <br />
-                                We will get back to you shortly on the next
-                                steps for caring for your pet(s)!
-                            </h1>
-                            <br />
-                            <br />
-                        </div>
-                    )}
+                    {status === 'sent' && <RequestThankYou request={request} />}
 
-                    <div className="statement">
-                        <h1>
-                            Pawblem Solved offers mid-day dog walks while you're
-                            at work and cat visits in Redmond and North
-                            Kirkland.
-                        </h1>
-                    </div>
+                    <RequestStatement request={request} />
 
                     <ClosedRequestNote />
 
-                    <div>
-                        <br />
-                        <p>
-                            Thank you so much for your interest in Pawblem
-                            Solved!
-                        </p>
-                        <p>Please check below for our current availability -</p>
-                        <div className="paragraph">
-                            <h3>Dog Walks</h3>
-                        </div>
-                        <p>
-                            Location: All Service Areas
-                            <br />
-                            Walk Time-Frame: 9am - 2pm
-                            <br />
-                            Days: Monday, Tuesday, Wednesday, Thursday, Friday;
-                            1-5 walks per week
-                            <br />
-                        </p>
-
-                        <p>Thanks again!</p>
-                        <p>
-                            We look forward to meeting some new furry friends!
-                        </p>
-                        <p>Danielle, Pawblem Solved</p>
-                    </div>
+                    <RequestIntro request={request} />
 
                     {status !== 'sent' && (
                         <form onSubmit={handleSubmit}>

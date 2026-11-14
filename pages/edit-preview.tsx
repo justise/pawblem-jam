@@ -10,6 +10,10 @@ import {
     FaqBody,
     HomeBody,
     RatesBody,
+    RequestIntro,
+    RequestStatement,
+    RequestThankYou,
+    RequestTop,
     ServicesBody,
 } from '../components/pageBodies';
 import {
@@ -35,7 +39,10 @@ function ClosedNoticePreview({ notice }: { notice: any }) {
                 <ClosedNoticeBar notice={notice} />
             </div>
             <p className="edit-preview-label">Note on the Request page:</p>
-            <div className="content-text" style={{ opacity: showing ? 1 : 0.5 }}>
+            <div
+                className="content-text"
+                style={{ opacity: showing ? 1 : 0.5 }}
+            >
                 {notice.requestPageNote ? (
                     <ClosedRequestNoteText notice={notice} />
                 ) : (
@@ -67,6 +74,25 @@ function Body({ page, data }: { page: string; data: any }) {
             return <AboutBody about={data} />;
         case 'faq':
             return <FaqBody faq={data} />;
+        case 'request':
+            return (
+                <>
+                    <RequestTop request={data} />
+                    <div className="content-text">
+                        <RequestStatement request={data} />
+                        <RequestIntro request={data} />
+                        <p className="edit-preview-label">
+                            (The request form appears here)
+                        </p>
+                        <hr />
+                        <p className="edit-preview-label">
+                            After someone sends the form, the top of the page
+                            shows:
+                        </p>
+                        <RequestThankYou request={data} />
+                    </div>
+                </>
+            );
         case 'closed-notice':
             return <ClosedNoticePreview notice={data} />;
         default:
@@ -86,7 +112,7 @@ export default function EditPreview() {
         // Ask the editor for the current content.
         window.parent.postMessage(
             { type: 'pawblem-preview-ready' },
-            window.location.origin,
+            window.location.origin
         );
         return () => window.removeEventListener('message', onMessage);
     }, []);
