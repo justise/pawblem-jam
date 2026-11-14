@@ -5,13 +5,13 @@
         {
             "name": "Dog walking",
             "show": true,
-            "image": "/images/tiles/dog15.jpg",
+            "image": "/images/taz.jpg",
             "imageAlt": "Dog walking",
             "body": "## Dog Walking\n\n* $45 per 45 minute walk (up to 2 dogs)\n* $3 for each additional dog"
         },
         {
             "name": "Cat sitting",
-            "show": false,
+            "show": true,
             "image": "/images/tiles/cat14.jpg",
             "imageAlt": "Cat sitting",
             "body": "## Cat Sitting\n\n* $38 per 30 minute visit for 2 cats\n* $3 for each additional cat"

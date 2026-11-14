@@ -5,7 +5,6 @@ export const NAV_ITEMS = [
     { id: 'home', href: '/', label: 'Home' },
     { id: 'services', href: '/services', label: 'Services' },
     { id: 'rates', href: '/rates', label: 'Rates' },
-    { id: 'forms', href: '/forms', label: 'Forms' },
     { id: 'about', href: '/about', label: 'About' },
     { id: 'faq', href: '/faq', label: 'FAQs' },
     { id: 'request', href: '/request', label: 'Request a Service' },

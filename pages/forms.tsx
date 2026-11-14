@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from 'react';
+import Head from 'next/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import {
@@ -210,6 +211,10 @@ const Forms = () => {
 
     return (
         <div id="container">
+            <Head>
+                {/* Shared by link only: keep it out of Google and other search engines. */}
+                <meta name="robots" content="noindex, nofollow" />
+            </Head>
             <Header selectedTab="forms"></Header>
             <div id="content">
                 <div className="banner-wrapper">
