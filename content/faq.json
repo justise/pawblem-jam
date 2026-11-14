@@ -1,7 +1,7 @@
 {
   "bannerTitle": "Frequently Asked Questions",
   "summaryTitle": "Pawblem Solved",
-  "summary": "### Serving:\n\nRedmond\nNorth Kirkland\n\n### Contact:\n\n(425) 445-7247\n[info@pawblemsolved.com](mailto:info@pawblemsolved.com)\n\nVisit Hours: 9am - 2pm\n\n### Please Note:\n\nDue to the nature of our work, we aren't always able to answer the phone, so please leave a message. If you call on a Friday, we will return your call the following business day.\n\nEmail is preferred for inquiries.",
+  "summary": "### Serving:\n\nRedmond\n\n### Contact:\n\n(425) 445-7247\n[info@pawblemsolved.com](mailto:info@pawblemsolved.com)\n\nVisit Hours: 9am - 2pm\n\n### Please Note:\n\nDue to the nature of our work, we aren't always able to answer the phone, so please leave a message. If you call on a Friday, we will return your call the following business day.\n\nEmail is preferred for inquiries.",
   "summaryImage": "/images/tiles/cat18.jpg",
   "questionsTitle": "Frequently Asked Questions",
   "questions": [
@@ -11,19 +11,19 @@
     },
     {
       "question": "Why should I hire a professional pet sitter?",
-      "answer": "Professional pet sitters are just what the description implies - professional. While having friends, family, or neighbors care for your pets may seem like a logical choice, however, you may run into a few areas of concern; trust - will they show up? What if they don't have experience working with animals? What happens if there's an emergency? Most professional pet sitters are licensed & and insured. This ensures everyone's protection, including; the owners, the pets, and the sitters, and means you can trust us to act responsibly when we enter your home. Professional pet sitters care for pets for a living and take their jobs very seriously."
+      "answer": "Professional pet sitters are just what the description implies - professional. While having friends, family, or neighbors care for your pets may seem like a logical choice, there are areas of concern; will they show up? What if they don't have experience working with animals? What happens if there's an emergency? Most professional pet sitters are licensed & insured. This ensures everyone's protection, including the owners, pets, and sitters, and means you can trust us to act responsibly when we enter your home. Professional pet sitters care for pets for a living and we take our jobs very seriously."
     },
     {
       "question": "Is Pawblem Solved Licensed & Insured?",
-      "answer": "Yes! We are licensed & insured through Business Insurers of the Carolinas"
+      "answer": "Yes! We are licensed & insured through Pet Sitters Associates (Beginning January 1, 2027)"
     },
     {
       "question": "How much time do you spend at each visit with my pet?",
-      "answer": "The standard visiting time is 30 minutes. We believe this gives your pet just the right amount of time to provide meals, exercise, play-time, human interaction, attention and lots of snuggles. As long as we have the availability, we are definitely open to spending more time with your pet; however, there will be an additional charge. Please note; 30 minutes is the minimum time we offer."
+      "answer": "The standard visiting time is 45 minutes. We believe this gives your pet just the right amount of time to provide meals, exercise, play-time, human interaction, attention and lots of snuggles. As long as we have the availability, we are definitely open to spending more time with your pet; however, there will be an additional charge. Please note; 45 minutes is the minimum time we offer."
     },
     {
       "question": "Will my dog be walked individually or in a group?",
-      "answer": "We will walk up to three dogs in the same household. Some dogs do not behave well with others, so to ensure the safety of your dog(s), we only provide individual, private walks."
+      "answer": "We will walk up to two dogs in the same household. Some dogs do not behave well with others, so to ensure the safety of your dog(s), we only provide individual, private walks."
     },
     {
       "question": "Who will be walking my dog or taking care of my pets?",
@@ -43,7 +43,7 @@
     },
     {
       "question": "What type of payment do you accept?",
-      "answer": "We accept cash, check."
+      "answer": "We accept cash, check, Venmo, Zelle"
     },
     {
       "question": "What are your service hours?",
@@ -55,7 +55,7 @@
     },
     {
       "question": "What areas do you service?",
-      "answer": "We serve Redmond and North Kirkland, WA."
+      "answer": "We serve Redmond, WA."
     }
   ],
   "sideImages": [
