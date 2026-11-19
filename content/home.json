@@ -1,9 +1,27 @@
 {
-  "hero": {
-    "title": "Dog Walkers & Cat Sitters",
-    "subtitle": "Redmond",
-    "buttonText": "Request a Service"
-  },
+  "mapHeading": "Servicing **Redmond, WA**",
+  "yelpReviewCount": 17,
+  "reviewsHeading": "Our customers **love us!**",
+  "steps": [
+    {
+      "image": "/images/sophie.jpg",
+      "title": "Request Service",
+      "text": "Tell Us About Your Needs",
+      "link": "/request/"
+    },
+    {
+      "image": "/images/consultation2.jpg",
+      "title": "Meet Your Nanny",
+      "text": "Book Your Free Consultation",
+      "link": "/about/"
+    },
+    {
+      "image": "/images/dancingdog.jpg",
+      "title": "Happy Pets",
+      "text": "Begin Operation Tippy Taps",
+      "link": ""
+    }
+  ],
   "accolades": [
     {
       "title": "Expertise.com Best Dog\nWalkers in Redmond",
@@ -21,7 +39,15 @@
       "link": "https://www.yelp.com/biz/pawblem-solved-redmond"
     }
   ],
+  "facebookReviewCount": 12,
+  "mapLink": "https://www.google.com/maps/d/edit?mid=1awphgF2VfkxgFm5I6rOHmNvOjDJGDnoo&usp=sharing",
   "whyHeading": "**Why Pawblem Solved** for your pets?",
+  "hero": {
+    "title": "Dog Walkers & Cat Sitters",
+    "subtitle": "Redmond",
+    "buttonText": "Request a Service"
+  },
+  "stepsHeading": "**3 simple steps to get started** with Pawblem Solved",
   "features": [
     {
       "icon": "/images/icons/dog.png",
@@ -54,31 +80,5 @@
       "text": "Founded in 2010 with\nConsistent 5-Star Reviews"
     }
   ],
-  "stepsHeading": "**3 simple steps to get started** with Pawblem Solved",
-  "steps": [
-    {
-      "image": "/images/sophie.jpg",
-      "title": "Request Service",
-      "text": "Tell Us About Your Needs",
-      "link": "/request/"
-    },
-    {
-      "image": "/images/consultation2.jpg",
-      "title": "Meet Your Nanny",
-      "text": "Book Your Free Consultation",
-      "link": "/about/"
-    },
-    {
-      "image": "/images/dancingdog.jpg",
-      "title": "Happy Pets",
-      "text": "Begin Operation Tippy Taps",
-      "link": ""
-    }
-  ],
-  "reviewsHeading": "Our customers **love us!**",
-  "facebookReviewCount": 12,
-  "yelpReviewCount": 17,
-  "mapHeading": "Servicing **Redmond**",
-  "mapImage": "/images/redmond-map-min.png",
-  "mapLink": "https://www.google.com/maps/d/edit?mid=1awphgF2VfkxgFm5I6rOHmNvOjDJGDnoo&usp=sharing"
+  "mapImage": "/images/redmond-map-min.png"
 }
