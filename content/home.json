@@ -44,7 +44,7 @@
   "whyHeading": "**Why Pawblem Solved** for your pets?",
   "hero": {
     "title": "Dog Walkers & Cat Sitters",
-    "subtitle": "Redmond",
+    "subtitle": "Redmond, WA",
     "buttonText": "Request a Service"
   },
   "stepsHeading": "**3 simple steps to get started** with Pawblem Solved",
@@ -67,7 +67,7 @@
     {
       "icon": "/images/icons/cat2.png",
       "title": "Dependable",
-      "text": "Same Walker & Backup\nCoverage for Every Visit."
+      "text": "Same Walker for Every Visit."
     },
     {
       "icon": "/images/icons/dog2.png",
